@@ -7,12 +7,6 @@ const quotes = [
   },
   {
     quote:
-      "Finally a team that actually understands the algorithm. Our hooks went from invisible to inevitable.",
-    name: "James L.",
-    title: "Creator & Public Speaker",
-  },
-  {
-    quote:
       "First viral reel in week two. We stopped guessing and started shipping content that worked.",
     name: "Noor A.",
     title: "Marketing Lead, F&B",
