@@ -1,7 +1,6 @@
 import { useReveal } from "@/hooks/use-reveal";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
-import VideoSection from "@/components/landing/VideoSection";
 import Results from "@/components/landing/Results";
 import Services from "@/components/landing/Services";
 import Founder from "@/components/landing/Founder";
@@ -16,7 +15,6 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <VideoSection />
         <Results />
         <Services />
         <Founder />
