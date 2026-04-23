@@ -47,7 +47,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button asChild size="sm" className="rounded-full px-5 font-semibold">
-            <a href="https://calendly.com/meetingwithmokhtar/discoverycallwithmokhtar" target="_blank" rel="noopener noreferrer">Book a Free Call</a>
+            <a href="#book">Book a Free Call</a>
           </Button>
         </div>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button asChild className="rounded-full w-full font-semibold">
-              <a href="https://calendly.com/meetingwithmokhtar/discoverycallwithmokhtar" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+              <a href="#book" onClick={() => setOpen(false)}>
                 Book a Free Call
               </a>
             </Button>
