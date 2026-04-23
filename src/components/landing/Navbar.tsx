@@ -74,7 +74,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button asChild className="rounded-full w-full font-semibold">
-              <a href="#book" onClick={() => setOpen(false)}>
+              <a href="https://calendly.com/meetingwithmokhtar/discoverycallwithmokhtar" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
                 Book a Free Call
               </a>
             </Button>
