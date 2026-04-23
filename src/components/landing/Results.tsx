@@ -16,7 +16,7 @@ const Card = ({ tag, text }: { tag: string; text: string }) => (
 );
 
 const Results = () => {
-  const loop = [...items, ...items, ...items, ...items];
+  const loop = [...items, ...items, ...items];
   return (
     <section id="results" className="py-20 sm:py-28 border-t border-border">
       <div className="container">
@@ -25,12 +25,14 @@ const Results = () => {
         </h2>
       </div>
 
-      <div className="reveal mt-16 relative overflow-hidden">
+      <div className="reveal mt-16 relative">
         <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none" />
-        <div className="flex marquee w-max">
+        <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide py-2">
           {loop.map((it, i) => (
-            <Card key={i} {...it} />
+            <div key={i} className="snap-center">
+              <Card {...it} />
+            </div>
           ))}
         </div>
       </div>
