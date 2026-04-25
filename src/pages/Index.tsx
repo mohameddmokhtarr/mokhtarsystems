@@ -23,6 +23,7 @@ const Index = () => {
         <Booking />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
