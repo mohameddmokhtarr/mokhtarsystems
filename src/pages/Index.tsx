@@ -5,6 +5,7 @@ import Results from "@/components/landing/Results";
 import Services from "@/components/landing/Services";
 import Founder from "@/components/landing/Founder";
 import Testimonials from "@/components/landing/Testimonials";
+import FAQ from "@/components/landing/FAQ";
 import Booking from "@/components/landing/Booking";
 import Footer from "@/components/landing/Footer";
 import WhatsAppFloat from "@/components/landing/WhatsAppFloat";
@@ -20,6 +21,7 @@ const Index = () => {
         <Services />
         <Founder />
         <Testimonials />
+        <FAQ />
         <Booking />
       </main>
       <Footer />
