@@ -7,6 +7,7 @@ import Founder from "@/components/landing/Founder";
 import Testimonials from "@/components/landing/Testimonials";
 import Booking from "@/components/landing/Booking";
 import Footer from "@/components/landing/Footer";
+import WhatsAppFloat from "@/components/landing/WhatsAppFloat";
 
 const Index = () => {
   useReveal();
