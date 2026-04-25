@@ -16,6 +16,9 @@ const Booking = () => {
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
       <div className="container relative">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="reveal inline-flex items-center rounded-full bg-[#FF6B00] px-4 py-1.5 text-xs font-semibold text-white tracking-wide mb-6">
+            Currently accepting 4 new brands this month
+          </div>
           <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-balance">
             If the numbers matter, <span className="text-primary">book the call.</span>
           </h2>
