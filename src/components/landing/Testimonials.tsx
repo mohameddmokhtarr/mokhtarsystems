@@ -11,6 +11,12 @@ const quotes = [
     name: "Noor A.",
     title: "Marketing Lead, F&B",
   },
+  {
+    quote:
+      "We were posting consistently but getting nothing. Within 3 weeks the system gave us clarity on what to post and why. Engagement tripled.",
+    name: "Layla M.",
+    title: "Brand Manager, Fashion Brand",
+  },
 ];
 
 const Testimonials = () => {
