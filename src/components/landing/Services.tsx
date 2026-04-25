@@ -3,17 +3,29 @@ const services = [
     n: "01",
     title: "Competitor & Trend Research",
     desc: "Full niche analysis, weekly trend reports, and content gaps your competitors are missing.",
+    bullets: [
+      "Weekly trend report",
+      "Top 10 competitor content audit",
+      "Content gap analysis",
+      "Format recommendations",
+    ],
   },
   {
     n: "02",
     title: "AI Content System",
     desc: "Hook writing, captions, content calendar, and monthly performance breakdowns. Built around your brand goals.",
+    bullets: [
+      "30 hooks per month",
+      "Full caption library",
+      "Content calendar",
+      "Monthly performance breakdown",
+    ],
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 sm:py-28 border-t border-border">
+    <section id="services" className="pt-20 sm:pt-28 pb-8 sm:pb-12 border-t border-border">
       <div className="container">
         <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight">
           What We Do.
@@ -34,6 +46,14 @@ const Services = () => {
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 {s.desc}
               </p>
+              <ul className="mt-6 space-y-2 text-muted-foreground">
+                {s.bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
