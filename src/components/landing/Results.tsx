@@ -1,7 +1,7 @@
 const items = [
-  { tag: "Consumer Brand", text: "+340% Instagram reach in 3 weeks" },
-  { tag: "Personal Brand", text: "120K views in under 12 hours" },
-  { tag: "F&B Brand", text: "180K views on the first viral reel" },
+  { tag: "Consumer Brand", text: "+180% Instagram growth in 4 weeks" },
+  { tag: "Personal Brand", text: "65K organic views in under 24 hours" },
+  { tag: "F&B Brand", text: "90K views on the first viral reel" },
 ];
 
 const Card = ({ tag, text }: { tag: string; text: string }) => (
