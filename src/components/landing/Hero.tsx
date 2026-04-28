@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const stats = [
-  { value: "180K", label: "Organic views on a single reel" },
-  { value: "+340%", label: "Instagram reach growth" },
-  { value: "5×", label: "Reel views month-over-month" },
+  { value: "90K", label: "Organic views on a single reel" },
+  { value: "+180%", label: "Instagram reach growth" },
+  { value: "3×", label: "Reel views month-over-month" },
 ];
 
 const Hero = () => {
