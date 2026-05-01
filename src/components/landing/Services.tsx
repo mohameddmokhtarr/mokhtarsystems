@@ -9,6 +9,8 @@ const services = [
       "Review and approval workflow",
       "Scheduled publishing and reporting",
     ],
+    examples:
+      "Examples: Automated research and brief generation for reports, drafting and editing pipelines for content teams, review and approval workflows that reduce back-and-forth, scheduled publishing to social media and blog with auto-formatting.",
   },
   {
     n: "02",
@@ -20,6 +22,8 @@ const services = [
       "Internal AI assistants",
       "Documentation and handover",
     ],
+    examples:
+      "Examples: Automated data entry from emails/forms into your CRM, daily report generation from multiple data sources, meeting note processing and action item extraction, invoice processing and approval routing, customer support ticket categorization and first-response automation.",
   },
 ];
 
@@ -54,6 +58,9 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 pt-6 border-t border-border text-sm text-muted-foreground leading-relaxed">
+                {s.examples}
+              </p>
             </div>
           ))}
         </div>

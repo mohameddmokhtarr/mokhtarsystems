@@ -9,22 +9,22 @@ const faqs = [
   {
     question: "What exactly do you implement?",
     answer:
-      "AI systems that automate specific workflows inside your business — usually content production, internal operations, and reporting. The scope is defined after the first call.",
+      "We build custom AI systems that live inside your existing tech stack. This includes content automation workflows (research, writing, editing, publishing), internal process automation (data entry, report generation, task management), and AI assistants that handle repetitive work. We don't sell you software—we build and hand over the systems so you own them.",
   },
   {
     question: "Is this consulting or implementation?",
     answer:
-      "Implementation. I build the system inside your stack, integrate it with your tools, and hand it over with documentation. Advice is part of the work, not the product.",
+      "Pure implementation. We don't advise and leave—we build it inside your business, connect it to your tools, document everything, and train your team to run it. You own the system when we're done.",
   },
   {
     question: "Who is this for?",
     answer:
-      "Established businesses with real operational volume — content teams, agencies, and operators who want output to scale without growing headcount in proportion.",
+      "Teams with 5+ people doing repetitive manual work (content creation, data processing, scheduling, reporting). You need some budget for development but don't need technical skills—we handle that part.",
   },
   {
     question: "How long does an engagement take?",
     answer:
-      "Most systems are designed and implemented in 4–8 weeks, depending on scope and the state of your existing tools and data.",
+      "Typically 6-12 weeks depending on complexity. We start with audit and design (2-3 weeks), move to implementation (3-6 weeks), then hand over and training (1-2 weeks).",
   },
 ];
 
