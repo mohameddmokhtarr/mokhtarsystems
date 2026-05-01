@@ -33,7 +33,7 @@ const Navbar = () => {
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold tracking-tight text-base sm:text-lg bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-40% via-[#d62976] via-70% to-[#962fbf] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_linear_infinite] hover:scale-105 transition-transform inline-block"
+          className="font-bold tracking-tight text-base sm:text-lg bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-[#d62976] to-[#962fbf] bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer hover:scale-105 transition-transform inline-block"
         >
           mokhtarsays_
         </a>
