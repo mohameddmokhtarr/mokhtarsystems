@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Results", href: "#results" },
+  { label: "Problem", href: "#problem" },
+  { label: "Approach", href: "#solution" },
   { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Book a Call", href: "#book" },
+  { label: "Contact", href: "#book" },
 ];
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <nav className="container flex h-16 items-center justify-between">
         <a href="#top" className="font-bold tracking-tight text-base sm:text-lg">
-          @mokhtarsays_
+          Mokhtar
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -47,7 +47,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button asChild size="sm" className="rounded-full px-5 font-semibold">
-            <a href="#book">Book a Free Call</a>
+            <a href="#book">Book a Call</a>
           </Button>
         </div>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
             ))}
             <Button asChild className="rounded-full w-full font-semibold">
               <a href="#book" onClick={() => setOpen(false)}>
-                Book a Free Call
+                Book a Call
               </a>
             </Button>
           </div>

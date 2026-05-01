@@ -17,13 +17,13 @@ const Booking = () => {
       <div className="container relative">
         <div className="max-w-4xl mx-auto text-center">
           <div className="reveal inline-flex items-center rounded-full bg-[#FF6B00] px-4 py-1.5 text-xs font-semibold text-white tracking-wide mb-6">
-            Currently accepting 4 new brands this month
+            Currently taking on 4 new businesses this quarter
           </div>
           <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-balance">
-            If the numbers matter, <span className="text-primary">book the call.</span>
+            Let's see if it fits<span className="text-primary">.</span>
           </h2>
           <p className="reveal mt-6 text-lg text-muted-foreground">
-            30 minutes. Straight answers. Clear next steps.
+            A 30-minute call. We look at your workflows, identify where AI removes the most manual work, and tell you honestly if there's a fit.
           </p>
         </div>
 
