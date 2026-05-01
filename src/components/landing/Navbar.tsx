@@ -29,8 +29,13 @@ const Navbar = () => {
       }`}
     >
       <nav className="container flex h-16 items-center justify-between">
-        <a href="#top" className="font-bold tracking-tight text-base sm:text-lg">
-          Mokhtar
+        <a
+          href="https://www.instagram.com/mokhtarsays_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold tracking-tight text-base sm:text-lg bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-40% via-[#d62976] via-70% to-[#962fbf] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_linear_infinite] hover:scale-105 transition-transform inline-block"
+        >
+          mokhtarsays_
         </a>
 
         <div className="hidden md:flex items-center gap-8">
