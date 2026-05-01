@@ -34,7 +34,7 @@ const Hero = () => {
             className="rounded-full px-7 h-12 font-semibold group"
           >
             <a href="#book">
-              Book a Free Call
+              Book a Call
               <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" size={18} />
             </a>
           </Button>

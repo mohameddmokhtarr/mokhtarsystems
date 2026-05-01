@@ -15,7 +15,7 @@ const Footer = () => {
             @mokhtarsays_
           </a>
           <div className="hidden md:block text-center text-muted-foreground">
-            Content That Converts.
+            AI Systems Implementation.
           </div>
           <div className="flex justify-end">
             <a
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="md:hidden mt-6 text-center text-muted-foreground">
-          Content That Converts.
+          AI Systems Implementation.
         </div>
         <div className="mt-8 pt-6 border-t border-border text-xs text-muted-foreground text-center">
           © {new Date().getFullYear()} @mokhtarsays_. All rights reserved.

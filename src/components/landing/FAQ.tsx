@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "How long until I see results?",
+    question: "What exactly do you implement?",
     answer:
-      "Most brands see measurable movement in weeks 2–3. The system is built for compounding, not spikes.",
+      "AI systems that automate specific workflows inside your business — usually content production, internal operations, and reporting. The scope is defined after the first call.",
   },
   {
-    question: "Do I need to create the content myself?",
+    question: "Is this consulting or implementation?",
     answer:
-      "No. We handle research, hooks, captions, and the calendar. You review and approve.",
+      "Implementation. I build the system inside your stack, integrate it with your tools, and hand it over with documentation. Advice is part of the work, not the product.",
   },
   {
-    question: "What types of brands do you work with?",
+    question: "Who is this for?",
     answer:
-      "Consumer brands, F&B, and personal brands focused on organic growth. If you're running paid ads only, we're not the right fit.",
+      "Established businesses with real operational volume — content teams, agencies, and operators who want output to scale without growing headcount in proportion.",
   },
   {
-    question: "What happens on the first call?",
+    question: "How long does an engagement take?",
     answer:
-      "30 minutes. We audit your current content, identify your biggest gaps, and tell you exactly what we'd build. No pitch deck.",
+      "Most systems are designed and implemented in 4–8 weeks, depending on scope and the state of your existing tools and data.",
   },
 ];
 
@@ -33,7 +33,7 @@ const FAQ = () => {
     <section className="py-20 sm:py-28 border-t border-border">
       <div className="container">
         <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight max-w-4xl">
-          Quick Answers<span className="text-primary">.</span>
+          Common Questions<span className="text-primary">.</span>
         </h2>
 
         <div className="reveal mt-16 max-w-3xl">

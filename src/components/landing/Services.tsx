@@ -1,24 +1,24 @@
 const services = [
   {
     n: "01",
-    title: "Competitor & Trend Research",
-    desc: "Full niche analysis, weekly trend reports, and content gaps your competitors are missing.",
+    title: "AI Content Systems",
+    desc: "Automated workflows for research, writing, editing, and publishing — built around how your business already operates.",
     bullets: [
-      "Weekly trend report",
-      "Top 10 competitor content audit",
-      "Content gap analysis",
-      "Format recommendations",
+      "Research and brief generation",
+      "Drafting and editing pipelines",
+      "Review and approval workflow",
+      "Scheduled publishing and reporting",
     ],
   },
   {
     n: "02",
-    title: "AI Content System",
-    desc: "Hook writing, captions, content calendar, and monthly performance breakdowns. Built around your brand goals.",
+    title: "AI Workflow Automation",
+    desc: "Internal processes that currently rely on manual effort — moved into reliable systems your team can run on.",
     bullets: [
-      "30 hooks per month",
-      "Full caption library",
-      "Content calendar",
-      "Monthly performance breakdown",
+      "Process audit and mapping",
+      "Tool and data integration",
+      "Internal AI assistants",
+      "Documentation and handover",
     ],
   },
 ];
@@ -28,7 +28,7 @@ const Services = () => {
     <section id="services" className="pt-20 sm:pt-28 pb-8 sm:pb-12 border-t border-border">
       <div className="container">
         <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight">
-          What We Do.
+          Services<span className="text-primary">.</span>
         </h2>
 
         <div className="mt-16 grid md:grid-cols-2 gap-8 lg:gap-12">
