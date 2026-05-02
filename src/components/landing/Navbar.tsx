@@ -28,14 +28,18 @@ const Navbar = () => {
       }`}
     >
       <nav className="container flex h-16 py-3 items-center justify-between">
-        {/* wordmark — white→salmon→white shimmer */}
         <a
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-display font-black text-lg sm:text-xl bg-gradient-to-r from-white via-[#E05A2B] to-white bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer inline-block px-3 py-1.5 border border-white/20 hover:border-white/50 hover:scale-105 transition-all"
+          className="group flex items-center gap-2 px-3 py-1.5 border border-white/10 bg-white/[0.04] backdrop-blur-md hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300"
         >
-          mokhtarsays_
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/60 group-hover:text-white transition-colors">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span className="font-mono text-[11px] tracking-widest uppercase text-white/70 group-hover:text-white transition-colors">mokhtarsays_</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

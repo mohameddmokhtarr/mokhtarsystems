@@ -10,7 +10,7 @@ const Footer = () => {
             href={instagramUrl}
             target="_blank"
             rel="noreferrer"
-            className="font-display uppercase tracking-tight text-base hover:text-[#E8896A] transition-colors text-[#2A1F18]"
+            className="font-display uppercase tracking-tight text-base hover:text-black transition-colors text-black"
           >
             @mokhtarsays_
           </a>

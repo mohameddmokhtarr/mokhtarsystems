@@ -6,33 +6,32 @@ const painPoints = [
 
 const PainPoints = () => {
   return (
-    <section className="py-16 sm:py-24 bg-[#0A0A0A]">
+    <section className="py-10 sm:py-14 bg-[#0A0A0A]">
       <div className="container">
-        <h2 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl uppercase tracking-tight leading-[0.9] text-white max-w-4xl">
+        <h2 className="reveal font-display text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight leading-[0.9] text-white max-w-4xl">
           Your ideas are world-class.{" "}
           <span className="italic-serif">Your systems</span>{" "}
           aren't.
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
           {painPoints.map((text, i) => (
             <div
               key={i}
-              className={`reveal glass glass-highlight p-6${i === 2 ? " lg:col-span-2" : ""}`}
+              className={`reveal glass glass-highlight p-5${i === 2 ? " sm:col-span-2 lg:col-span-1 lg:row-span-2" : ""}`}
             >
-              {/* ✗ in a small glass-salmon pill */}
-              <div className="glass-salmon w-8 h-8 flex items-center justify-center">
+              <div className="glass-salmon w-7 h-7 flex items-center justify-center">
                 <span className="text-sm font-bold text-[#E05A2B]">✗</span>
               </div>
-              <p className="mt-4 font-display text-xl uppercase tracking-tight leading-tight text-white">
+              <p className="mt-3 font-display text-xl uppercase tracking-tight leading-tight text-white">
                 {text}
               </p>
             </div>
           ))}
 
-          {/* CTA card — salmon glass, col-3 row-span-2 at lg */}
-          <div className="reveal glass-salmon glass-highlight p-6 text-white flex flex-col justify-between lg:row-start-1 lg:col-start-3 lg:row-span-2">
+          {/* CTA card */}
+          <div className="reveal glass-salmon glass-highlight p-5 text-white flex flex-col justify-between sm:col-span-2 lg:col-span-2">
             <div>
               <div className="text-3xl font-bold opacity-40">→</div>
               <h3 className="mt-4 font-display text-2xl sm:text-3xl uppercase tracking-tight leading-tight">
