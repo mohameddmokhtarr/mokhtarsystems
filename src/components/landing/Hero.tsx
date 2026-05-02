@@ -14,9 +14,11 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
       <div className="container relative">
-        <div className="reveal inline-flex items-center gap-2 tag">
-          <Sparkles size={14} />
-          AI Systems Implementation
+        <div className="reveal inline-block">
+          <div className="hero-badge">
+            <Sparkles size={18} className="hero-badge-icon" />
+            AI Systems Implementation
+          </div>
         </div>
 
         <h1 className="reveal mt-8 font-display text-6xl sm:text-8xl lg:text-[9rem] xl:text-[11rem] leading-[0.85] tracking-tight text-balance uppercase">
