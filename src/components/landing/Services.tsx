@@ -38,7 +38,7 @@ const Services = () => {
           <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Services</span>
         </h2>
 
-        <div className="mt-16 grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="mt-20 grid md:grid-cols-2 gap-8 lg:gap-12">
           {services.map((s, i) => (
             <div
               key={s.n}

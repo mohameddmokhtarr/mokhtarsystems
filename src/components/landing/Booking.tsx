@@ -27,7 +27,7 @@ const Booking = () => {
           </p>
         </div>
 
-        <div className="reveal mt-16 max-w-4xl mx-auto">
+        <div className="reveal mt-20 max-w-4xl mx-auto">
           <div className="rounded-2xl border-2 border-ink bg-card overflow-hidden shadow-brutal-lg">
             <div
               className="calendly-inline-widget"

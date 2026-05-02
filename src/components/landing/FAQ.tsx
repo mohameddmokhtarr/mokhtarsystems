@@ -39,7 +39,7 @@ const FAQ = () => {
           Common <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Questions</span>.
         </h2>
 
-        <div className="reveal mt-16 max-w-3xl">
+        <div className="reveal mt-20 max-w-3xl">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, i) => (
               <AccordionItem
