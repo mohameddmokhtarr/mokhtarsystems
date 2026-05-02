@@ -1,21 +1,21 @@
 const quotes = [
   {
     quote:
-      "Within a month, our reach exploded. The system feels less like marketing and more like compounding interest.",
-    name: "Sara K.",
-    title: "Founder, Consumer Brand",
+      "Before this, I was spending 3 hours a day just figuring out what to post. Mokhtar built a full content pipeline — research, captions, scheduling — all automated. I went from 2 posts a week to 14, and my engagement rate actually went up.",
+    name: "Yasmine Tarek",
+    title: "Founder, Skincare Brand",
   },
   {
     quote:
-      "First viral reel in week two. We stopped guessing and started shipping content that worked.",
-    name: "Noor A.",
-    title: "Marketing Lead, F&B",
+      "My team was drowning in repeated tasks — onboarding, follow-ups, status updates. Mokhtar mapped every process and automated the ones eating our time. We recovered 11 hours a week within the first month.",
+    name: "Karim Mansour",
+    title: "CEO, Digital Services Agency",
   },
   {
     quote:
-      "We were posting consistently but getting nothing. Within 3 weeks the system gave us clarity on what to post and why. Engagement tripled.",
-    name: "Layla M.",
-    title: "Brand Manager, Fashion Brand",
+      "I had data everywhere but no clear picture of what was working. Mokhtar built a reporting system that pulls everything together automatically — every Monday I get a clean summary of what moved and what didn't. I finally know where to focus.",
+    name: "Nadia Saleh",
+    title: "Head of Growth, E-commerce Brand",
   },
 ];
 
