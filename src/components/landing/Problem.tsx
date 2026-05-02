@@ -15,12 +15,15 @@ const points = [
 
 const Problem = () => {
   return (
-    <section id="problem" className="py-20 sm:py-28 border-t border-border">
+    <section id="problem" className="py-20 sm:py-28 border-t-2 border-ink bg-secondary">
       <div className="container">
-        <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight max-w-4xl text-balance">
-          The Bottleneck<span className="text-primary">.</span>
+        <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
+          The Problem
+        </div>
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9]">
+          The <span className="bg-accent border-2 border-ink px-2 -rotate-1 inline-block shadow-brutal">Bottleneck</span>.
         </h2>
-        <p className="reveal mt-6 max-w-2xl text-lg text-muted-foreground">
+        <p className="reveal mt-8 max-w-2xl text-lg sm:text-xl text-foreground/75 leading-relaxed">
           Most businesses don't have an AI problem. They have an
           implementation problem.
         </p>
@@ -29,15 +32,17 @@ const Problem = () => {
           {points.map((p, i) => (
             <div
               key={i}
-              className="reveal rounded-2xl border border-border bg-card p-8"
+              className={`reveal rounded-2xl border-2 border-ink bg-card p-8 shadow-brutal hover:shadow-brutal-lg hover:-translate-x-[2px] hover:-translate-y-[2px] transition-all ${
+                i === 1 ? "md:translate-y-6" : ""
+              }`}
             >
-              <div className="text-primary text-sm font-mono font-semibold tracking-widest">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground border-2 border-ink font-display text-lg">
                 {String(i + 1).padStart(2, "0")}
               </div>
-              <h3 className="mt-4 text-xl font-bold leading-tight">
+              <h3 className="mt-5 font-display text-2xl uppercase leading-tight tracking-tight">
                 {p.title}
               </h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">
+              <p className="mt-3 text-foreground/75 leading-relaxed">
                 {p.desc}
               </p>
             </div>
