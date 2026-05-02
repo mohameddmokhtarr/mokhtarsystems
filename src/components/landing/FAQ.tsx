@@ -30,10 +30,13 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-20 sm:py-28 border-t border-border">
+    <section className="py-20 sm:py-28 border-t-2 border-ink bg-secondary">
       <div className="container">
-        <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight max-w-4xl">
-          Common Questions<span className="text-primary">.</span>
+        <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
+          FAQ
+        </div>
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl leading-[0.9]">
+          Common <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Questions</span>.
         </h2>
 
         <div className="reveal mt-16 max-w-3xl">
@@ -42,12 +45,12 @@ const FAQ = () => {
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
-                className="rounded-2xl border border-border bg-card px-6 data-[state=open]:border-primary/50 transition-colors"
+                className="rounded-2xl border-2 border-ink bg-card px-6 shadow-brutal data-[state=open]:bg-accent transition-colors"
               >
-                <AccordionTrigger className="py-6 text-left text-base sm:text-lg font-semibold hover:no-underline hover:text-primary transition-colors">
+                <AccordionTrigger className="py-6 text-left text-base sm:text-lg font-display uppercase tracking-tight hover:no-underline transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 text-muted-foreground text-base leading-relaxed">
+                <AccordionContent className="pb-6 text-foreground/80 text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
