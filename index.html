@@ -7,9 +7,9 @@
     <meta name="description" content="I help businesses implement AI systems that automate content and operations — increasing output and reducing manual work." />
     <meta name="author" content="Mokhtar" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="Mokhtar — AI Systems Implementation" />
     <meta property="og:description" content="AI systems implemented inside your business to automate content and workflows." />
@@ -24,5 +24,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal, .reveal-stagger, .divider-line').forEach(el => io.observe(el));
+        window.addEventListener('scroll', () => {
+          document.querySelectorAll('nav, header nav').forEach(n => n.classList.toggle('nav-scrolled', window.scrollY > 40));
+        });
+      });
+    </script>
   </body>
 </html>

@@ -21,25 +21,25 @@ const quotes = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 sm:py-28 border-t border-border">
+    <section className="py-20 sm:py-28 border-t-2 border-[#1A1512] bg-dot-grid">
       <div className="container">
-        <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight max-w-4xl">
-          What the Work <span className="text-muted-foreground">Changed.</span>
+        <h2 className="reveal font-display text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight max-w-4xl text-[#2A1F18]">
+          What the Work <span className="text-[#8A7060]">Changed.</span>
         </h2>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {quotes.map((q, i) => (
             <figure
               key={i}
-              className="reveal rounded-2xl border border-border bg-card p-8 flex flex-col"
+              className="reveal card-light p-8 flex flex-col"
             >
-              <div className="text-primary text-4xl font-black leading-none">"</div>
-              <blockquote className="mt-2 text-base sm:text-lg leading-relaxed flex-1">
+              <div className="text-[#E8896A] text-4xl font-display leading-none">"</div>
+              <blockquote className="mt-2 text-base sm:text-lg leading-relaxed flex-1 text-[#2A1F18]">
                 {q.quote}
               </blockquote>
-              <figcaption className="mt-8 pt-6 border-t border-border">
-                <div className="font-semibold">{q.name}</div>
-                <div className="text-sm text-muted-foreground">{q.title}</div>
+              <figcaption className="mt-8 pt-6 border-t border-[#2A1F18]/10">
+                <div className="font-bold text-[#2A1F18]">{q.name}</div>
+                <div className="text-sm text-[#8A7060]">{q.title}</div>
               </figcaption>
             </figure>
           ))}

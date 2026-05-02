@@ -5,11 +5,9 @@ const items = [
 ];
 
 const Card = ({ tag, text }: { tag: string; text: string }) => (
-  <div className="shrink-0 w-[320px] sm:w-[420px] mx-3 rounded-2xl border border-border bg-card p-8">
-    <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">
-      {tag}
-    </div>
-    <div className="mt-4 text-2xl sm:text-3xl font-bold leading-tight">
+  <div className="shrink-0 w-[320px] sm:w-[420px] mx-3 card-light p-8">
+    <div className="tag">{tag}</div>
+    <div className="mt-4 text-2xl sm:text-3xl font-display uppercase leading-tight text-[#2A1F18]">
       {text}
     </div>
   </div>
@@ -18,16 +16,16 @@ const Card = ({ tag, text }: { tag: string; text: string }) => (
 const Results = () => {
   const loop = [...items, ...items, ...items, ...items];
   return (
-    <section id="results" className="py-20 sm:py-28 border-t border-border">
+    <section id="results" className="py-20 sm:py-28 border-t-2 border-[#1A1512] bg-dot-grid">
       <div className="container">
-        <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-balance max-w-4xl">
-          Results First. <span className="text-muted-foreground">Talk Later.</span>
+        <h2 className="reveal font-display text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-balance max-w-4xl text-[#2A1F18]">
+          Results First. <span className="text-[#8A7060]">Talk Later.</span>
         </h2>
       </div>
 
       <div className="reveal mt-16 relative overflow-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[#F5F0E8] to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-[#F5F0E8] to-transparent pointer-events-none" />
         <div className="flex marquee w-max">
           {loop.map((it, i) => (
             <Card key={i} {...it} />

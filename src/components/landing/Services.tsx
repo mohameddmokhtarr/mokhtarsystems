@@ -29,41 +29,39 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="pt-28 sm:pt-40 pb-28 sm:pb-40 border-t-2 border-ink bg-secondary">
+    <section id="services" className="pt-28 sm:pt-40 pb-28 sm:pb-40 border-t-2 border-[#1A1512] bg-dot-grid">
       <div className="container">
-        <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
-          What I Do
+        <div className="reveal mb-6">
+          <span className="tag">What I Do</span>
         </div>
-        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9]">
-          <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Services</span>
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#2A1F18]">
+          <span className="bg-[#E8896A] text-white border-2 border-[#1A1512] px-3 inline-block shadow-brutal -rotate-1">Services</span>
         </h2>
 
         <div className="mt-20 grid md:grid-cols-2 gap-8 lg:gap-12">
           {services.map((s, i) => (
             <div
               key={s.n}
-              className={`reveal group rounded-2xl border-2 border-ink bg-card p-8 sm:p-10 shadow-brutal hover:shadow-brutal-lg hover:-translate-x-[2px] hover:-translate-y-[2px] transition-all ${
-                i === 1 ? "md:translate-y-8" : ""
-              }`}
+              className={`reveal card-light p-8 sm:p-10 ${i === 1 ? "md:translate-y-8" : ""}`}
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent text-foreground border-2 border-ink font-display text-lg">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F5B89A] text-[#2A1F18] border-2 border-[#1A1512] font-display text-lg">
                 {s.n}
               </div>
-              <h3 className="mt-5 font-display text-3xl sm:text-4xl uppercase leading-[0.95] tracking-tight">
+              <h3 className="mt-5 font-display text-3xl sm:text-4xl uppercase leading-[0.95] tracking-tight text-[#2A1F18]">
                 {s.title}
               </h3>
-              <p className="mt-4 text-foreground/75 leading-relaxed">
+              <p className="mt-4 text-[#8A7060] leading-relaxed">
                 {s.desc}
               </p>
-              <ul className="mt-6 space-y-2.5 text-foreground/80">
+              <ul className="mt-6 space-y-2.5 text-[#2A1F18]">
                 {s.bullets.map((b) => (
                   <li key={b} className="flex items-start gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-primary border border-ink shrink-0" />
-                    <span className="font-medium">{b}</span>
+                    <span className="mt-2 h-2 w-2 rounded-full bg-[#E8896A] shrink-0" />
+                    <span className="font-bold">{b}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 pt-6 border-t-2 border-dashed border-ink/30 text-sm text-foreground/70 leading-relaxed">
+              <p className="mt-6 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-sm text-[#8A7060] leading-relaxed">
                 {s.examples}
               </p>
             </div>

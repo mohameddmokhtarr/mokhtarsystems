@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        salmon: '#E8896A',
+        'salmon-light': '#F5B89A',
+        'salmon-dark': '#C45A38',
+        cream: '#F5F0E8',
+        'warm-dark': '#1A1512',
+        'body-text': '#2A1F18',
+        'warm-muted': '#8A7060',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -64,9 +71,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Archivo Black", "Space Grotesk", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+        sans: ["Space Mono", "ui-monospace", "monospace"],
+        display: ["Fraunces", "serif"],
+        mono: ["Space Mono", "monospace"],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",

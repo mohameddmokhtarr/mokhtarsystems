@@ -30,13 +30,13 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-28 sm:py-40 border-t-2 border-ink bg-secondary">
+    <section className="py-28 sm:py-40 border-t-2 border-[#1A1512] bg-dot-grid">
       <div className="container">
-        <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
-          FAQ
+        <div className="reveal mb-6">
+          <span className="tag">FAQ</span>
         </div>
-        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl leading-[0.9]">
-          Common <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Questions</span>.
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl leading-[0.9] text-[#2A1F18]">
+          Common <span className="bg-[#E8896A] text-white border-2 border-[#1A1512] px-3 inline-block shadow-brutal -rotate-1">Questions</span>.
         </h2>
 
         <div className="reveal mt-20 max-w-3xl">
@@ -45,12 +45,12 @@ const FAQ = () => {
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
-                className="rounded-2xl border-2 border-ink bg-card px-6 shadow-brutal data-[state=open]:bg-accent transition-colors"
+                className="card-light px-6 data-[state=open]:bg-[#F5B89A]/30 transition-colors"
               >
-                <AccordionTrigger className="py-6 text-left text-base sm:text-lg font-display uppercase tracking-tight hover:no-underline transition-colors">
+                <AccordionTrigger className="py-6 text-left text-base sm:text-lg font-display uppercase tracking-tight hover:no-underline text-[#2A1F18] transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 text-foreground/80 text-base leading-relaxed">
+                <AccordionContent className="pb-6 text-[#8A7060] text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

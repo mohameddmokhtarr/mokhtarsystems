@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const links = [
@@ -24,7 +23,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/85 backdrop-blur-xl border-b-2 border-ink"
+          ? "bg-[#F5F0E8]/90 backdrop-blur-xl border-b-2 border-[#1A1512]"
           : "bg-transparent"
       }`}
     >
@@ -33,7 +32,7 @@ const Navbar = () => {
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-display text-lg sm:text-xl bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-[#d62976] to-[#962fbf] bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer hover:scale-105 transition-transform inline-block px-3 py-1.5 border-2 border-ink rounded-full bg-card"
+          className="font-display text-lg sm:text-xl bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-[#d62976] to-[#962fbf] bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer hover:scale-105 transition-transform inline-block px-3 py-1.5 border-2 border-[#1A1512] rounded-full bg-[#F5F0E8]"
         >
           mokhtarsays_
         </a>
@@ -43,7 +42,7 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-bold uppercase tracking-wider text-foreground/70 hover:text-primary transition-colors"
+              className="text-sm font-bold uppercase tracking-wider text-[#2A1F18]/70 hover:text-[#E8896A] transition-colors"
             >
               {l.label}
             </a>
@@ -51,13 +50,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button asChild size="sm">
-            <a href="#book">Book a Call</a>
-          </Button>
+          <a href="#book" className="btn-salmon" style={{ padding: "9px 22px", fontSize: "13px" }}>
+            Book a Call
+          </a>
         </div>
 
         <button
-          className="md:hidden text-foreground border-2 border-ink rounded-full p-2 bg-card"
+          className="md:hidden text-[#2A1F18] border-2 border-[#1A1512] rounded-full p-2 bg-[#F5F0E8]"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -66,23 +65,25 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t-2 border-ink bg-background/95 backdrop-blur-xl">
+        <div className="md:hidden border-t-2 border-[#1A1512] bg-[#F5F0E8]/95 backdrop-blur-xl">
           <div className="container py-4 flex flex-col gap-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-bold uppercase tracking-wider text-foreground/70 hover:text-primary"
+                className="text-sm font-bold uppercase tracking-wider text-[#2A1F18]/70 hover:text-[#E8896A]"
               >
                 {l.label}
               </a>
             ))}
-            <Button asChild className="w-full">
-              <a href="#book" onClick={() => setOpen(false)}>
-                Book a Call
-              </a>
-            </Button>
+            <a
+              href="#book"
+              onClick={() => setOpen(false)}
+              className="btn-salmon text-center"
+            >
+              Book a Call
+            </a>
           </div>
         </div>
       )}

@@ -23,30 +23,26 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-28 sm:py-40 border-t-2 border-ink">
+    <section id="benefits" className="py-28 sm:py-40 border-t-2 border-[#1A1512] bg-dot-grid">
       <div className="container">
-        <div className="reveal inline-block rounded-full border-2 border-ink bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
-          Outcomes
+        <div className="reveal mb-6">
+          <span className="tag">Outcomes</span>
         </div>
-        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9]">
-          What <span className="italic" style={{ fontFamily: "Space Grotesk", fontWeight: 700 }}>Changes</span>.
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9] text-[#2A1F18]">
+          What <span className="italic font-display">Changes</span>.
         </h2>
 
         <div className="mt-20 grid md:grid-cols-2 gap-8">
           {benefits.map((b, i) => (
             <div
               key={i}
-              className={`reveal rounded-2xl border-2 border-ink bg-card p-8 sm:p-10 shadow-brutal hover:shadow-brutal-lg hover:-translate-x-[2px] hover:-translate-y-[2px] transition-all ${
-                i % 2 === 1 ? "md:translate-y-6" : ""
-              }`}
+              className={`reveal card-light p-8 sm:p-10 ${i % 2 === 1 ? "md:translate-y-6" : ""}`}
             >
-              <div className="inline-block rounded-full border-2 border-ink bg-primary text-primary-foreground px-3 py-1 text-xs uppercase tracking-widest font-bold">
-                {b.metric}
-              </div>
-              <h3 className="mt-5 font-display text-2xl sm:text-3xl uppercase leading-tight tracking-tight">
+              <span className="tag">{b.metric}</span>
+              <h3 className="mt-5 font-display text-2xl sm:text-3xl uppercase leading-tight tracking-tight text-[#2A1F18]">
                 {b.title}
               </h3>
-              <p className="mt-3 text-foreground/75 leading-relaxed">
+              <p className="mt-3 text-[#8A7060] leading-relaxed">
                 {b.desc}
               </p>
             </div>
