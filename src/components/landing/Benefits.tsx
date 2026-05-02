@@ -23,7 +23,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 sm:py-28 border-t-2 border-ink">
+    <section id="benefits" className="py-28 sm:py-40 border-t-2 border-ink">
       <div className="container">
         <div className="reveal inline-block rounded-full border-2 border-ink bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
           Outcomes
@@ -32,7 +32,7 @@ const Benefits = () => {
           What <span className="italic" style={{ fontFamily: "Space Grotesk", fontWeight: 700 }}>Changes</span>.
         </h2>
 
-        <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-20 grid md:grid-cols-2 gap-8">
           {benefits.map((b, i) => (
             <div
               key={i}

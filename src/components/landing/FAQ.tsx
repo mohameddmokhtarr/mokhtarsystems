@@ -30,7 +30,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-20 sm:py-28 border-t-2 border-ink bg-secondary">
+    <section className="py-28 sm:py-40 border-t-2 border-ink bg-secondary">
       <div className="container">
         <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
           FAQ
@@ -39,7 +39,7 @@ const FAQ = () => {
           Common <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Questions</span>.
         </h2>
 
-        <div className="reveal mt-16 max-w-3xl">
+        <div className="reveal mt-20 max-w-3xl">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, i) => (
               <AccordionItem

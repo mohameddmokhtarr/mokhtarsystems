@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="top"
-      className="relative pt-32 sm:pt-40 pb-20 sm:pb-28 overflow-hidden bg-grid"
+      className="relative pt-36 sm:pt-48 pb-28 sm:pb-40 overflow-hidden bg-grid"
     >
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
       <div className="container relative">
