@@ -29,36 +29,41 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="pt-20 sm:pt-28 pb-8 sm:pb-12 border-t border-border">
+    <section id="services" className="pt-20 sm:pt-28 pb-12 sm:pb-20 border-t-2 border-ink bg-secondary">
       <div className="container">
-        <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight">
-          Services<span className="text-primary">.</span>
+        <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
+          What I Do
+        </div>
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9]">
+          <span className="bg-primary text-primary-foreground border-2 border-ink px-3 inline-block shadow-brutal -rotate-1">Services</span>
         </h2>
 
         <div className="mt-16 grid md:grid-cols-2 gap-8 lg:gap-12">
-          {services.map((s) => (
+          {services.map((s, i) => (
             <div
               key={s.n}
-              className="reveal group rounded-2xl border border-border bg-card p-8 sm:p-10 hover:border-primary/50 transition-colors"
+              className={`reveal group rounded-2xl border-2 border-ink bg-card p-8 sm:p-10 shadow-brutal hover:shadow-brutal-lg hover:-translate-x-[2px] hover:-translate-y-[2px] transition-all ${
+                i === 1 ? "md:translate-y-8" : ""
+              }`}
             >
-              <div className="text-primary text-sm font-mono font-semibold tracking-widest">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent text-foreground border-2 border-ink font-display text-lg">
                 {s.n}
               </div>
-              <h3 className="mt-4 text-2xl sm:text-3xl font-bold leading-tight">
+              <h3 className="mt-5 font-display text-3xl sm:text-4xl uppercase leading-[0.95] tracking-tight">
                 {s.title}
               </h3>
-              <p className="mt-4 text-muted-foreground leading-relaxed">
+              <p className="mt-4 text-foreground/75 leading-relaxed">
                 {s.desc}
               </p>
-              <ul className="mt-6 space-y-2 text-muted-foreground">
+              <ul className="mt-6 space-y-2.5 text-foreground/80">
                 {s.bullets.map((b) => (
                   <li key={b} className="flex items-start gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                    <span>{b}</span>
+                    <span className="mt-2 h-2 w-2 rounded-full bg-primary border border-ink shrink-0" />
+                    <span className="font-medium">{b}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 pt-6 border-t border-border text-sm text-muted-foreground leading-relaxed">
+              <p className="mt-6 pt-6 border-t-2 border-dashed border-ink/30 text-sm text-foreground/70 leading-relaxed">
                 {s.examples}
               </p>
             </div>
