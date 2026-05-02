@@ -48,7 +48,7 @@ const Hero = () => {
               key={s.label}
               className={`card-light p-6 min-w-0 overflow-hidden ${i === 1 ? "sm:translate-y-3" : ""}`}
             >
-              <div className="font-display text-xl sm:text-2xl uppercase tracking-tight text-[#2A1F18] break-words">
+              <div className="font-display text-lg sm:text-xl md:text-2xl uppercase tracking-tight text-[#2A1F18] whitespace-nowrap">
                 {s.value}
               </div>
               <div className="mt-3 text-sm text-[#8A7060] leading-relaxed break-words">
