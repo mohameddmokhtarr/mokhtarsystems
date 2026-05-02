@@ -23,25 +23,30 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 sm:py-28 border-t border-border">
+    <section id="benefits" className="py-20 sm:py-28 border-t-2 border-ink">
       <div className="container">
-        <h2 className="reveal text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight max-w-4xl text-balance">
-          What Changes<span className="text-primary">.</span>
+        <div className="reveal inline-block rounded-full border-2 border-ink bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
+          Outcomes
+        </div>
+        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9]">
+          What <span className="italic" style={{ fontFamily: "Space Grotesk", fontWeight: 700 }}>Changes</span>.
         </h2>
 
         <div className="mt-16 grid md:grid-cols-2 gap-6">
           {benefits.map((b, i) => (
             <div
               key={i}
-              className="reveal rounded-2xl border border-border bg-card p-8 sm:p-10"
+              className={`reveal rounded-2xl border-2 border-ink bg-card p-8 sm:p-10 shadow-brutal hover:shadow-brutal-lg hover:-translate-x-[2px] hover:-translate-y-[2px] transition-all ${
+                i % 2 === 1 ? "md:translate-y-6" : ""
+              }`}
             >
-              <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">
+              <div className="inline-block rounded-full border-2 border-ink bg-primary text-primary-foreground px-3 py-1 text-xs uppercase tracking-widest font-bold">
                 {b.metric}
               </div>
-              <h3 className="mt-4 text-2xl font-bold leading-tight">
+              <h3 className="mt-5 font-display text-2xl sm:text-3xl uppercase leading-tight tracking-tight">
                 {b.title}
               </h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">
+              <p className="mt-3 text-foreground/75 leading-relaxed">
                 {b.desc}
               </p>
             </div>
