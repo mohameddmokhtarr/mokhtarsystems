@@ -17,26 +17,19 @@ import WhatsAppFloat from "@/components/landing/WhatsAppFloat";
 const Index = () => {
   useReveal();
   return (
-    <div className="min-h-screen bg-[#F5F0E8] text-[#2A1F18]">
+    <div className="min-h-screen bg-[#0A0A0A] text-[#E8E4DF]">
       <Navbar />
       <main>
         <Hero />
         <PainPoints />
         <LogoMarquee />
         <Manifesto />
-        <div className="divider-line" />
         <Problem />
-        <div className="divider-line" />
         <Solution />
-        <div className="divider-line" />
         <Services />
-        <div className="divider-line" />
         <Benefits />
-        <div className="divider-line" />
         <Testimonials />
-        <div className="divider-line" />
         <FAQ />
-        <div className="divider-line" />
         <Booking />
       </main>
       <Footer />

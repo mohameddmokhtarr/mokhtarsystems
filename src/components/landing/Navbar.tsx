@@ -23,16 +23,17 @@ const Navbar = () => {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#F5F0E8]/90 backdrop-blur-xl border-b-2 border-[#1A1512]"
+          ? "bg-[rgba(10,10,10,0.95)] backdrop-blur-md border-b border-white/[0.08]"
           : "bg-transparent"
       }`}
     >
-      <nav className="container flex h-18 py-3 items-center justify-between">
+      <nav className="container flex h-16 py-3 items-center justify-between">
+        {/* wordmark — white→salmon→white shimmer */}
         <a
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-display font-black text-lg sm:text-xl bg-gradient-to-r from-[#C45A38] via-[#F5B89A] to-[#C45A38] bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer inline-block px-4 py-2 border-2 border-[#E8896A] rounded-full bg-[#F5F0E8] shadow-[0_0_14px_rgba(232,137,106,0.35)] hover:shadow-[0_0_22px_rgba(232,137,106,0.6)] hover:scale-105 transition-all"
+          className="font-display font-black text-lg sm:text-xl bg-gradient-to-r from-white via-[#E05A2B] to-white bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer inline-block px-3 py-1.5 border border-white/20 hover:border-white/50 hover:scale-105 transition-all"
         >
           mokhtarsays_
         </a>
@@ -42,7 +43,8 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-bold uppercase tracking-wider text-[#2A1F18]/70 hover:text-[#E8896A] transition-colors"
+              className="font-sans text-xs font-600 uppercase tracking-wider text-white/55 hover:text-white transition-colors"
+              style={{ fontWeight: 600 }}
             >
               {l.label}
             </a>
@@ -50,13 +52,17 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <a href="#book" className="btn-salmon" style={{ padding: "9px 22px", fontSize: "13px" }}>
+          <a
+            href="#book"
+            className="btn-salmon"
+            style={{ padding: "10px 20px", fontSize: "12px" }}
+          >
             Book a Call
           </a>
         </div>
 
         <button
-          className="md:hidden text-[#2A1F18] border-2 border-[#1A1512] rounded-full p-2 bg-[#F5F0E8]"
+          className="md:hidden text-white border border-white/20 p-2"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -65,14 +71,15 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t-2 border-[#1A1512] bg-[#F5F0E8]/95 backdrop-blur-xl">
-          <div className="container py-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-white/[0.08] bg-[rgba(10,10,10,0.98)] backdrop-blur-md">
+          <div className="container py-5 flex flex-col gap-5">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-bold uppercase tracking-wider text-[#2A1F18]/70 hover:text-[#E8896A]"
+                className="font-sans text-xs font-600 uppercase tracking-wider text-white/55 hover:text-white"
+                style={{ fontWeight: 600 }}
               >
                 {l.label}
               </a>

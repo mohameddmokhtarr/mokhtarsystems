@@ -21,25 +21,25 @@ const quotes = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 sm:py-28 border-t-2 border-[#1A1512] bg-dot-grid">
+    <section className="py-16 sm:py-24 bg-[#0A0A0A]">
       <div className="container">
-        <h2 className="reveal font-display text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight max-w-4xl text-[#2A1F18]">
-          What the Work <span className="text-[#8A7060]">Changed.</span>
+        <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tight max-w-4xl text-white">
+          What the Work <span className="text-[#888580]">Changed.</span>
         </h2>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
+        <div className="mt-12 grid md:grid-cols-3 gap-4">
           {quotes.map((q, i) => (
             <figure
               key={i}
-              className="reveal card-light p-8 flex flex-col"
+              className="reveal p-6 bg-[#111] border border-white/[0.07] flex flex-col"
             >
-              <div className="text-[#E8896A] text-4xl font-display leading-none">"</div>
-              <blockquote className="mt-2 text-base sm:text-lg leading-relaxed flex-1 text-[#2A1F18]">
+              <div className="text-[#E05A2B] text-4xl font-display leading-none">"</div>
+              <blockquote className="mt-2 text-sm sm:text-base leading-relaxed flex-1 text-white/80 font-sans">
                 {q.quote}
               </blockquote>
-              <figcaption className="mt-8 pt-6 border-t border-[#2A1F18]/10">
-                <div className="font-bold text-[#2A1F18]">{q.name}</div>
-                <div className="text-sm text-[#8A7060]">{q.title}</div>
+              <figcaption className="mt-6 pt-5 border-t border-white/[0.07]">
+                <div className="font-sans font-bold text-white" style={{ fontWeight: 700 }}>{q.name}</div>
+                <div className="text-sm text-[#666] font-sans">{q.title}</div>
               </figcaption>
             </figure>
           ))}

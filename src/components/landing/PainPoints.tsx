@@ -6,45 +6,39 @@ const painPoints = [
 
 const PainPoints = () => {
   return (
-    <section className="py-24 sm:py-36 border-t-2 border-[#1A1512] bg-[#FAF7F2]">
+    <section className="py-16 sm:py-24 bg-[#0A0A0A]">
       <div className="container">
-        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#1A1512] max-w-4xl">
+        <h2 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl uppercase tracking-tight leading-[0.9] text-white max-w-4xl">
           Your ideas are world-class.{" "}
           <span className="italic-serif">Your systems</span>{" "}
           aren't.
         </h2>
 
-        {/*
-          Grid layout:
-          md (2-col):  [P1][P2] / [P3][CTA]
-          lg (3-col):  [P1][P2][CTA↕] / [P3 col-span-2][CTA↕]
-        */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-          {/* Pain point cards */}
           {painPoints.map((text, i) => (
             <div
               key={i}
-              className={`reveal card-light p-8 rounded-xl${i === 2 ? " lg:col-span-2" : ""}`}
+              className={`reveal p-6 bg-[#141414] border border-white/[0.08]${i === 2 ? " lg:col-span-2" : ""}`}
             >
-              <div className="text-2xl font-bold text-[#C45A38]">✗</div>
-              <p className="mt-5 font-display text-xl sm:text-2xl uppercase tracking-tight leading-tight text-[#1A1512]">
+              <div className="text-2xl font-bold text-[#E05A2B]">✗</div>
+              <p className="mt-4 font-display text-xl uppercase tracking-tight leading-tight text-white">
                 {text}
               </p>
             </div>
           ))}
 
-          {/* CTA card — spans 2 rows at lg, placed last in DOM but visually col-3 at lg */}
-          <div className="reveal bg-[#C45A38] rounded-xl p-8 text-white flex flex-col justify-between lg:row-start-1 lg:col-start-3 lg:row-span-2">
+          {/* CTA card — col-3, row-span-2 at lg */}
+          <div className="reveal p-6 bg-[#E05A2B] text-white flex flex-col justify-between lg:row-start-1 lg:col-start-3 lg:row-span-2">
             <div>
-              <div className="text-3xl font-bold opacity-50">→</div>
-              <h3 className="mt-5 font-display text-2xl sm:text-3xl uppercase tracking-tight leading-tight">
+              <div className="text-3xl font-bold opacity-40">→</div>
+              <h3 className="mt-4 font-display text-2xl sm:text-3xl uppercase tracking-tight leading-tight">
                 Sound familiar? Here's what we build.
               </h3>
             </div>
             <a
               href="#services"
-              className="mt-8 self-start inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider border-b-2 border-white/50 pb-1 hover:border-white transition-colors"
+              className="mt-8 self-start inline-flex items-center gap-2 font-sans font-600 text-sm uppercase tracking-wider border-b border-white/50 pb-1 hover:border-white transition-colors"
             >
               See how it works →
             </a>
