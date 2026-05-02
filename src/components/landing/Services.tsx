@@ -29,7 +29,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="pt-20 sm:pt-28 pb-12 sm:pb-20 border-t-2 border-ink bg-secondary">
+    <section id="services" className="pt-28 sm:pt-40 pb-28 sm:pb-40 border-t-2 border-ink bg-secondary">
       <div className="container">
         <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
           What I Do

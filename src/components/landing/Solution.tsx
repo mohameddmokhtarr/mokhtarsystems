@@ -7,7 +7,7 @@ const steps = [
 
 const Solution = () => {
   return (
-    <section id="solution" className="py-20 sm:py-28 border-t-2 border-ink">
+    <section id="solution" className="py-28 sm:py-40 border-t-2 border-ink">
       <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <div className="reveal lg:sticky lg:top-28">
           <div className="inline-block rounded-full border-2 border-ink bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">

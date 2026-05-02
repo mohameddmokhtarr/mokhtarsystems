@@ -23,7 +23,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 sm:py-28 border-t-2 border-ink">
+    <section id="benefits" className="py-28 sm:py-40 border-t-2 border-ink">
       <div className="container">
         <div className="reveal inline-block rounded-full border-2 border-ink bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
           Outcomes

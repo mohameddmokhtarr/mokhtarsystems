@@ -15,7 +15,7 @@ const points = [
 
 const Problem = () => {
   return (
-    <section id="problem" className="py-20 sm:py-28 border-t-2 border-ink bg-secondary">
+    <section id="problem" className="py-28 sm:py-40 border-t-2 border-ink bg-secondary">
       <div className="container">
         <div className="reveal inline-block rounded-full border-2 border-ink bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-brutal mb-6">
           The Problem

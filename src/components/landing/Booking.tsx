@@ -12,7 +12,7 @@ const Booking = () => {
   }, []);
 
   return (
-    <section id="book" className="py-20 sm:py-32 border-t-2 border-ink relative overflow-hidden bg-grid">
+    <section id="book" className="py-28 sm:py-40 border-t-2 border-ink relative overflow-hidden bg-grid">
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
       <div className="container relative">
         <div className="max-w-4xl mx-auto text-center">
