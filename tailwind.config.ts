@@ -64,7 +64,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Archivo Black", "Space Grotesk", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
