@@ -1,6 +1,9 @@
 import { useReveal } from "@/hooks/use-reveal";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
+import PainPoints from "@/components/landing/PainPoints";
+import LogoMarquee from "@/components/landing/LogoMarquee";
+import Manifesto from "@/components/landing/Manifesto";
 import Problem from "@/components/landing/Problem";
 import Solution from "@/components/landing/Solution";
 import Services from "@/components/landing/Services";
@@ -18,6 +21,9 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <PainPoints />
+        <LogoMarquee />
+        <Manifesto />
         <div className="divider-line" />
         <Problem />
         <div className="divider-line" />

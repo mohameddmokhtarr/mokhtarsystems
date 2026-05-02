@@ -72,6 +72,30 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Fraunces', serif; font-weight: 900; }
 .divider-line.visible,
 .divider-line.is-visible { transform: scaleX(1); }
 
+/* ── Italic serif utility ── */
+.italic-serif { font-style: italic; font-family: 'Fraunces', serif; }
+
+/* ── Dark button (WGB-style) ── */
+.btn-dark {
+  background: var(--dark); color: #FAF7F2;
+  border: 2px solid var(--dark); border-radius: 28px;
+  padding: 13px 32px; font-family: 'Space Mono', monospace; font-weight: 700;
+  cursor: pointer; transition: background .2s, color .2s, transform .2s;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-dark:hover { background: transparent; color: var(--dark); transform: translateY(-2px); }
+
+/* ── Orbital diagram dot pulse ── */
+.orbital-dot {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: dot-pulse 3s ease-in-out infinite;
+}
+@keyframes dot-pulse {
+  0%,100% { transform: scale(1);   opacity: 1; }
+  50%      { transform: scale(1.7); opacity: 0.55; }
+}
+
 /* ── Tag / label ── */
 .tag {
   font-family:'Space Mono',monospace; font-size:10px; font-weight:700;
