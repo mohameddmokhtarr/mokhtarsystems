@@ -24,16 +24,16 @@ const Navbar = () => {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border"
+          ? "bg-background/85 backdrop-blur-xl border-b-2 border-ink"
           : "bg-transparent"
       }`}
     >
-      <nav className="container flex h-16 items-center justify-between">
+      <nav className="container flex h-18 py-3 items-center justify-between">
         <a
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold tracking-tight text-base sm:text-lg bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-[#d62976] to-[#962fbf] bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer hover:scale-105 transition-transform inline-block"
+          className="font-display text-lg sm:text-xl bg-gradient-to-r from-[#feda75] via-[#fa7e1e] via-[#d62976] to-[#962fbf] bg-clip-text text-transparent bg-[length:300%_auto] animate-shimmer hover:scale-105 transition-transform inline-block px-3 py-1.5 border-2 border-ink rounded-full bg-card"
         >
           mokhtarsays_
         </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-bold uppercase tracking-wider text-foreground/70 hover:text-primary transition-colors"
             >
               {l.label}
             </a>
@@ -51,34 +51,34 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button asChild size="sm" className="rounded-full px-5 font-semibold">
+          <Button asChild size="sm">
             <a href="#book">Book a Call</a>
           </Button>
         </div>
 
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden text-foreground border-2 border-ink rounded-full p-2 bg-card"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+        <div className="md:hidden border-t-2 border-ink bg-background/95 backdrop-blur-xl">
           <div className="container py-4 flex flex-col gap-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground"
+                className="text-sm font-bold uppercase tracking-wider text-foreground/70 hover:text-primary"
               >
                 {l.label}
               </a>
             ))}
-            <Button asChild className="rounded-full w-full font-semibold">
+            <Button asChild className="w-full">
               <a href="#book" onClick={() => setOpen(false)}>
                 Book a Call
               </a>
