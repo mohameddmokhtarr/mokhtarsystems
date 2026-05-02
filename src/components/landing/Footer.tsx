@@ -22,7 +22,7 @@ const Footer = () => {
               href={instagramUrl}
               target="_blank"
               rel="noreferrer"
-              className="btn-outline inline-flex items-center gap-2"
+              className="inline-flex items-center gap-2 border border-[#1A1512]/30 text-[#1A1512] hover:border-[#1A1512] transition-colors font-sans font-semibold uppercase tracking-widest"
               style={{ padding: "8px 18px", fontSize: "11px" }}
             >
               <Instagram size={16} />
