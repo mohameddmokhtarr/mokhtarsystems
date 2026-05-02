@@ -99,6 +99,43 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Fraunces', serif; font-weight: 900; }
   50%      { transform: scale(1.7); opacity: 0.55; }
 }
 
+/* ── Glass surfaces — piano-black glassmorphism ── */
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.03) inset,
+    0 8px 32px rgba(0,0,0,0.4);
+}
+.glass-strong {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.05) inset,
+    0 16px 48px rgba(0,0,0,0.5);
+}
+.glass-highlight { position: relative; overflow: hidden; }
+.glass-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 10%; width: 80%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+  pointer-events: none;
+}
+.glass-salmon {
+  background: rgba(224,90,43,0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(224,90,43,0.25);
+  box-shadow:
+    0 0 0 1px rgba(224,90,43,0.08) inset,
+    0 8px 32px rgba(224,90,43,0.15);
+}
+
 /* ── Tag / label ── */
 .tag {
   font-family:'Space Mono',monospace; font-size:10px; font-weight:700;

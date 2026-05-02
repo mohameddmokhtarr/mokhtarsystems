@@ -16,7 +16,7 @@ const Hero = () => {
           {/* ── Left: copy ── */}
           <div>
             <div className="reveal inline-block">
-              <div className="hero-badge">
+              <div className="hero-badge glass" style={{ boxShadow: "0 0 20px rgba(224,90,43,0.2), 0 0 0 1px rgba(255,255,255,0.03) inset" }}>
                 <Sparkles size={18} className="hero-badge-icon" />
                 AI Systems Implementation
               </div>

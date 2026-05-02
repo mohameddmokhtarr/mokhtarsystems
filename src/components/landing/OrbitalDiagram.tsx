@@ -19,7 +19,8 @@ const OrbitalDiagram = ({ light = true }: Props) => {
       <ellipse cx="230" cy="198" rx="128" ry="73"  stroke={stroke} strokeWidth="1"   fill="none" transform="rotate(12,230,198)" opacity="0.45" />
       <ellipse cx="230" cy="198" rx="188" ry="108" stroke={stroke} strokeWidth="0.8" fill="none" transform="rotate(12,230,198)" opacity="0.28" />
 
-      {/* Centre star */}
+      {/* Centre star — glass lens + glow rings */}
+      <circle cx="230" cy="198" r="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" strokeWidth="1" />
       <circle cx="230" cy="198" r="16" fill={dot} opacity="0.12" />
       <circle cx="230" cy="198" r="7"  fill={dot} />
       <text x="230" y="202" textAnchor="middle" fontSize="9" fill={starText} fontWeight="700">✦</text>

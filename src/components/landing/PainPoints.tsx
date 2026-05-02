@@ -19,17 +19,20 @@ const PainPoints = () => {
           {painPoints.map((text, i) => (
             <div
               key={i}
-              className={`reveal p-6 bg-[#141414] border border-white/[0.08]${i === 2 ? " lg:col-span-2" : ""}`}
+              className={`reveal glass glass-highlight p-6${i === 2 ? " lg:col-span-2" : ""}`}
             >
-              <div className="text-2xl font-bold text-[#E05A2B]">✗</div>
+              {/* ✗ in a small glass-salmon pill */}
+              <div className="glass-salmon w-8 h-8 flex items-center justify-center">
+                <span className="text-sm font-bold text-[#E05A2B]">✗</span>
+              </div>
               <p className="mt-4 font-display text-xl uppercase tracking-tight leading-tight text-white">
                 {text}
               </p>
             </div>
           ))}
 
-          {/* CTA card — col-3, row-span-2 at lg */}
-          <div className="reveal p-6 bg-[#E05A2B] text-white flex flex-col justify-between lg:row-start-1 lg:col-start-3 lg:row-span-2">
+          {/* CTA card — salmon glass, col-3 row-span-2 at lg */}
+          <div className="reveal glass-salmon glass-highlight p-6 text-white flex flex-col justify-between lg:row-start-1 lg:col-start-3 lg:row-span-2">
             <div>
               <div className="text-3xl font-bold opacity-40">→</div>
               <h3 className="mt-4 font-display text-2xl sm:text-3xl uppercase tracking-tight leading-tight">
@@ -38,7 +41,8 @@ const PainPoints = () => {
             </div>
             <a
               href="#services"
-              className="mt-8 self-start inline-flex items-center gap-2 font-sans font-600 text-sm uppercase tracking-wider border-b border-white/50 pb-1 hover:border-white transition-colors"
+              className="mt-8 self-start inline-flex items-center gap-2 font-sans text-sm uppercase tracking-wider border-b border-white/50 pb-1 hover:border-white transition-colors"
+              style={{ fontWeight: 600 }}
             >
               See how it works →
             </a>
