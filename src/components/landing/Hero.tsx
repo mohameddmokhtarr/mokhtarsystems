@@ -46,12 +46,12 @@ const Hero = () => {
           {stats.map((s, i) => (
             <div
               key={s.label}
-              className={`card-light p-6 ${i === 1 ? "sm:translate-y-3" : ""}`}
+              className={`card-light p-6 min-w-0 overflow-hidden ${i === 1 ? "sm:translate-y-3" : ""}`}
             >
-              <div className="font-display text-2xl sm:text-3xl uppercase tracking-tight text-[#2A1F18]">
+              <div className="font-display text-xl sm:text-2xl uppercase tracking-tight text-[#2A1F18] break-words">
                 {s.value}
               </div>
-              <div className="mt-3 text-sm text-[#8A7060] leading-relaxed">
+              <div className="mt-3 text-sm text-[#8A7060] leading-relaxed break-words">
                 {s.label}
               </div>
             </div>
