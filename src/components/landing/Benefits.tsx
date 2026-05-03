@@ -42,7 +42,7 @@ const Benefits = () => {
               <h3 className="mt-5 font-display text-2xl sm:text-3xl uppercase leading-tight tracking-tight text-[#2A1F18]">
                 {b.title}
               </h3>
-              <p className="mt-3 text-[#8A7060] leading-relaxed">
+              <p className="mt-3 text-[#3D2E22] leading-relaxed">
                 {b.desc}
               </p>
             </div>

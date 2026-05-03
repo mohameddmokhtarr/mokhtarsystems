@@ -10,23 +10,22 @@ const Footer = () => {
             href={instagramUrl}
             target="_blank"
             rel="noreferrer"
-            className="font-display uppercase tracking-tight text-base hover:text-black transition-colors text-black"
+            className="ig-gradient font-display uppercase tracking-tight text-lg font-black"
           >
             @mokhtarsays_
           </a>
           <div className="hidden md:block text-center font-bold uppercase tracking-widest text-xs text-[#8A7060]">
             AI Systems Implementation.
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end items-center gap-3">
             <a
               href={instagramUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 border border-[#1A1512]/30 text-[#1A1512] hover:border-[#1A1512] transition-colors font-sans font-semibold uppercase tracking-widest"
-              style={{ padding: "8px 18px", fontSize: "11px" }}
+              aria-label="Open Instagram"
+              className="ig-icon-wrap"
             >
-              <Instagram size={16} />
-              <span>Instagram</span>
+              <Instagram size={18} strokeWidth={2.4} />
             </a>
           </div>
         </div>

@@ -16,11 +16,11 @@ const Solution = () => {
           <h2 className="font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-balance leading-[0.9] text-[#2A1F18]">
             How <span className="text-[#E8896A]">it</span> works.
           </h2>
-          <p className="mt-8 text-lg sm:text-xl text-[#8A7060] leading-relaxed">
+          <p className="mt-8 text-lg sm:text-xl text-[#3D2E22] leading-relaxed">
             I implement AI systems directly inside your business. Not advice.
             Not training. Not another tool to manage.
           </p>
-          <p className="mt-4 text-lg text-[#8A7060] leading-relaxed">
+          <p className="mt-4 text-lg text-[#3D2E22] leading-relaxed">
             We start with the workflows that cost your team the most time, map
             them end to end, and replace the manual steps with reliable
             automated ones — owned by you when we're done.
@@ -40,7 +40,7 @@ const Solution = () => {
               </div>
               <div>
                 <div className="font-display text-2xl uppercase tracking-tight text-[#2A1F18]">{s.t}</div>
-                <div className="text-[#8A7060] mt-2 leading-relaxed">{s.d}</div>
+                <div className="text-[#3D2E22] mt-2 leading-relaxed">{s.d}</div>
               </div>
             </div>
           ))}

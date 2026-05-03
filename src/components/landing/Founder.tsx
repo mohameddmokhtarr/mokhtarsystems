@@ -22,7 +22,7 @@ const Founder = () => {
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-[#2A1F18]">
             The Builder.
           </h2>
-          <p className="mt-6 text-lg text-[#8A7060] leading-relaxed">
+          <p className="mt-6 text-lg text-[#3D2E22] leading-relaxed">
             This system was built by Mokhtar — a content strategist obsessed
             with one thing: brands that actually grow. We don't sell posts. We
             build leverage.

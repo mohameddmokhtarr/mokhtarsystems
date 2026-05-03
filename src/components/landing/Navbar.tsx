@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 
 const links = [
   { label: "Problem", href: "#problem" },
@@ -32,14 +32,15 @@ const Navbar = () => {
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center gap-2 px-3 py-1.5 border border-white/10 bg-white/[0.04] backdrop-blur-md hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300"
+          className="group flex items-center gap-2.5"
+          aria-label="Instagram @mokhtarsays_"
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/60 group-hover:text-white transition-colors">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-          <span className="font-mono text-[11px] tracking-widest uppercase text-white/70 group-hover:text-white transition-colors">mokhtarsays_</span>
+          <span className="ig-icon-wrap">
+            <Instagram size={18} strokeWidth={2.4} />
+          </span>
+          <span className="ig-gradient font-mono text-[12px] tracking-widest uppercase font-bold">
+            mokhtarsays_
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -75,15 +76,15 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-white/[0.08] bg-[rgba(10,10,10,0.98)] backdrop-blur-md">
-          <div className="container py-5 flex flex-col gap-5">
-            {links.map((l) => (
+        <div className="menu-panel md:hidden border-t border-white/[0.08] bg-[rgba(10,10,10,0.98)] backdrop-blur-xl">
+          <div className="container py-7 flex flex-col gap-5">
+            {links.map((l, i) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="font-sans text-xs font-600 uppercase tracking-wider text-white/55 hover:text-white"
-                style={{ fontWeight: 600 }}
+                className="menu-link font-display text-2xl uppercase tracking-tight text-white/85 hover:text-white"
+                style={{ animationDelay: `${0.08 + i * 0.07}s` }}
               >
                 {l.label}
               </a>
@@ -91,7 +92,8 @@ const Navbar = () => {
             <a
               href="#book"
               onClick={() => setOpen(false)}
-              className="btn-salmon text-center"
+              className="btn-salmon text-center menu-link"
+              style={{ animationDelay: `${0.08 + links.length * 0.07}s` }}
             >
               Book a Call
             </a>
