@@ -7,7 +7,7 @@
   --salmon:       #E05A2B;
   --salmon-light: #F5B89A;
   --salmon-dark:  #B8451F;
-  --cream:        #DCD4C7;
+  --cream:        #1F1A17;
   --dark:         #0A0A0A;
   --body:         #E8E4DF;
   --muted:        #888580;
@@ -21,8 +21,8 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Fraunces', serif; font-weight: 900; }
 .bg-dot-grid {
   background-color: var(--cream);
   background-image:
-    linear-gradient(rgba(10,10,10,0.10) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10,10,10,0.10) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
