@@ -420,37 +420,48 @@ nav.nav-scrolled { backdrop-filter:blur(14px); background:rgba(10,10,10,0.95) !i
   to { transform: translateX(-50%); }
 }
 
-/* Animated Instagram gradient text */
-.ig-gradient {
-  background: linear-gradient(90deg,#F58529 0%,#DD2A7B 25%,#8134AF 50%,#515BD4 75%,#F58529 100%);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: ig-shift 5s linear infinite;
-}
-@keyframes ig-shift { to { background-position: -300% 0; } }
-
-/* Animated Instagram icon */
-.ig-icon-wrap {
-  position: relative;
+/* Instagram handle pill — clean, minimal, on-brand */
+.ig-handle {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 36px; height: 36px;
-  border-radius: 10px;
-  background: linear-gradient(135deg,#F58529,#DD2A7B,#8134AF,#515BD4);
-  background-size: 200% 200%;
-  animation: ig-shift 5s linear infinite, ig-bob 3.4s ease-in-out infinite;
-  color: #fff;
-  box-shadow: 0 6px 24px rgba(221,42,123,0.35);
-  transition: transform .25s ease;
+  gap: 8px;
+  padding: 7px 14px 7px 10px;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.04);
+  color: #F0EDE8;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  border-radius: 999px;
+  transition: border-color .25s ease, background .25s ease, color .25s ease;
 }
-.ig-icon-wrap:hover { transform: scale(1.08) rotate(-4deg); }
-@keyframes ig-bob {
-  0%,100% { transform: translateY(0); }
-  50%     { transform: translateY(-3px); }
+.ig-handle:hover {
+  border-color: var(--salmon);
+  background: rgba(224,90,43,0.10);
+  color: #fff;
+}
+.ig-handle .ig-dot {
+  width: 6px; height: 6px; border-radius: 999px;
+  background: var(--salmon);
+  box-shadow: 0 0 0 0 rgba(224,90,43,0.55);
+  animation: ig-dot-pulse 2.4s ease-in-out infinite;
+}
+@keyframes ig-dot-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(224,90,43,0.55); }
+  50%     { box-shadow: 0 0 0 6px rgba(224,90,43,0); }
+}
+
+/* Light variant for cream sections (footer) */
+.ig-handle-light {
+  border-color: rgba(26,21,18,0.25);
+  background: transparent;
+  color: #1A1512;
+}
+.ig-handle-light:hover {
+  border-color: #1A1512;
+  background: rgba(26,21,18,0.04);
+  color: #1A1512;
 }
 
 /* Mobile menu smooth reveal */
