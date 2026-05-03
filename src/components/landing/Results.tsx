@@ -19,7 +19,7 @@ const Results = () => {
     <section id="results" className="py-20 sm:py-28 border-t-2 border-[#1A1512] bg-dot-grid">
       <div className="container">
         <h2 className="reveal font-display text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-balance max-w-4xl text-[#2A1F18]">
-          Results First. <span className="text-[#8A7060]">Talk Later.</span>
+          Results First. <span className="text-[#3D2E22]">Talk Later.</span>
         </h2>
       </div>
 

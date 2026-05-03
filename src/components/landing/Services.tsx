@@ -50,7 +50,7 @@ const Services = () => {
               <h3 className="mt-5 font-display text-3xl sm:text-4xl uppercase leading-[0.95] tracking-tight text-[#2A1F18]">
                 {s.title}
               </h3>
-              <p className="mt-4 text-[#8A7060] leading-relaxed">
+              <p className="mt-4 text-[#3D2E22] leading-relaxed">
                 {s.desc}
               </p>
               <ul className="mt-6 space-y-2.5 text-[#2A1F18]">
@@ -61,7 +61,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-sm text-[#8A7060] leading-relaxed">
+              <p className="mt-6 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-sm text-[#3D2E22] leading-relaxed">
                 {s.examples}
               </p>
             </div>

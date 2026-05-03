@@ -23,7 +23,7 @@ const Problem = () => {
         <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9] text-[#2A1F18]">
           The <span className="bg-[#E8896A] text-white border-2 border-[#1A1512] px-2 -rotate-1 inline-block shadow-brutal">Bottleneck</span>.
         </h2>
-        <p className="reveal mt-8 max-w-2xl text-lg sm:text-xl text-[#8A7060] leading-relaxed">
+        <p className="reveal mt-8 max-w-2xl text-lg sm:text-xl text-[#3D2E22] leading-relaxed">
           Most businesses don't have an AI problem. They have an
           implementation problem.
         </p>
@@ -40,7 +40,7 @@ const Problem = () => {
               <h3 className="mt-5 font-display text-2xl uppercase leading-tight tracking-tight text-[#2A1F18]">
                 {p.title}
               </h3>
-              <p className="mt-3 text-[#8A7060] leading-relaxed">
+              <p className="mt-3 text-[#3D2E22] leading-relaxed">
                 {p.desc}
               </p>
             </div>
