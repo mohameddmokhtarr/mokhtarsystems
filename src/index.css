@@ -419,3 +419,73 @@ nav.nav-scrolled { backdrop-filter:blur(14px); background:rgba(10,10,10,0.95) !i
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+/* Animated Instagram gradient text */
+.ig-gradient {
+  background: linear-gradient(90deg,#F58529 0%,#DD2A7B 25%,#8134AF 50%,#515BD4 75%,#F58529 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: ig-shift 5s linear infinite;
+}
+@keyframes ig-shift { to { background-position: -300% 0; } }
+
+/* Animated Instagram icon */
+.ig-icon-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+  background-size: 200% 200%;
+  animation: ig-shift 5s linear infinite, ig-bob 3.4s ease-in-out infinite;
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(221,42,123,0.35);
+  transition: transform .25s ease;
+}
+.ig-icon-wrap:hover { transform: scale(1.08) rotate(-4deg); }
+@keyframes ig-bob {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-3px); }
+}
+
+/* Mobile menu smooth reveal */
+@keyframes menu-slide-down {
+  0%   { opacity: 0; transform: translateY(-12px); filter: blur(6px); }
+  100% { opacity: 1; transform: translateY(0);     filter: blur(0); }
+}
+@keyframes menu-link-in {
+  0%   { opacity: 0; transform: translateX(-14px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.menu-panel {
+  animation: menu-slide-down .42s cubic-bezier(.2,.8,.2,1) both;
+  transform-origin: top center;
+}
+.menu-link {
+  animation: menu-link-in .5s cubic-bezier(.2,.8,.2,1) both;
+  position: relative;
+}
+.menu-link::after {
+  content: '';
+  position: absolute; left: 0; bottom: -4px;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--salmon), #DD2A7B);
+  transition: width .35s ease;
+}
+.menu-link:hover::after { width: 100%; }
+
+/* Highlight callout for the lead paragraph */
+.lead-highlight {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  background: linear-gradient(135deg, #E05A2B 0%, #DD2A7B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
