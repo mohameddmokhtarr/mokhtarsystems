@@ -32,15 +32,12 @@ const Navbar = () => {
           href="https://www.instagram.com/mokhtarsays_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center gap-2.5"
+          className="ig-handle"
           aria-label="Instagram @mokhtarsays_"
         >
-          <span className="ig-icon-wrap">
-            <Instagram size={18} strokeWidth={2.4} />
-          </span>
-          <span className="ig-gradient font-mono text-[12px] tracking-widest uppercase font-bold">
-            mokhtarsays_
-          </span>
+          <Instagram size={14} strokeWidth={2} />
+          <span className="ig-dot" />
+          <span>mokhtarsays_</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
