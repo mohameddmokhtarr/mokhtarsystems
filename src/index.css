@@ -494,9 +494,5 @@ nav.nav-scrolled { backdrop-filter:blur(14px); background:rgba(10,10,10,0.95) !i
 .lead-highlight {
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  background: linear-gradient(135deg, #E05A2B 0%, #DD2A7B 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #E05A2B;
 }
