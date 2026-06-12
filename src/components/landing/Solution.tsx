@@ -13,7 +13,7 @@ const Solution = () => {
           <div className="mb-6">
             <span className="tag">The Approach</span>
           </div>
-          <h2 className="font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-balance leading-[0.9] text-[#2A1F18]">
+          <h2 className="font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-balance leading-[0.9] text-[#2A1F18]">
             How <span className="text-[#E8896A]">it</span> works.
           </h2>
           <p className="mt-8 text-lg sm:text-xl text-[#3D2E22] leading-relaxed">

@@ -6,7 +6,7 @@ const Manifesto = () => {
       <div className="container grid lg:grid-cols-2 gap-16 items-center">
 
         <div>
-          <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#FAF7F2]">
+          <h2 className="reveal font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#FAF7F2]">
             Building growth{" "}
             <span className="italic-serif">systems</span>{" "}
             beyond the obvious.

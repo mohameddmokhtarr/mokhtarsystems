@@ -20,7 +20,7 @@ const Booking = () => {
               Currently taking on 4 new businesses this quarter
             </span>
           </div>
-          <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-balance leading-[0.9] text-[#F5F0E8]">
+          <h2 className="reveal font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-balance leading-[0.9] text-[#F5F0E8]">
             Book a Free <span className="bg-[#E8896A] text-white border-2 border-[#F5B89A] px-3 inline-block shadow-brutal -rotate-1">Discovery</span> Call
           </h2>
           <p className="reveal mt-8 text-lg sm:text-xl text-[#F5F0E8]/75">

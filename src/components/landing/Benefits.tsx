@@ -28,7 +28,7 @@ const Benefits = () => {
         <div className="reveal mb-6">
           <span className="tag">Outcomes</span>
         </div>
-        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9] text-[#2A1F18]">
+        <h2 className="reveal font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight max-w-4xl text-balance leading-[0.9] text-[#2A1F18]">
           What <span className="italic font-display">Changes</span>.
         </h2>
 

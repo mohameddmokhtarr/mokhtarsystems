@@ -35,7 +35,7 @@ const Services = () => {
         <div className="reveal mb-6">
           <span className="tag">What I Do</span>
         </div>
-        <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#2A1F18]">
+        <h2 className="reveal font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#2A1F18]">
           <span className="bg-[#E8896A] text-white border-2 border-[#1A1512] px-3 inline-block shadow-brutal -rotate-1">Services</span>
         </h2>
 

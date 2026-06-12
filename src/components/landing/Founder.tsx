@@ -8,7 +8,7 @@ const Founder = () => {
           <div className="aspect-[4/5] rounded-2xl overflow-hidden border-2 border-[#1A1512] card-light">
             <img
               src={founderImg}
-              alt="Mokhtar — content strategist and founder"
+              alt="Mokhtar — builder and founder"
               loading="lazy"
               width={800}
               height={1024}
