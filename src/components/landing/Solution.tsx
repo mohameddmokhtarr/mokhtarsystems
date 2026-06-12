@@ -1,5 +1,5 @@
 const steps = [
-  { n: "01", t: "Audit", d: "Identify the workflows where AI removes the most manual work." },
+  { n: "01", t: "Audit", d: "Identify where AI removes the most manual work — in your content pipeline or your visual production." },
   { n: "02", t: "Design", d: "Map the system end to end with clear inputs, outputs, and owners." },
   { n: "03", t: "Implement", d: "Build it inside your stack and connect it to your team's tools." },
   { n: "04", t: "Hand over", d: "Document everything. Train your team. You own the system." },

@@ -21,10 +21,10 @@ const Booking = () => {
             </span>
           </div>
           <h2 className="reveal font-display text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-balance leading-[0.9] text-[#F5F0E8]">
-            Let's see if it <span className="bg-[#E8896A] text-white border-2 border-[#F5B89A] px-3 inline-block shadow-brutal -rotate-1">fits</span>.
+            Book a Free <span className="bg-[#E8896A] text-white border-2 border-[#F5B89A] px-3 inline-block shadow-brutal -rotate-1">Discovery</span> Call
           </h2>
           <p className="reveal mt-8 text-lg sm:text-xl text-[#F5F0E8]/75">
-            A 30-minute call. We look at your workflows, identify where AI removes the most manual work, and tell you honestly if there's a fit.
+            A 30-minute call. We look at your content and visual production, identify where AI removes the most manual work and cost, and tell you honestly if there's a fit.
           </p>
         </div>
 

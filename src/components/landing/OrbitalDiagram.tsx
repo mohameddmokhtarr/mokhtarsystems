@@ -30,8 +30,8 @@ const OrbitalDiagram = ({ light = true }: Props) => {
 
       {/* Static orbit labels */}
       <text x="302" y="228" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label}>CONTENT</text>
-      <text x="106" y="153" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label} textAnchor="end">OPERATIONS</text>
-      <text x="280" y="100" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label}>REPORTING</text>
+      <text x="106" y="153" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label} textAnchor="end">VISUALS</text>
+      <text x="280" y="100" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label}>AUTOMATION</text>
 
       {/* CONTENT — inner orbit, 8s. begin=0s → starts at rotated right-side ≈(296,212), near label */}
       <g>
@@ -44,7 +44,7 @@ const OrbitalDiagram = ({ light = true }: Props) => {
         </animateMotion>
       </g>
 
-      {/* OPERATIONS — middle orbit, 12s. begin=-6.7s → starts at ≈(118,149), near label */}
+      {/* VISUALS — middle orbit, 12s. begin=-6.7s → starts at ≈(118,149), near label */}
       <g>
         <circle r="9" fill={dot} opacity="0.12" />
         <circle r="5" fill={dot} />
@@ -55,7 +55,7 @@ const OrbitalDiagram = ({ light = true }: Props) => {
         </animateMotion>
       </g>
 
-      {/* REPORTING — outer orbit, 16s. begin=-12.2s → starts at ≈(268,96), near label */}
+      {/* AUTOMATION — outer orbit, 16s. begin=-12.2s → starts at ≈(268,96), near label */}
       <g>
         <circle r="9" fill={dot} opacity="0.12" />
         <circle r="5" fill={dot} />

@@ -17,7 +17,7 @@ const Footer = () => {
             <span>mokhtarsays_</span>
           </a>
           <div className="hidden md:block text-center font-bold uppercase tracking-widest text-xs text-[#8A7060]">
-            AI Systems Implementation.
+            AI Content Systems & Visuals.
           </div>
           <div className="flex justify-end items-center">
             <a
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="md:hidden mt-6 text-center font-bold uppercase tracking-widest text-xs text-[#8A7060]">
-          AI Systems Implementation.
+          AI Content Systems & Visuals.
         </div>
         <div className="mt-8 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-xs text-[#8A7060] text-center">
           © {new Date().getFullYear()} @mokhtarsays_. All rights reserved.
