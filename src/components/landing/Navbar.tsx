@@ -56,7 +56,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <a
-            href="#book"
+            href="/#book"
             className="btn-salmon"
             style={{ padding: "10px 20px", fontSize: "12px" }}
           >
@@ -88,7 +88,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#book"
+              href="/#book"
               onClick={() => setOpen(false)}
               className="btn-salmon text-center menu-link"
               style={{ animationDelay: `${0.08 + links.length * 0.07}s` }}
