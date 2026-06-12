@@ -1,7 +1,7 @@
 const painPoints = [
   "You're running on content chaos — no system, no consistency, no pipeline.",
   "Your team is stuck doing the same manual tasks every single week.",
-  "You have no clear picture of what's actually moving the needle.",
+  "You're spending thousands on photoshoots and waiting weeks for edited files.",
 ];
 
 const PainPoints = () => {
@@ -35,7 +35,7 @@ const PainPoints = () => {
             <div>
               <div className="text-3xl font-bold opacity-40">→</div>
               <h3 className="mt-4 font-display text-2xl sm:text-3xl uppercase tracking-tight leading-tight">
-                Sound familiar? Here's what we build.
+                Sound familiar? Here's what I build.
               </h3>
             </div>
             <a

@@ -2,7 +2,7 @@ const benefits = [
   {
     metric: "Hours back",
     title: "Time saved across the team",
-    desc: "Repetitive work — research, drafting, formatting, reporting — moves from people to systems.",
+    desc: "Repetitive content work and slow photoshoot cycles move to AI — same output, lower cost, less time.",
   },
   {
     metric: "More output",
@@ -17,7 +17,7 @@ const benefits = [
   {
     metric: "Owned by you",
     title: "Internal capability, not a dependency",
-    desc: "You keep the system, the documentation, and the access. No lock-in to me or any single tool.",
+    desc: "You keep the content pipeline, the documentation, and the visual assets. No agency retainer, no lock-in to me or any single tool.",
   },
 ];
 

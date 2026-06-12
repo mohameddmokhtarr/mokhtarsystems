@@ -12,7 +12,7 @@ const Manifesto = () => {
             beyond the obvious.
           </h2>
           <p className="reveal mt-8 max-w-lg text-lg text-[#FAF7F2]/65 leading-relaxed">
-            The old way is disconnected tools and random posting. We wire your content and visuals into one AI-powered system that runs without you.
+            The old way is disconnected tools and random posting. I wire your content and visuals into one AI-powered system that runs without you.
           </p>
         </div>
 

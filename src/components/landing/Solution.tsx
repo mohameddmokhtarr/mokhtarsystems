@@ -21,9 +21,9 @@ const Solution = () => {
             Not training. Not another tool to manage.
           </p>
           <p className="mt-4 text-lg text-[#3D2E22] leading-relaxed">
-            We start with the workflows that cost your team the most time, map
+            I start with the workflows that cost your team the most time, map
             them end to end, and replace the manual steps with reliable
-            automated ones — owned by you when we're done.
+            automated ones — owned by you when I'm done.
           </p>
         </div>
 
