@@ -1,7 +1,7 @@
 const points = [
   {
     title: "Manual work eats your team's time",
-    desc: "Content, reporting, and internal processes are still done by hand — slowly, inconsistently, and at high cost.",
+    desc: "Content and visual production are still done by hand — slow photoshoot cycles, inconsistent output, and high cost.",
   },
   {
     title: "Output doesn't match the headcount",

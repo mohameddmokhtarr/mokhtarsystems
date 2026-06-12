@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What exactly do you implement?",
     answer:
-      "We build custom AI systems that live inside your existing tech stack. This includes content automation workflows (research, writing, editing, publishing), internal process automation (data entry, report generation, task management), and AI assistants that handle repetitive work. We don't sell you software—we build and hand over the systems so you own them.",
+      "We build custom AI systems that live inside your existing tech stack. This includes content automation workflows (research, writing, editing, publishing), AI Visuals (AI-generated product and campaign photography for fashion and product brands — no shoots required), and AI assistants that handle repetitive work. We don't sell you software—we build and hand over the systems so you own them.",
   },
   {
     question: "Is this consulting or implementation?",
@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Who is this for?",
     answer:
-      "Teams with 5+ people doing repetitive manual work (content creation, data processing, scheduling, reporting). You need some budget for development but don't need technical skills—we handle that part.",
+      "Teams with 5+ people doing repetitive manual work (content creation, data processing, scheduling, reporting), or brands that need consistent product/campaign photography without booking shoots. You need some budget for development but don't need technical skills—we handle that part.",
   },
   {
     question: "How long does an engagement take?",

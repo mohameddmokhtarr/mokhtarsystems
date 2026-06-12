@@ -1,8 +1,8 @@
 const pills = [
   "✦ AI Systems",
   "✦ Content Pipelines",
-  "✦ Ops Automation",
-  "✦ Weekly Reporting",
+  "✦ AI Visuals",
+  "✦ Content Automation",
   "✦ Growth Infrastructure",
   "✦ Cairo-Based",
   "✦ mokhtarsays_",

@@ -34,7 +34,7 @@ const Hero = () => {
             </h1>
 
             <p className="reveal mt-6 sm:mt-8 text-sm sm:text-base text-[#999] leading-relaxed font-sans">
-              I build AI content systems and create photorealistic AI visuals — replacing manual work and full-scale shoots alike.
+              I build AI systems and AI-generated visuals that replace manual content work and traditional photoshoots.
             </p>
 
             <div className="reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">

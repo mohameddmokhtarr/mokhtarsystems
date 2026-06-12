@@ -13,7 +13,7 @@ const quotes = [
   },
   {
     quote:
-      "I had data everywhere but no clear picture of what was working. Mokhtar built a reporting system that pulls everything together automatically — every Monday I get a clean summary of what moved and what didn't. I finally know where to focus.",
+      "I had content scattered everywhere with no consistency. Mokhtar built a content system that runs automatically — every week the right posts go out, on-brand and on-time. I finally know it's handled.",
     name: "Nadia Saleh",
     title: "Head of Growth, E-commerce Brand",
   },
