@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "How long does an engagement take?",
     answer:
-      "Typically 6-12 weeks depending on complexity. We start with audit and design (2-3 weeks), move to implementation (3-6 weeks), then hand over and training (1-2 weeks).",
+      "Depends on the service. AI Visuals is fast — your first batch of AI-generated product or fashion images is ready within 48–72 hours of receiving your brief and brand assets. AI Content Systems take a bit longer to build properly: expect 2–3 weeks to design, build, and hand over your automated content pipeline. Either way, you're seeing real output before the end of the first month.",
   },
 ];
 

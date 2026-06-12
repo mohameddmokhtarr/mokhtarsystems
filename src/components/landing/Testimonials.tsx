@@ -7,15 +7,15 @@ const quotes = [
   },
   {
     quote:
-      "My team was drowning in repeated tasks — onboarding, follow-ups, status updates. Mokhtar mapped every process and automated the ones eating our time. We recovered 11 hours a week within the first month.",
-    name: "Karim Mansour",
-    title: "CEO, Digital Services Agency",
+      "We were spending thousands on product shoots and still waiting two weeks for edited files. Mokhtar delivered a full AI Visuals shoot — 40+ images, consistent lighting, our exact brand palette — in 48 hours. The quality stopped our audience mid-scroll.",
+    name: "Sara El-Din",
+    title: "Founder, Modest Fashion Label",
   },
   {
     quote:
-      "I had content scattered everywhere with no consistency. Mokhtar built a content system that runs automatically — every week the right posts go out, on-brand and on-time. I finally know it's handled.",
-    name: "Nadia Saleh",
-    title: "Head of Growth, E-commerce Brand",
+      "Our content team was briefing, writing, and posting manually — the whole cycle took five days per piece. Now it takes two hours, and the output is more consistent. The system Mokhtar built understands our brand voice and holds it across every platform.",
+    name: "Lina Haddad",
+    title: "Marketing Director, Lifestyle Brand",
   },
 ];
 
