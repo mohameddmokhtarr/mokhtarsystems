@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What exactly do you implement?",
     answer:
-      "We build custom AI systems that live inside your existing tech stack. This includes content automation workflows (research, writing, editing, publishing), AI Visuals (AI-generated product and campaign photography for fashion and product brands — no shoots required), and AI assistants that handle repetitive work. We don't sell you software—we build and hand over the systems so you own them.",
+      "I build custom AI systems that live inside your existing business. For AI Content Systems, this means automated workflows for research, writing, editing, and publishing. For AI Visuals, this means AI-generated product and campaign photography — no shoots, no logistics, no waiting. I don't sell software — I build and hand over the systems so you own them.",
   },
   {
     question: "Is this consulting or implementation?",

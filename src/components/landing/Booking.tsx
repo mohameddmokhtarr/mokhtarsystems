@@ -24,7 +24,7 @@ const Booking = () => {
             Book a Free <span className="bg-[#E8896A] text-white border-2 border-[#F5B89A] px-3 inline-block shadow-brutal -rotate-1">Discovery</span> Call
           </h2>
           <p className="reveal mt-8 text-lg sm:text-xl text-[#F5F0E8]/75">
-            A 30-minute call. We look at your content and visual production, identify where AI removes the most manual work and cost, and tell you honestly if there's a fit.
+            A 30-minute call. I look at your content and visual production, identify where AI removes the most manual work and cost, and tell you honestly if there's a fit.
           </p>
         </div>
 
