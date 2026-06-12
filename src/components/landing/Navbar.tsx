@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Menu, X, Instagram } from "lucide-react";
 
 const links = [
-  { label: "Problem", href: "#problem" },
-  { label: "Approach", href: "#solution" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#book" },
+  { label: "Problem", href: "/#problem" },
+  { label: "Approach", href: "/#solution" },
+  { label: "Services", href: "/#services" },
+  { label: "AI Visuals", href: "/ai-visuals" },
+  { label: "Contact", href: "/#book" },
 ];
 
 const Navbar = () => {
@@ -55,7 +56,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <a
-            href="#book"
+            href="/#book"
             className="btn-salmon"
             style={{ padding: "10px 20px", fontSize: "12px" }}
           >
@@ -87,7 +88,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#book"
+              href="/#book"
               onClick={() => setOpen(false)}
               className="btn-salmon text-center menu-link"
               style={{ animationDelay: `${0.08 + links.length * 0.07}s` }}

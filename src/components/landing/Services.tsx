@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const services = [
   {
     n: "01",
@@ -14,16 +16,15 @@ const services = [
   },
   {
     n: "02",
-    title: "AI Workflow Automation",
-    desc: "Internal processes that currently rely on manual effort — moved into reliable systems your team can run on.",
+    title: "AI Visuals",
+    desc: "AI-generated fashion, product, and campaign photography — full shoots without booking a model, location, or photographer. Photorealistic quality, fast turnaround.",
     bullets: [
-      "Process audit and mapping",
-      "Tool and data integration",
-      "Internal AI assistants",
-      "Documentation and handover",
+      "Studio & e-commerce product shots",
+      "Editorial campaign imagery",
+      "Multiple angles & variations",
+      "Delivered ready to publish",
     ],
-    examples:
-      "Examples: Automated data entry from emails/forms into your CRM, daily report generation from multiple data sources, meeting note processing and action item extraction, invoice processing and approval routing, customer support ticket categorization and first-response automation.",
+    href: "/ai-visuals",
   },
 ];
 
@@ -61,9 +62,19 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-sm text-[#3D2E22] leading-relaxed">
-                {s.examples}
-              </p>
+              {s.examples && (
+                <p className="mt-6 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-sm text-[#3D2E22] leading-relaxed">
+                  {s.examples}
+                </p>
+              )}
+              {s.href && (
+                <Link
+                  to={s.href}
+                  className="mt-8 inline-flex items-center gap-2 bg-[#E8896A] text-white border-2 border-[#1A1512] px-5 py-3 font-display text-sm uppercase tracking-wide shadow-brutal hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-brutal-lg transition-all"
+                >
+                  Explore AI Visuals →
+                </Link>
+              )}
             </div>
           ))}
         </div>
