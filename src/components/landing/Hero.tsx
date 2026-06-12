@@ -18,23 +18,23 @@ const Hero = () => {
             <div className="reveal inline-block">
               <div className="hero-badge glass" style={{ boxShadow: "0 0 20px rgba(224,90,43,0.2), 0 0 0 1px rgba(255,255,255,0.03) inset" }}>
                 <Sparkles size={18} className="hero-badge-icon" />
-                AI Systems Implementation
+                AI Content Systems & Visuals
               </div>
             </div>
 
             <h1 className="reveal mt-6 sm:mt-8 font-display text-[2.75rem] sm:text-[4rem] md:text-[5rem] lg:text-[7rem] xl:text-[8rem] leading-[0.92] tracking-tight uppercase text-white">
-              <span className="block">AI Systems</span>
+              <span className="block">AI Content</span>
               <span className="block">
-                Built <span className="italic-serif">Inside</span>
+                & <span className="italic-serif">Visuals</span>
               </span>
               <span className="block">
-                <span className="bg-[#E05A2B] text-white px-2 sm:px-3 -mx-1 inline border-none -rotate-1">Your</span>{" "}
-                Business.
+                For <span className="bg-[#E05A2B] text-white px-2 sm:px-3 -mx-1 inline border-none -rotate-1">Your</span>{" "}
+                Brand.
               </span>
             </h1>
 
             <p className="reveal mt-6 sm:mt-8 text-sm sm:text-base text-[#999] leading-relaxed font-sans">
-              I build AI systems that replace manual work — across content, operations, and reporting.
+              I build AI content systems and create photorealistic AI visuals — replacing manual work and full-scale shoots alike.
             </p>
 
             <div className="reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
