@@ -23,12 +23,10 @@ const Founder = () => {
             The Builder.
           </h2>
           <p className="mt-6 text-lg text-[#3D2E22] leading-relaxed">
-            This system was built by Mokhtar — a content strategist obsessed
-            with one thing: brands that actually grow. We don't sell posts. We
-            build leverage.
+            I'm Mokhtar — a builder obsessed with one thing: brands that actually grow. I build AI content systems that replace manual content work, and AI-generated visuals that replace expensive, slow photoshoots. I don't sell posts or hours. I build the infrastructure that runs without you.
           </p>
           <p className="mt-8 text-xl sm:text-2xl font-bold italic leading-snug border-l-4 border-[#E8896A] pl-6 text-[#2A1F18]">
-            Most agencies sell hours. We build systems. That's the difference.
+            Most agencies sell hours. I build systems. That's the difference.
           </p>
         </div>
       </div>

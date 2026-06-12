@@ -62,11 +62,6 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              {s.examples && (
-                <p className="mt-6 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-sm text-[#3D2E22] leading-relaxed">
-                  {s.examples}
-                </p>
-              )}
               {s.href && (
                 <Link
                   to={s.href}
