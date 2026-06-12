@@ -5,6 +5,7 @@ const links = [
   { label: "Problem", href: "#problem" },
   { label: "Approach", href: "#solution" },
   { label: "Services", href: "#services" },
+  { label: "AI Visuals", href: "/ai-visuals" },
   { label: "Contact", href: "#book" },
 ];
 
