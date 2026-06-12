@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { Menu, X, Instagram } from "lucide-react";
 
 const links = [
-  { label: "Problem", href: "#problem" },
-  { label: "Approach", href: "#solution" },
-  { label: "Services", href: "#services" },
+  { label: "Problem", href: "/#problem" },
+  { label: "Approach", href: "/#solution" },
+  { label: "Services", href: "/#services" },
   { label: "AI Visuals", href: "/ai-visuals" },
-  { label: "Contact", href: "#book" },
+  { label: "Contact", href: "/#book" },
 ];
 
 const Navbar = () => {
