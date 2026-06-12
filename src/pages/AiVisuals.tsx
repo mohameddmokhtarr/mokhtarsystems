@@ -24,6 +24,36 @@ const editorialVideos = [
   "/ai-visuals/video-02.mp4",
 ];
 
+const portfolioShots = [
+  "/ai-visuals/shot-11.jpg",
+  "/ai-visuals/shot-12.jpg",
+  "/ai-visuals/shot-13.jpg",
+  "/ai-visuals/shot-14.jpg",
+  "/ai-visuals/shot-15.jpg",
+  "/ai-visuals/shot-16.jpg",
+  "/ai-visuals/shot-17.jpg",
+  "/ai-visuals/shot-18.jpg",
+  "/ai-visuals/shot-19.jpg",
+  "/ai-visuals/shot-20.jpg",
+  "/ai-visuals/shot-21.jpg",
+  "/ai-visuals/shot-22.jpg",
+  "/ai-visuals/shot-23.jpg",
+  "/ai-visuals/shot-24.jpg",
+  "/ai-visuals/shot-25.jpg",
+  "/ai-visuals/shot-26.jpg",
+  "/ai-visuals/shot-27.jpg",
+  "/ai-visuals/shot-28.jpg",
+  "/ai-visuals/shot-29.jpg",
+  "/ai-visuals/shot-30.jpg",
+  "/ai-visuals/shot-31.jpg",
+];
+
+const portfolioVideos = [
+  "/ai-visuals/video-03.mp4",
+  "/ai-visuals/video-04.mp4",
+  "/ai-visuals/video-05.mp4",
+];
+
 const AiVisuals = () => {
   useReveal();
   return (
@@ -133,6 +163,47 @@ const AiVisuals = () => {
                   key={src}
                   className="card-light overflow-hidden p-0 aspect-[3/4]"
                 >
+                  <video
+                    src={src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Full Portfolio ── */}
+        <section className="py-28 sm:py-36 border-t-2 border-[#1A1512] bg-dot-grid">
+          <div className="container">
+            <div className="reveal mb-6">
+              <span className="tag">Full Portfolio</span>
+            </div>
+            <h2 className="reveal font-display text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight leading-[0.9] text-[#2A1F18]">
+              More <span className="italic-serif">work</span>.
+            </h2>
+            <p className="reveal mt-6 max-w-2xl text-[#3D2E22] leading-relaxed">
+              A broader look at what's possible — fashion, product, editorial, and motion.
+            </p>
+            <div className="reveal mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {portfolioShots.map((src) => (
+                <div key={src} className="card-light overflow-hidden p-0 aspect-[3/4]">
+                  <img
+                    src={src}
+                    alt="AI-generated visual"
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="reveal mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {portfolioVideos.map((src) => (
+                <div key={src} className="card-light overflow-hidden p-0 aspect-[9/16] sm:aspect-[3/4]">
                   <video
                     src={src}
                     autoPlay
