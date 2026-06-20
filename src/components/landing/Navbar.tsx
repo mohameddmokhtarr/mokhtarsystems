@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="flex md:hidden items-center gap-3">
           <a
             href="/#book"
-            className="text-[10px] font-sans font-semibold uppercase tracking-[1.5px] text-[#E05A2B] border border-[#E05A2B]/30 px-3 py-1.5 hover:border-[#E05A2B] transition-colors"
+            className="text-[10px] font-sans font-bold uppercase tracking-[1.5px] text-white bg-[#E05A2B] px-3 py-1.5 hover:bg-[#c94a1e] transition-colors"
           >
             Book
           </a>
