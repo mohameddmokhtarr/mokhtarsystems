@@ -1,6 +1,7 @@
 const items = [
-  { tag: "Consumer Brand", text: "+180% Instagram growth in 4 weeks" },
-  { tag: "Personal Brand", text: "65K organic views in under 24 hours" },
+  { tag: "Clothing Brand", text: "Sold out full stock within 24 hours of posting" },
+  { tag: "Swimwear Brand", text: "Saved 300K EGP on shoots without losing quality" },
+  { tag: "F&B Export", text: "3x engagement in under 1 week" },
   { tag: "F&B Brand", text: "90K views on the first viral reel" },
   { tag: "AI Visuals", text: "40+ campaign images delivered in 48 hours. No shoot." },
 ];
