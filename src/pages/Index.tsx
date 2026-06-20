@@ -12,6 +12,7 @@ import Benefits from "@/components/landing/Benefits";
 import ConceptLab from "@/components/landing/ConceptLab";
 import HowWeThink from "@/components/landing/HowWeThink";
 import Testimonials from "@/components/landing/Testimonials";
+import Experience from "@/components/landing/Experience";
 import FAQ from "@/components/landing/FAQ";
 import Booking from "@/components/landing/Booking";
 import Footer from "@/components/landing/Footer";
@@ -35,6 +36,7 @@ const Index = () => {
         <ConceptLab />
         <HowWeThink />
         <Testimonials />
+        <Experience />
         <FAQ />
         <Booking />
       </main>

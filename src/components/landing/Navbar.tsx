@@ -6,7 +6,7 @@ const links = [
   { label: "Approach", href: "/#solution" },
   { label: "Services", href: "/#services" },
   { label: "Work", href: "/work" },
-  { label: "Lab", href: "/#concept-lab" },
+  { label: "Campaigns", href: "/#campaign-simulation" },
   { label: "Contact", href: "/#book" },
 ];
 
@@ -65,13 +65,21 @@ const Navbar = () => {
           </a>
         </div>
 
-        <button
-          className="md:hidden text-white border border-white/20 p-2"
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        <div className="flex md:hidden items-center gap-3">
+          <a
+            href="/#book"
+            className="text-[10px] font-sans font-semibold uppercase tracking-[1.5px] text-[#E05A2B] border border-[#E05A2B]/30 px-3 py-1.5 hover:border-[#E05A2B] transition-colors"
+          >
+            Book
+          </a>
+          <button
+            className="text-white border border-white/20 p-2"
+            onClick={() => setOpen((o) => !o)}
+            aria-label="Toggle menu"
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </nav>
 
       {open && (

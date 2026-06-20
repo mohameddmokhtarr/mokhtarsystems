@@ -55,6 +55,16 @@ const HowWeThink = () => {
             </div>
           ))}
         </div>
+
+        <div className="reveal mt-12 text-center">
+          <a
+            href="/ai-visuals"
+            className="inline-flex items-center gap-2 font-sans text-sm uppercase tracking-wider text-white/50 border-b border-white/20 pb-1 hover:text-white hover:border-white/50 transition-colors"
+            style={{ fontWeight: 600 }}
+          >
+            See the work →
+          </a>
+        </div>
       </div>
     </section>
   );

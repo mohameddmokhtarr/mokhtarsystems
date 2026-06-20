@@ -48,6 +48,10 @@ const Benefits = () => {
             </div>
           ))}
         </div>
+
+        <div className="reveal mt-16 text-center">
+          <a href="#book" className="btn-salmon">Book a Call</a>
+        </div>
       </div>
     </section>
   );

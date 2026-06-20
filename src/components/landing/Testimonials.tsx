@@ -44,6 +44,11 @@ const Testimonials = () => {
             </figure>
           ))}
         </div>
+
+        <div className="reveal mt-14 text-center">
+          <p className="text-[#666] text-sm mb-6">Ready to see results like these?</p>
+          <a href="#book" className="btn-salmon">Start a Project</a>
+        </div>
       </div>
     </section>
   );

@@ -46,6 +46,16 @@ const Problem = () => {
             </div>
           ))}
         </div>
+
+        <div className="reveal mt-14 text-center">
+          <a
+            href="#solution"
+            className="inline-flex items-center gap-2 font-sans text-sm uppercase tracking-wider text-[#E8896A] border-b border-[#E8896A]/40 pb-1 hover:border-[#E8896A] transition-colors"
+            style={{ fontWeight: 600 }}
+          >
+            See the approach →
+          </a>
+        </div>
       </div>
     </section>
   );
