@@ -39,7 +39,7 @@ const Navbar = () => {
         >
           <Instagram size={14} strokeWidth={2} />
           <span className="ig-dot" />
-          <span>mmohamedmokhtarr</span>
+          <span className="hidden sm:inline">mmohamedmokhtarr</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
