@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="border-t-2 border-[#1A1512] pt-10 pb-20 sm:pb-10 bg-dot-grid">
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6 text-sm">
+        <div className="flex items-center justify-between md:grid md:grid-cols-3 md:items-center gap-6 text-sm">
           <a
             href={instagramUrl}
             target="_blank"
