@@ -98,8 +98,14 @@ const Navbar = () => {
             <a
               href="/#book"
               onClick={() => setOpen(false)}
-              className="btn-salmon text-center menu-link"
-              style={{ animationDelay: `${0.08 + links.length * 0.07}s` }}
+              className="btn-salmon text-center menu-animate"
+              style={{
+                animationDelay: `${0.08 + links.length * 0.07}s`,
+                fontWeight: 900,
+                fontSize: "14px",
+                letterSpacing: "3px",
+                boxShadow: "0 0 32px rgba(224,90,43,0.45), 0 8px 28px rgba(0,0,0,0.5)",
+              }}
             >
               Book a Call
             </a>
