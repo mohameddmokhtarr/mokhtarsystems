@@ -4,7 +4,7 @@ const services = [
   {
     n: "01",
     title: "AI Content Systems",
-    desc: "Automated workflows for research, writing, editing, and publishing — built around how your business already operates.",
+    desc: "Automated workflows for research, writing, editing, and publishing. Built around how your business already operates.",
     bullets: [
       "Research and brief generation",
       "Drafting and editing pipelines",
@@ -17,7 +17,7 @@ const services = [
   {
     n: "02",
     title: "AI Visuals",
-    desc: "AI-generated fashion, product, and campaign photography — full shoots without booking a model, location, or photographer. Photorealistic quality, fast turnaround.",
+    desc: "AI-generated fashion, product, and campaign photography. Full shoots without booking a model, location, or photographer. Photorealistic quality, fast turnaround.",
     bullets: [
       "Studio & e-commerce product shots",
       "Editorial campaign imagery",

@@ -1,5 +1,5 @@
 const steps = [
-  { n: "01", t: "Audit", d: "Identify where AI removes the most manual work — in your content pipeline or your visual production." },
+  { n: "01", t: "Audit", d: "Identify where AI removes the most manual work: your content pipeline or your visual production." },
   { n: "02", t: "Design", d: "Map the system end to end with clear inputs, outputs, and owners." },
   { n: "03", t: "Implement", d: "Build it inside your stack and connect it to your team's tools." },
   { n: "04", t: "Hand over", d: "Document everything. Train your team. You own the system." },
@@ -23,7 +23,7 @@ const Solution = () => {
           <p className="mt-4 text-lg text-[#3D2E22] leading-relaxed">
             I start with the workflows that cost your team the most time, map
             them end to end, and replace the manual steps with reliable
-            automated ones — owned by you when I'm done.
+            automated ones. Owned by you when I'm done.
           </p>
         </div>
 

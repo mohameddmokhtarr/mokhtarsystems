@@ -1,5 +1,5 @@
 const painPoints = [
-  "You're running on content chaos — no system, no consistency, no pipeline.",
+  "You're running on content chaos. No system, no consistency, no pipeline.",
   "Your team is stuck doing the same manual tasks every single week.",
   "You're spending thousands on photoshoots and waiting weeks for edited files.",
 ];

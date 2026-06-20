@@ -28,7 +28,7 @@ const SelectedWork = () => {
               Selected <span className="italic-serif">Work</span>
             </h1>
             <p className="reveal mt-6 max-w-lg text-[#555] text-sm sm:text-base leading-relaxed">
-              A curated selection of campaigns, product shoots, and content systems — built for modern brands.
+              A curated selection of campaigns, product shoots, and content systems. Built for modern brands.
             </p>
           </div>
         </section>

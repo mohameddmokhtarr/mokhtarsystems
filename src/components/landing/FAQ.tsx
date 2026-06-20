@@ -9,22 +9,22 @@ const faqs = [
   {
     question: "What exactly do you implement?",
     answer:
-      "I build custom AI systems that live inside your existing business. For AI Content Systems, this means automated workflows for research, writing, editing, and publishing. For AI Visuals, this means AI-generated product and campaign photography — no shoots, no logistics, no waiting. I don't sell software — I build and hand over the systems so you own them.",
+      "I build custom AI systems that live inside your existing business. For AI Content Systems, this means automated workflows for research, writing, editing, and publishing. For AI Visuals, this means AI-generated product and campaign photography. No shoots, no logistics, no waiting. I don't sell software. I build and hand over the systems so you own them.",
   },
   {
     question: "Is this consulting or implementation?",
     answer:
-      "Pure implementation. I don't advise and leave — I build it inside your business, connect it to your tools, document everything, and train your team to run it. You own the system when I'm done.",
+      "Pure implementation. I don't advise and leave. I build it inside your business, connect it to your tools, document everything, and train your team to run it. You own the system when I'm done.",
   },
   {
     question: "Who is this for?",
     answer:
-      "Teams with 5+ people doing repetitive manual work (content creation, data processing, scheduling, reporting), or brands that need consistent product/campaign photography without booking shoots. You need some budget for development but don't need technical skills — I handle that part.",
+      "Teams with 5+ people doing repetitive manual work (content creation, data processing, scheduling, reporting), or brands that need consistent product/campaign photography without booking shoots. You need some budget for development but don't need technical skills. I handle that part.",
   },
   {
     question: "How long does an engagement take?",
     answer:
-      "Depends on the service. AI Visuals is fast — your first batch of AI-generated product or fashion images is ready within 48–72 hours of receiving your brief and brand assets. AI Content Systems take a bit longer to build properly: expect 2–3 weeks to design, build, and hand over your automated content pipeline. Either way, you're seeing real output before the end of the first month.",
+      "Depends on the service. AI Visuals is fast: your first batch of AI-generated product or fashion images is ready within 48–72 hours of receiving your brief and brand assets. AI Content Systems take a bit longer to build properly: expect 2–3 weeks to design, build, and hand over your automated content pipeline. Either way, you're seeing real output before the end of the first month.",
   },
 ];
 

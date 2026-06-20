@@ -2,7 +2,7 @@ const benefits = [
   {
     metric: "Hours back",
     title: "Time saved across the team",
-    desc: "Repetitive content work and slow photoshoot cycles move to AI — same output, lower cost, less time.",
+    desc: "Repetitive content work and slow photoshoot cycles move to AI. Same output, lower cost, less time.",
   },
   {
     metric: "More output",

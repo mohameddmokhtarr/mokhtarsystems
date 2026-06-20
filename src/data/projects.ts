@@ -23,10 +23,10 @@ export const projects: Project[] = [
     id: 'black-mini-dress',
     title: 'Black Mini Dress',
     category: 'Fashion',
-    description: 'Complete e-commerce shoot for a keyhole-neckline mini dress — studio-consistent across every angle.',
+    description: 'Complete e-commerce shoot for a keyhole-neckline mini dress, studio-consistent across every angle.',
     coverImage: '/ai-visuals/shot-13.jpg',
     challenge:
-      'The brand needed high-volume studio imagery for a hero SKU — a keyhole-neckline black mini dress — with consistent lighting, posing, and background across multiple model shots for both web and social use.',
+      'The brand needed high-volume studio imagery for a hero SKU (a keyhole-neckline black mini dress) with consistent lighting, posing, and background across multiple model shots for both web and social use.',
     solution:
       'Built a locked studio template: controlled white background, signature top-light with soft fill, and a clear posing brief. Every frame followed the same visual rules, making the set feel like a single unified shoot regardless of the angle.',
     deliverables: [
@@ -47,23 +47,23 @@ export const projects: Project[] = [
     videos: ['/ai-visuals/video-03.mp4', '/ai-visuals/video-04.mp4'],
     keyTakeaways: {
       creative:
-        'A strong studio template — consistent light, background, and posing rules — turns individual shots into a coherent product story. The garment sells itself when the environment stays invisible.',
+        'A strong studio template (consistent light, background, and posing rules) turns individual shots into a coherent product story. The garment sells itself when the environment stays invisible.',
       workflow:
         'Locking the lighting and background parameters first, then batching all model poses in sequence, eliminates drift across a multi-angle shoot and saves significant revision time.',
       business:
-        'Consistent studio imagery across a hero SKU directly reduces return rates — customers who see the garment clearly from multiple angles know exactly what they are buying.',
+        'Consistent studio imagery across a hero SKU directly reduces return rates. Customers who see the garment clearly from multiple angles know exactly what they are buying.',
     },
   },
   {
     id: 'navy-crochet-co-ord',
     title: 'Navy Crochet Co-ord',
     category: 'Luxury',
-    description: 'Studio and resort editorial for a navy crochet knit set — from clean white-background shots to luxury poolside campaigns.',
+    description: 'Studio and resort editorial for a navy crochet knit set: from clean white-background shots to luxury poolside campaigns.',
     coverImage: '/ai-visuals/shot-26.jpg',
     challenge:
-      'A single garment — a navy crochet tank and wide-leg knit pants co-ord — needed to work across two very different contexts: clean studio e-commerce imagery and aspirational luxury editorial at resort locations.',
+      'A single garment (a navy crochet tank and wide-leg knit pants co-ord) needed to work across two very different contexts: clean studio e-commerce imagery and aspirational luxury editorial at resort locations.',
     solution:
-      'Shot the collection in two distinct visual registers. Studio shots delivered product clarity for the website. Then the same co-ord was taken to luxury pool and resort settings — Côte d\'Azur architecture, infinity pools, Mediterranean light — to build the aspirational layer the brand needed for campaign content.',
+      'Shot the collection in two distinct visual registers. Studio shots delivered product clarity for the website. Then the same co-ord was taken to luxury pool and resort settings (Côte d\'Azur architecture, infinity pools, Mediterranean light) to build the aspirational layer the brand needed for campaign content.',
     deliverables: [
       'Full studio e-commerce set (7 model shots, white background)',
       'Luxury resort editorial (10 location hero images)',
@@ -96,23 +96,23 @@ export const projects: Project[] = [
     ],
     keyTakeaways: {
       creative:
-        'The same garment reads completely differently depending on its environment. A clean studio shot sells the product; a luxury location shot sells the lifestyle. Both are necessary — and both can come from a single production plan.',
+        'The same garment reads completely differently depending on its environment. A clean studio shot sells the product; a luxury location shot sells the lifestyle. Both are necessary, and both can come from a single production plan.',
       workflow:
         'Separating the studio and editorial phases makes each more controlled. Studio first (product clarity), then location (campaign story). Trying to do both simultaneously creates visual compromise in both directions.',
       business:
-        'Brands that show the same piece in multiple contexts — product page and campaign — convert at higher rates because customers can see both what they are buying and who they are buying into.',
+        'Brands that show the same piece in multiple contexts (product page and campaign) convert at higher rates because customers can see both what they are buying and who they are buying into.',
     },
   },
   {
     id: 'white-linen-co-ord',
     title: 'White Linen Co-ord',
     category: 'Fashion',
-    description: 'Studio e-commerce set for a white linen structured crop top and maxi skirt — clean, consistent, scalable.',
+    description: 'Studio e-commerce set for a white linen structured crop top and maxi skirt. Clean, consistent, scalable.',
     coverImage: '/ai-visuals/shot-17.jpg',
     challenge:
       'White and cream garments are among the hardest to shoot well at scale. Fabric texture, shadow detail, and tonal range all collapse under poor lighting, making identical white pieces look inconsistent across a product catalogue.',
     solution:
-      'Developed a high-key studio setup tuned specifically for light-coloured linen — retaining fabric texture and natural drape while keeping backgrounds clean. The same model, light, and posing brief carried across all garment variants in the collection.',
+      'Developed a high-key studio setup tuned specifically for light-coloured linen, retaining fabric texture and natural drape while keeping backgrounds clean. The same model, light, and posing brief carried across all garment variants in the collection.',
     deliverables: [
       'Studio e-commerce shots across 6 styles and poses',
       'White and cream garment variants with consistent tonal rendering',
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       creative:
         'Light-coloured garments require lighting setups that reveal texture, not just shape. A flat, overlit studio destroys the linen quality that makes the piece worth buying.',
       workflow:
-        'Building a tonal reference image first — establishing exactly how the white should render before shooting any model frames — saves significant post-production correction across a multi-piece catalogue.',
+        'Building a tonal reference image first (establishing exactly how the white should render before shooting any model frames) saves significant post-production correction across a multi-piece catalogue.',
       business:
         'Accurate colour and texture rendering for light garments directly reduces returns. Customers know linen wrinkles; they return items when the fabric quality looks different online than in-hand.',
     },
@@ -141,10 +141,10 @@ export const projects: Project[] = [
     id: 'pom-pom-summer-set',
     title: 'Pom-Pom Summer Set',
     category: 'Fashion',
-    description: 'Studio campaign for a white spaghetti-strap cami and pom-pom trim shorts — playful, clean, summer-ready.',
+    description: 'Studio campaign for a white spaghetti-strap cami and pom-pom trim shorts. Playful, clean, summer-ready.',
     coverImage: '/ai-visuals/shot-21.jpg',
     challenge:
-      'A textured summer co-ord — white cami with pom-pom detail shorts — needed studio imagery that communicated the playful character of the piece while keeping the background clean for e-commerce use.',
+      'A textured summer co-ord (white cami with pom-pom detail shorts) needed studio imagery that communicated the playful character of the piece while keeping the background clean for e-commerce use.',
     solution:
       'Shot the set against a consistent white studio background with warm directional light that picked up the pom-pom texture and natural fabric drape. Posing was kept relaxed and natural to match the summer mood of the garment.',
     deliverables: [
@@ -161,21 +161,21 @@ export const projects: Project[] = [
     videos: ['/ai-visuals/video-08.mp4'],
     keyTakeaways: {
       creative:
-        'Texture-forward pieces need lighting that makes the detail visible without making the image feel busy. The pom-pom trim is the design signature — the shot fails if it reads as background noise.',
+        'Texture-forward pieces need lighting that makes the detail visible without making the image feel busy. The pom-pom trim is the design signature. The shot fails if it reads as background noise.',
       workflow:
         'For small-detail garments, always capture dedicated detail frames in the same session. Product pages that include macro shots of signature details consistently outperform those that show only full-body hero images.',
       business:
-        'Seasonal pieces have short windows. Fast studio production that doesn\'t require location bookings means summer imagery is live when the season starts — not three weeks into it.',
+        'Seasonal pieces have short windows. Fast studio production that doesn\'t require location bookings means summer imagery is live when the season starts, not three weeks into it.',
     },
   },
   {
     id: 'white-circle-detail-set',
     title: 'White Circle-Detail Set',
     category: 'Luxury',
-    description: 'Outdoor editorial for a white spaghetti-strap top and shorts with circle appliqué detail — shot at Mediterranean pool and villa.',
+    description: 'Outdoor editorial for a white spaghetti-strap top and shorts with circle appliqué detail, shot at Mediterranean pool and villa.',
     coverImage: '/ai-visuals/shot-37.jpg',
     challenge:
-      'A white linen summer set with a distinctive circle-detail appliqué needed campaign imagery that went beyond studio — the brand needed aspirational location content to position the piece for a luxury summer audience.',
+      'A white linen summer set with a distinctive circle-detail appliqué needed campaign imagery that went beyond studio. The brand needed aspirational location content to position the piece for a luxury summer audience.',
     solution:
       'Shot the collection against two Mediterranean settings: an infinity pool with geometric architecture and a whitewashed villa with bougainvillea. Both locations matched the palette and tone of the garment, making the clothing and the environment feel designed for each other.',
     deliverables: [
@@ -195,14 +195,14 @@ export const projects: Project[] = [
       workflow:
         'Outdoor editorial shoots require a location brief as detailed as the garment brief. Confirming light direction, background palette, and setting mood before arriving eliminates the variables that derail on-location production.',
       business:
-        'Aspirational location imagery earns disproportionately more reach on social platforms. A strong campaign outdoor shot typically outperforms clean studio imagery by 3–5x on saves and shares — the metric that drives new audience discovery.',
+        'Aspirational location imagery earns disproportionately more reach on social platforms. A strong campaign outdoor shot typically outperforms clean studio imagery by 3–5x on saves and shares, the metric that drives new audience discovery.',
     },
   },
   {
     id: 'pink-linen-set',
     title: 'Pink Linen Set',
     category: 'Fashion',
-    description: 'Studio e-commerce shoot for a blush pink linen kimono-jacket and shorts set — oversized silhouette, relaxed summer styling.',
+    description: 'Studio e-commerce shoot for a blush pink linen kimono-jacket and shorts set. Oversized silhouette, relaxed summer styling.',
     coverImage: '/ai-visuals/shot-33.png',
     challenge:
       'A blush pink linen co-ord with an oversized kimono jacket needed studio imagery that communicated the relaxed, wearable fit of the silhouette without losing the softness of the colour or the texture of the fabric.',
@@ -221,23 +221,23 @@ export const projects: Project[] = [
     videos: ['/ai-visuals/video-10.mp4'],
     keyTakeaways: {
       creative:
-        'Soft pastel garments require extremely controlled colour temperature in studio lighting. A single degree shift toward cool or warm can make blush pink read as grey or salmon — neither of which is what the customer is buying.',
+        'Soft pastel garments require extremely controlled colour temperature in studio lighting. A single degree shift toward cool or warm can make blush pink read as grey or salmon. Neither is what the customer is buying.',
       workflow:
         'For relaxed-fit silhouettes, side and three-quarter angles are as important as front-facing shots. They communicate the oversized proportion that makes the piece wearable, which front shots often flatten.',
       business:
-        'Accurate colour rendering is the highest-value investment in linen e-commerce photography. Pink garments have among the highest return rates when photographed under mismatched lighting — and among the highest retention when the colour is accurate.',
+        'Accurate colour rendering is the highest-value investment in linen e-commerce photography. Pink garments have among the highest return rates when photographed under mismatched lighting, and among the highest retention when the colour is accurate.',
     },
   },
   {
     id: 'blue-floral-dress',
     title: 'Blue Floral Dress',
     category: 'Fashion',
-    description: 'Studio product shoot for a bold blue floral-print long-sleeve mock-neck midi dress — high-impact print, precise tonal control.',
+    description: 'Studio product shoot for a bold blue floral-print long-sleeve mock-neck midi dress. High-impact print, precise tonal control.',
     coverImage: '/ai-visuals/shot-32.png',
     challenge:
-      'A high-contrast blue and white floral print dress needed studio photography that kept the pattern reading sharply without competing with the background — a common failure point for bold printed pieces at scale.',
+      'A high-contrast blue and white floral print dress needed studio photography that kept the pattern reading sharply without competing with the background, a common failure point for bold printed pieces at scale.',
     solution:
-      'Shot against a clean white background with soft, even studio light that rendered the navy blue floral pattern with full detail while keeping the white ground of the dress — and the studio background — clearly distinct.',
+      'Shot against a clean white background with soft, even studio light that rendered the navy blue floral pattern with full detail while keeping the white ground of the dress and the studio background clearly distinct.',
     deliverables: [
       'Hero studio product shot',
       'Print-detail and garment close-up frames',
@@ -252,7 +252,7 @@ export const projects: Project[] = [
       creative:
         'Bold prints need neutral, controlled studio environments. Any background colour or texture competes directly with the pattern, fragmenting the image and making the print harder to read at scroll speed.',
       workflow:
-        'Colour-managed shooting for printed garments means calibrating the monitor, the light, and the export profile in one session — not correcting blue-cast in post after the fact.',
+        'Colour-managed shooting for printed garments means calibrating the monitor, the light, and the export profile in one session, not correcting blue-cast in post after the fact.',
       business:
         'Printed pieces are harder to photograph than solids but drive higher initial engagement. A well-lit print shot that renders pattern accurately earns the kind of immediate stop-the-scroll attention that solid colours rarely achieve.',
     },

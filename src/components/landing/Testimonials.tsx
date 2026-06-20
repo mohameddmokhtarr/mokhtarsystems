@@ -1,19 +1,19 @@
 const quotes = [
   {
     quote:
-      "Before this, I was spending 3 hours a day just figuring out what to post. Mokhtar built a full content pipeline — research, captions, scheduling — all automated. I went from 2 posts a week to 14, and my engagement rate actually went up.",
+      "Before this, I was spending 3 hours a day just figuring out what to post. Mokhtar built a full content pipeline: research, captions, scheduling, all automated. I went from 2 posts a week to 14, and my engagement rate actually went up.",
     name: "Yasmine Tarek",
     title: "Founder, Skincare Brand",
   },
   {
     quote:
-      "We were spending thousands on product shoots and still waiting two weeks for edited files. Mokhtar delivered a full AI Visuals shoot — 40+ images, consistent lighting, our exact brand palette — in 48 hours. The quality stopped our audience mid-scroll.",
+      "We were spending thousands on product shoots and still waiting two weeks for edited files. Mokhtar delivered a full AI Visuals shoot: 40+ images, consistent lighting, our exact brand palette, all in 48 hours. The quality stopped our audience mid-scroll.",
     name: "Sara El-Din",
     title: "Founder, Modest Fashion Label",
   },
   {
     quote:
-      "Our content team was briefing, writing, and posting manually — the whole cycle took five days per piece. Now it takes two hours, and the output is more consistent. The system Mokhtar built understands our brand voice and holds it across every platform.",
+      "Our content team was briefing, writing, and posting manually. The whole cycle took five days per piece. Now it takes two hours, and the output is more consistent. The system Mokhtar built understands our brand voice and holds it across every platform.",
     name: "Lina Haddad",
     title: "Marketing Director, Lifestyle Brand",
   },

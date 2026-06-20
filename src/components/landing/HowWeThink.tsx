@@ -1,15 +1,15 @@
 const insights = [
   {
     title: "Why Most AI Ads Feel Fake",
-    body: "Because the prompt came before the idea. Great campaigns start with a human truth, a tension, or a story — not a technical request. AI is the brush, not the painting.",
+    body: "Because the prompt came before the idea. Great campaigns start with a human truth, a tension, or a story. Not a technical request. AI is the brush, not the painting.",
   },
   {
     title: "Why We Never Start With The Prompt",
-    body: "We start with the brief. What is the brand trying to say? Who are they saying it to? What do we want people to feel? The prompt is the last 10% — strategy is the other 90.",
+    body: "We start with the brief. What is the brand trying to say? Who are they saying it to? What do we want people to feel? The prompt is the last 10%. Strategy is the other 90.",
   },
   {
     title: "The Biggest Mistake Brands Make With AI",
-    body: "Using it for speed without using it for thinking. The real value of AI in content production is not just faster output — it's the ability to test more creative directions before committing to one.",
+    body: "Using it for speed without using it for thinking. The real value of AI in content production is not just faster output. It's the ability to test more creative directions before committing to one.",
   },
   {
     title: "How We Build Content Systems",
