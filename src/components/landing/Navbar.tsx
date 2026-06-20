@@ -29,7 +29,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <nav className="container flex h-16 py-3 items-center justify-between">
+      <nav className="container relative flex h-16 py-3 items-center justify-between">
         <a
           href="https://www.instagram.com/mmohamedmokhtarr/"
           target="_blank"
@@ -65,21 +65,20 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="flex md:hidden items-center gap-3">
-          <a
-            href="/#book"
-            className="text-[10px] font-sans font-bold uppercase tracking-[1.5px] text-white bg-[#E05A2B] px-3 py-1.5 hover:bg-[#c94a1e] transition-colors"
-          >
-            Book
-          </a>
-          <button
-            className="text-white border border-white/20 p-2"
-            onClick={() => setOpen((o) => !o)}
-            aria-label="Toggle menu"
-          >
-            {open ? <X size={20} /> : <Menu size={20} />}
-          </button>
-        </div>
+        <a
+          href="/#book"
+          className="md:hidden absolute left-1/2 -translate-x-1/2 text-[10px] font-sans font-bold uppercase tracking-[2px] text-white bg-[#E05A2B] px-5 py-2 rounded-full hover:bg-[#c94a1e] transition-colors whitespace-nowrap"
+        >
+          Book a Call
+        </a>
+
+        <button
+          className="md:hidden text-white border border-white/20 p-2 rounded-md"
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
+        >
+          {open ? <X size={20} /> : <Menu size={20} />}
+        </button>
       </nav>
 
       {open && (
