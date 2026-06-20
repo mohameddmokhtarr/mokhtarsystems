@@ -36,9 +36,29 @@ const Experience = () => {
         <h2 className="reveal font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-white">
           Experience
         </h2>
-        <p className="reveal mt-5 max-w-xl text-[#555] text-sm sm:text-base leading-relaxed mb-16 sm:mb-20">
+        <p className="reveal mt-5 max-w-xl text-[#555] text-sm sm:text-base leading-relaxed mb-12 sm:mb-16">
           Built across industries and production scales. No client names. A clear record of where the work has been done and what it demanded.
         </p>
+
+        <div className="reveal grid grid-cols-2 sm:grid-cols-3 gap-px border border-white/[0.06] mb-12 sm:mb-16">
+          {[
+            { value: "10+", label: "Clients", sub: "MENA Region" },
+            { value: "1000+", label: "Pieces Delivered", sub: "Across all formats" },
+            { value: "48h", label: "Avg. Turnaround", sub: "Brief to delivery" },
+          ].map(({ value, label, sub }) => (
+            <div key={label} className="p-6 sm:p-8 border-r border-white/[0.06] last:border-r-0 sm:[&:nth-child(3)]:border-r-0">
+              <div className="font-display text-3xl sm:text-5xl uppercase tracking-tight text-white leading-none">
+                {value}
+              </div>
+              <div className="mt-2 text-[11px] font-sans font-semibold uppercase tracking-widest text-white/50">
+                {label}
+              </div>
+              <div className="mt-1 text-[10px] font-mono text-white/20 tracking-wider">
+                {sub}
+              </div>
+            </div>
+          ))}
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {categories.map((cat, i) => (
