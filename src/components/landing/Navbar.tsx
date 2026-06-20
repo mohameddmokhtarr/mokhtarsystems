@@ -5,7 +5,8 @@ const links = [
   { label: "Problem", href: "/#problem" },
   { label: "Approach", href: "/#solution" },
   { label: "Services", href: "/#services" },
-  { label: "AI Visuals", href: "/ai-visuals" },
+  { label: "Work", href: "/work" },
+  { label: "Lab", href: "/#concept-lab" },
   { label: "Contact", href: "/#book" },
 ];
 
@@ -30,15 +31,15 @@ const Navbar = () => {
     >
       <nav className="container flex h-16 py-3 items-center justify-between">
         <a
-          href="https://www.instagram.com/mokhtarsays_/"
+          href="https://www.instagram.com/mmohamedmokhtarr/"
           target="_blank"
           rel="noopener noreferrer"
           className="ig-handle"
-          aria-label="Instagram @mokhtarsays_"
+          aria-label="Instagram @mmohamedmokhtarr"
         >
           <Instagram size={14} strokeWidth={2} />
           <span className="ig-dot" />
-          <span>mokhtarsays_</span>
+          <span>mmohamedmokhtarr</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

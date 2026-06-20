@@ -1,9 +1,9 @@
 import { Instagram } from "lucide-react";
 
 const Footer = () => {
-  const instagramUrl = "https://www.instagram.com/mokhtarsays_/";
+  const instagramUrl = "https://www.instagram.com/mmohamedmokhtarr/";
   return (
-    <footer className="border-t-2 border-[#1A1512] py-10 bg-dot-grid">
+    <footer className="border-t-2 border-[#1A1512] pt-10 pb-20 sm:pb-10 bg-dot-grid">
       <div className="container">
         <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6 text-sm">
           <a
@@ -14,7 +14,7 @@ const Footer = () => {
           >
             <Instagram size={14} strokeWidth={2} />
             <span className="ig-dot" />
-            <span>mokhtarsays_</span>
+            <span>mmohamedmokhtarr</span>
           </a>
           <div className="hidden md:block text-center font-bold uppercase tracking-widest text-xs text-[#8A7060]">
             AI Content Systems & Visuals.
@@ -34,8 +34,8 @@ const Footer = () => {
         <div className="md:hidden mt-6 text-center font-bold uppercase tracking-widest text-xs text-[#8A7060]">
           AI Content Systems & Visuals.
         </div>
-        <div className="mt-8 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-xs text-[#8A7060] text-center">
-          © {new Date().getFullYear()} @mokhtarsays_. All rights reserved.
+        <div className="mt-8 pt-6 border-t-2 border-dashed border-[#2A1F18]/20 text-xs text-[#8A7060] text-center break-words px-2">
+          © {new Date().getFullYear()} @mmohamedmokhtarr. All rights reserved.
         </div>
       </div>
     </footer>

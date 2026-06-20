@@ -9,6 +9,8 @@ import Problem from "@/components/landing/Problem";
 import Solution from "@/components/landing/Solution";
 import Services from "@/components/landing/Services";
 import Benefits from "@/components/landing/Benefits";
+import ConceptLab from "@/components/landing/ConceptLab";
+import HowWeThink from "@/components/landing/HowWeThink";
 import Testimonials from "@/components/landing/Testimonials";
 import FAQ from "@/components/landing/FAQ";
 import Booking from "@/components/landing/Booking";
@@ -30,6 +32,8 @@ const Index = () => {
         <Solution />
         <Services />
         <Benefits />
+        <ConceptLab />
+        <HowWeThink />
         <Testimonials />
         <FAQ />
         <Booking />

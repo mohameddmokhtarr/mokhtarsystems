@@ -5,7 +5,7 @@ const pills = [
   "✦ Content Automation",
   "✦ Growth Infrastructure",
   "✦ Cairo-Based",
-  "✦ mokhtarsays_",
+  "✦ mmohamedmokhtarr",
 ];
 
 const LogoMarquee = () => {
