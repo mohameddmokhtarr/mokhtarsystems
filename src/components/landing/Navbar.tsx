@@ -101,7 +101,7 @@ const Navbar = () => {
               className="btn-salmon text-center menu-animate"
               style={{
                 animationDelay: `${0.08 + links.length * 0.07}s`,
-                fontWeight: 900,
+                fontWeight: 700,
                 fontSize: "14px",
                 letterSpacing: "3px",
                 boxShadow: "0 0 32px rgba(224,90,43,0.45), 0 8px 28px rgba(0,0,0,0.5)",
