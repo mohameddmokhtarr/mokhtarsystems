@@ -96,7 +96,8 @@ const ConceptLab = () => {
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/92 via-black/25 to-black/0 transition-all duration-500 group-hover:from-black/96 group-hover:via-black/45" />
+              <div className="absolute inset-0 bg-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent transition-all duration-500 group-hover:via-black/75" />
 
               <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-7">
                 <div className="flex items-center gap-2 mb-2.5 flex-wrap">
