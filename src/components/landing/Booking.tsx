@@ -31,9 +31,9 @@ const Booking = () => {
         <div className="reveal mt-20 max-w-4xl mx-auto">
           <div className="card-dark overflow-hidden" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.4)' }}>
             <div
-              className="calendly-inline-widget"
+              className="calendly-inline-widget h-[850px] sm:h-[700px]"
               data-url="https://calendly.com/meetingwithmokhtar/discoverycallwithmokhtar"
-              style={{ minWidth: "320px", height: "700px" }}
+              style={{ minWidth: "320px" }}
             />
           </div>
         </div>

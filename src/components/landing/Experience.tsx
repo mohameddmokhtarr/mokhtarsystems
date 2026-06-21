@@ -46,7 +46,7 @@ const Experience = () => {
             { value: "1000+", label: "Pieces Delivered", sub: "Across all formats" },
             { value: "48h", label: "Avg. Turnaround", sub: "Brief to delivery" },
           ].map(({ value, label, sub }) => (
-            <div key={label} className="p-6 sm:p-8 border-r border-white/[0.06] last:border-r-0 sm:[&:nth-child(3)]:border-r-0">
+            <div key={label} className="p-6 sm:p-8 border-r border-white/[0.06] [&:nth-child(2)]:border-r-0 sm:[&:nth-child(2)]:border-r last:border-r-0 sm:[&:nth-child(3)]:border-r-0">
               <div className="font-display text-3xl sm:text-5xl uppercase tracking-tight text-white leading-none">
                 {value}
               </div>
@@ -67,7 +67,7 @@ const Experience = () => {
               className="reveal group border border-white/[0.06] p-7 sm:p-9 hover:border-white/[0.13] hover:bg-white/[0.018] transition-all duration-400 ease-out"
               style={{ transitionDelay: `${i * 0.07}s` }}
             >
-              <div className="text-[8.5px] font-mono tracking-[3px] uppercase text-white/25 mb-6">
+              <div className="text-[8.5px] font-mono tracking-[3px] uppercase text-white/35 mb-6">
                 {cat.n}
               </div>
               <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight text-white/85 leading-[1.1] group-hover:text-white transition-colors duration-300">

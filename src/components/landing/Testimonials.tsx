@@ -31,7 +31,7 @@ const Testimonials = () => {
           {quotes.map((q, i) => (
             <figure
               key={i}
-              className="reveal glass glass-highlight p-6 flex flex-col"
+              className="reveal glass glass-highlight p-5 sm:p-7 flex flex-col"
             >
               <div className="text-[#E05A2B] text-4xl font-display leading-none">"</div>
               <blockquote className="mt-2 text-sm sm:text-base leading-relaxed flex-1 text-white/80 font-sans">

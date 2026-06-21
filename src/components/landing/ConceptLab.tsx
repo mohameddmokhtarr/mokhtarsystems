@@ -120,7 +120,7 @@ const ConceptLab = () => {
                     { label: "Execution", value: concept.execution },
                   ].map(({ label, value }) => (
                     <div key={label} className="flex gap-2 text-[10px] leading-relaxed">
-                      <span className="text-white/25 font-mono uppercase tracking-widest shrink-0 w-[70px]">
+                      <span className="text-white/25 font-mono uppercase tracking-widest shrink-0 w-[82px]">
                         {label}
                       </span>
                       <span className="text-white/55">{value}</span>

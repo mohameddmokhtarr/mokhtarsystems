@@ -12,7 +12,7 @@ const WhatsAppFloat = () => {
       >
         <MessageCircle size={28} fill="white" strokeWidth={1.5} />
       </a>
-      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-card border-2 border-ink px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100 shadow-brutal pointer-events-none">
+      <span className="absolute bottom-full mb-3 right-0 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:right-full sm:mr-3 sm:mb-0 whitespace-nowrap rounded-full bg-card border-2 border-ink px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100 shadow-brutal pointer-events-none">
         Chat on WhatsApp
       </span>
     </div>

@@ -26,8 +26,8 @@ const Results = () => {
       </div>
 
       <div className="reveal mt-16 relative overflow-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[#F5F0E8] to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-[#F5F0E8] to-transparent pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-10 sm:w-24 z-10 bg-gradient-to-r from-[#F5F0E8] to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-10 sm:w-24 z-10 bg-gradient-to-l from-[#F5F0E8] to-transparent pointer-events-none" />
         <div className="flex marquee w-max">
           {loop.map((it, i) => (
             <Card key={i} {...it} />

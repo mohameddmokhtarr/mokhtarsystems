@@ -43,7 +43,7 @@ const HowWeThink = () => {
               className="reveal group border border-white/[0.06] p-7 sm:p-9 hover:border-white/[0.13] hover:bg-white/[0.018] transition-all duration-400 ease-out"
               style={{ transitionDelay: `${i * 0.07}s` }}
             >
-              <div className="text-[8.5px] font-mono tracking-[3px] uppercase text-white/18 mb-6">
+              <div className="text-[8.5px] font-mono tracking-[3px] uppercase text-white/30 mb-6">
                 0{i + 1}
               </div>
               <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight text-white/85 leading-[1.1] group-hover:text-white transition-colors duration-300">

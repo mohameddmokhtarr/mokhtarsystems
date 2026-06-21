@@ -10,9 +10,9 @@ const pills = [
 
 const LogoMarquee = () => {
   return (
-    <div className="py-5 overflow-hidden bg-[#0F0F0F] border-t border-b border-white/[0.07]">
+    <div className="group py-5 overflow-hidden bg-[#0F0F0F] border-t border-b border-white/[0.07]">
       <div
-        className="flex gap-4 w-max"
+        className="flex gap-4 w-max group-hover:[animation-play-state:paused]"
         style={{ animation: "marquee 35s linear infinite" }}
       >
         {[...pills, ...pills].map((p, i) => (
