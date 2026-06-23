@@ -247,7 +247,7 @@ export const projects: Project[] = [
     gallery: [
       '/ai-visuals/shot-40.png',
     ],
-    videos: [],
+    videos: ['/ai-visuals/video-12.mp4'],
     keyTakeaways: {
       creative:
         'Industrial spaces have their own visual language. Sunlight through factory windows, the geometry of machinery, and the rhythm of production lines are all cinematic material when framed correctly.',
