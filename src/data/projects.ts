@@ -229,6 +229,35 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 'desert-editorial',
+    title: 'Desert Editorial',
+    category: 'Luxury',
+    description: 'Multi-model luxury fashion film shot against dramatic sandstone canyon formations. Earth-tone garments, circular staging, golden desert light.',
+    coverImage: '/ai-visuals/shot-39.png',
+    challenge:
+      'A luxury fashion film required a setting that elevated the garments beyond the studio — an environment that felt monumental, natural, and completely unlike anything a conventional shoot could produce.',
+    solution:
+      'Placed multiple models in a circular formation inside a sandstone canyon, using the architecture of the rock itself as the staging. Earth-tone garments were selected to harmonise with the desert palette, letting the scale of the environment do the storytelling.',
+    deliverables: [
+      'Multi-model luxury fashion film',
+      'Desert canyon location editorial',
+      'Full campaign video for social and web',
+      'Earth-tone collection campaign assets',
+    ],
+    gallery: [
+      '/ai-visuals/shot-39.png',
+    ],
+    videos: ['/ai-visuals/video-11.mp4'],
+    keyTakeaways: {
+      creative:
+        'Scale is a creative tool. Placing models inside a space that dwarfs them shifts the viewer\'s attention from product to world — and a world worth inhabiting is worth buying into.',
+      workflow:
+        'Location-driven campaigns require environment selection before garment selection, not after. The rock formations, light temperature, and palette of the canyon defined every garment and styling decision that followed.',
+      business:
+        'Luxury fashion films in monumental natural settings earn significantly higher organic reach than studio content. The rarity of the environment signals the rarity of the brand.',
+    },
+  },
+  {
     id: 'blue-floral-dress',
     title: 'Blue Floral Dress',
     category: 'Fashion',
