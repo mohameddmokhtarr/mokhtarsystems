@@ -230,31 +230,32 @@ export const projects: Project[] = [
   },
   {
     id: 'export-factory',
-    title: 'Export Factory',
+    title: 'Kavé x Mawzoun',
     category: 'Commercial',
-    description: 'Commercial content for a food manufacturing and export operation — potato and coffee production built for European markets.',
-    coverImage: '/ai-visuals/shot-40.png',
+    description: 'Brand film for Kavé coffee and Mawzoun trading — from factory floor to premium retail, built for European export markets.',
+    coverImage: '/ai-visuals/shot-40.jpg',
     challenge:
-      'A food manufacturing company exporting to Europe needed commercial content that communicated industrial scale, quality control, and international-grade production standards — all within a single cohesive visual narrative.',
+      'Kavé and Mawzoun needed a single commercial film that worked across two registers: the raw industrial credibility of a real production facility, and the premium retail identity of a brand positioning itself for European buyers.',
     solution:
-      'Produced a factory walkthrough campaign capturing the full production cycle: raw ingredients, roasting and processing equipment, packaging, and export-ready output. Natural light and cinematic framing turned industrial machinery into brand proof.',
+      'Shot the full vertical — factory roasting floor, slow-motion coffee bean sequences, and the Kavé retail space with its copper-toned bar and capsule wall. The film moves from origin to brand, giving B2B buyers proof of scale and end consumers a reason to care.',
     deliverables: [
-      'Full factory commercial film',
-      'Production floor walkthrough footage',
-      'Coffee roasting and processing sequences',
-      'Export-market campaign assets for European B2B audiences',
+      'Full brand commercial film',
+      'Factory and roasting floor sequences',
+      'Slow-motion coffee bean product shots',
+      'Kavé retail interior campaign footage',
+      'Export-market assets for European B2B and retail audiences',
     ],
     gallery: [
-      '/ai-visuals/shot-40.png',
+      '/ai-visuals/shot-40.jpg',
     ],
     videos: ['/ai-visuals/video-12.mp4'],
     keyTakeaways: {
       creative:
-        'Industrial spaces have their own visual language. Sunlight through factory windows, the geometry of machinery, and the rhythm of production lines are all cinematic material when framed correctly.',
+        'The strongest brand films move through scale — from the rawness of production to the polish of retail. Kavé works because it earns the premium identity by first showing the process behind it.',
       workflow:
-        'Commercial factory content requires a shot list built around the buyer\'s decision criteria, not aesthetic preference. European importers want to see hygiene standards, equipment quality, and volume capacity — that is what the camera should prove.',
+        'A two-register shoot (industrial + retail) requires two completely different lighting and framing approaches in the same production day. Locking the visual language of each environment in advance is what keeps them feeling like one film rather than two.',
       business:
-        'B2B export clients convert on trust signals, not lifestyle imagery. A well-produced factory film replaces the need for an in-person site visit and shortens the sales cycle significantly for international buyers.',
+        'For export brands, a film that shows both the factory and the finished retail experience cuts the sales cycle in half. European buyers need proof of production scale; consumers need a brand they want to be part of.',
     },
   },
   {
@@ -262,7 +263,7 @@ export const projects: Project[] = [
     title: 'Siwa Editorial',
     category: 'Luxury',
     description: 'Multi-model luxury fashion film shot against dramatic sandstone canyon formations. Earth-tone garments, circular staging, golden desert light.',
-    coverImage: '/ai-visuals/shot-39.png',
+    coverImage: '/ai-visuals/shot-39.jpg',
     challenge:
       'A luxury fashion film required a setting that elevated the garments beyond the studio — an environment that felt monumental, natural, and completely unlike anything a conventional shoot could produce.',
     solution:
