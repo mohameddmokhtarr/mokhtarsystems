@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Fashion' | 'Beauty' | 'Luxury';
+export type ProjectCategory = 'Fashion' | 'Beauty' | 'Luxury' | 'Commercial';
 
 export interface Project {
   id: string;
@@ -226,6 +226,35 @@ export const projects: Project[] = [
         'For relaxed-fit silhouettes, side and three-quarter angles are as important as front-facing shots. They communicate the oversized proportion that makes the piece wearable, which front shots often flatten.',
       business:
         'Accurate colour rendering is the highest-value investment in linen e-commerce photography. Pink garments have among the highest return rates when photographed under mismatched lighting, and among the highest retention when the colour is accurate.',
+    },
+  },
+  {
+    id: 'export-factory',
+    title: 'Export Factory',
+    category: 'Commercial',
+    description: 'Commercial content for a food manufacturing and export operation — potato and coffee production built for European markets.',
+    coverImage: '/ai-visuals/shot-40.png',
+    challenge:
+      'A food manufacturing company exporting to Europe needed commercial content that communicated industrial scale, quality control, and international-grade production standards — all within a single cohesive visual narrative.',
+    solution:
+      'Produced a factory walkthrough campaign capturing the full production cycle: raw ingredients, roasting and processing equipment, packaging, and export-ready output. Natural light and cinematic framing turned industrial machinery into brand proof.',
+    deliverables: [
+      'Full factory commercial film',
+      'Production floor walkthrough footage',
+      'Coffee roasting and processing sequences',
+      'Export-market campaign assets for European B2B audiences',
+    ],
+    gallery: [
+      '/ai-visuals/shot-40.png',
+    ],
+    videos: [],
+    keyTakeaways: {
+      creative:
+        'Industrial spaces have their own visual language. Sunlight through factory windows, the geometry of machinery, and the rhythm of production lines are all cinematic material when framed correctly.',
+      workflow:
+        'Commercial factory content requires a shot list built around the buyer\'s decision criteria, not aesthetic preference. European importers want to see hygiene standards, equipment quality, and volume capacity — that is what the camera should prove.',
+      business:
+        'B2B export clients convert on trust signals, not lifestyle imagery. A well-produced factory film replaces the need for an in-person site visit and shortens the sales cycle significantly for international buyers.',
     },
   },
   {
