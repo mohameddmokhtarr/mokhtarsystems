@@ -229,8 +229,8 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 'desert-editorial',
-    title: 'Desert Editorial',
+    id: 'siwa-editorial',
+    title: 'Siwa Editorial',
     category: 'Luxury',
     description: 'Multi-model luxury fashion film shot against dramatic sandstone canyon formations. Earth-tone garments, circular staging, golden desert light.',
     coverImage: '/ai-visuals/shot-39.png',
