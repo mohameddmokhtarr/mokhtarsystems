@@ -229,6 +229,36 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 'benphos',
+    title: 'Benphos',
+    category: 'Commercial',
+    description: 'Industrial brand film for Benphos — a phosphate processing and export facility shot at full operational scale, from aerial overview to factory floor.',
+    coverImage: '/ai-visuals/shot-41.jpg',
+    challenge:
+      'Benphos needed a film that communicated the scale and operational sophistication of a phosphate processing facility to international partners and investors — without losing the cinematic quality that makes the content worth watching.',
+    solution:
+      'Shot the facility across multiple registers: aerial drone establishing shots over the full plant with the desert and Nile backdrop, ground-level conveyor and processing sequences, worker-led machinery operation, and flotation process close-ups. The film builds from scale to detail.',
+    deliverables: [
+      'Full industrial brand film',
+      'Aerial drone footage of facility and surrounding landscape',
+      'Ground-level processing and conveyor sequences',
+      'Worker and operational detail shots',
+      'Export-ready assets for investor and B2B presentations',
+    ],
+    gallery: [
+      '/ai-visuals/shot-41.jpg',
+    ],
+    videos: ['/ai-visuals/video-13.mp4'],
+    keyTakeaways: {
+      creative:
+        'Industrial scale is the story. The aerial establishing shot — factory against desert and river — communicates more about Benphos in three seconds than any spec sheet. The film earns its close-ups by earning its wide shots first.',
+      workflow:
+        'Heavy industrial shoots require a shot hierarchy: aerials first to lock the geography, then ground-level sequences while equipment is running, then detail and worker shots. Running it in any other order means missing operational moments you cannot recreate.',
+      business:
+        'For B2B and investor audiences, a film that shows real operations at real scale removes doubt before the first conversation. Benphos competes internationally — its content needs to match that ambition.',
+    },
+  },
+  {
     id: 'export-factory',
     title: 'Kavé x Mawzoun',
     category: 'Commercial',
