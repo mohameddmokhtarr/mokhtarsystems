@@ -322,7 +322,7 @@ export const projects: Project[] = [
     title: 'The Girl Theory',
     category: 'Fashion',
     description: 'Full studio e-commerce set for a linen separates collection — camp-collar shirts, drawstring tops, wide-leg trousers, and pinstripe pieces in neutral earth tones.',
-    coverImage: '/ai-visuals/shot-42.jpg',
+    coverImage: '/ai-visuals/shot-61.jpg',
     challenge:
       'A multi-piece linen separates collection — spanning camp-collar shirts, drawstring-waist tops, V-neck polos, pinstripe styles, and wide-leg trousers across beige, oat, cream, and white — needed a unified studio approach that made every garment feel part of one coherent collection without any piece looking interchangeable.',
     solution:
