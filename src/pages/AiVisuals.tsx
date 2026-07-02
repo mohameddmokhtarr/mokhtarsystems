@@ -6,11 +6,22 @@ import Footer from "@/components/landing/Footer";
 import Booking from "@/components/landing/Booking";
 import ProjectModal from "@/components/ProjectModal";
 import { projects } from "@/data/projects";
-import type { Project } from "@/data/projects";
+import type { Project, ProjectCategory } from "@/data/projects";
+
+const TABS: { label: string; value: ProjectCategory | 'All' }[] = [
+  { label: 'All', value: 'All' },
+  { label: 'Fashion', value: 'Fashion' },
+  { label: 'Luxury', value: 'Luxury' },
+  { label: 'Commercial', value: 'Commercial' },
+  { label: 'Motion', value: 'Motion' },
+];
 
 const SelectedWork = () => {
   useReveal();
   const [modal, setModal] = useState<Project | null>(null);
+  const [active, setActive] = useState<ProjectCategory | 'All'>('All');
+
+  const filtered = active === 'All' ? projects : projects.filter(p => p.category === active);
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-[#E8E4DF]">
@@ -33,11 +44,32 @@ const SelectedWork = () => {
           </div>
         </section>
 
+        {/* ── Filter tabs ── */}
+        <section className="border-b border-white/[0.06] bg-[#0A0A0A] sticky top-[57px] sm:top-[65px] z-40">
+          <div className="container">
+            <div className="flex gap-0 overflow-x-auto scrollbar-none -mb-px">
+              {TABS.map(tab => (
+                <button
+                  key={tab.value}
+                  onClick={() => setActive(tab.value)}
+                  className={`shrink-0 px-5 py-4 text-[9px] font-mono tracking-[3px] uppercase border-b-2 transition-colors duration-200 ${
+                    active === tab.value
+                      ? 'border-[#E05A2B] text-white'
+                      : 'border-transparent text-white/30 hover:text-white/60'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── Project grid ── */}
         <section className="py-16 sm:py-24">
           <div className="container">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7">
-              {projects.map((project, i) => (
+              {filtered.map((project, i) => (
                 <button
                   key={project.id}
                   onClick={() => setModal(project)}
