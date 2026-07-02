@@ -1,8 +1,8 @@
 const steps = [
-  { n: "01", t: "Audit", d: "Identify where AI removes the most manual work: your content pipeline or your visual production." },
-  { n: "02", t: "Design", d: "Map the system end to end with clear inputs, outputs, and owners." },
-  { n: "03", t: "Implement", d: "Build it inside your stack and connect it to your team's tools." },
-  { n: "04", t: "Hand over", d: "Document everything. Train your team. You own the system." },
+  { n: "01", t: "Brief", d: "Understand the brand's visual gaps and content needs. What needs to ship, at what quality, and for which channels." },
+  { n: "02", t: "Direct", d: "Build the creative direction. Campaign concept, visual language, content system architecture — before a single image is generated." },
+  { n: "03", t: "Produce", d: "Generate AI visuals, build the content system, and deliver campaign-ready assets at the quality and volume the brand needs." },
+  { n: "04", t: "Launch", d: "Everything is yours. Assets, system documentation, and your team trained to run it independently." },
 ];
 
 const Solution = () => {
@@ -17,13 +17,11 @@ const Solution = () => {
             How <span className="text-[#E8896A]">it</span> works.
           </h2>
           <p className="mt-8 text-lg sm:text-xl text-[#3D2E22] leading-relaxed">
-            I implement AI systems directly inside your business. Not advice.
-            Not training. Not another tool to manage.
+            I build AI visual and content systems directly for your brand. Not templates.
+            Not generic output. Not a tool handed over without a direction.
           </p>
           <p className="mt-4 text-lg text-[#3D2E22] leading-relaxed">
-            I start with the workflows that cost your team the most time, map
-            them end to end, and replace the manual steps with reliable
-            automated ones. Owned by you when I'm done.
+            Every project starts with creative direction — the brief, the visual language, the content standard. Then I build the system around it. Owned by you when I'm done.
           </p>
         </div>
 

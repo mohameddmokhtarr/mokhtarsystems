@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Fashion' | 'Beauty' | 'Luxury' | 'Commercial';
+export type ProjectCategory = 'Fashion' | 'Beauty' | 'Luxury' | 'Commercial' | 'Motion';
 
 export interface Project {
   id: string;
@@ -19,6 +19,33 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'motion-reel',
+    title: 'Motion Reel',
+    category: 'Motion',
+    description: 'A showcase of AI-generated motion direction — demonstrating what's possible when creative direction meets generative video.',
+    coverImage: '/ai-visuals/shot-61.jpg',
+    challenge:
+      'Demonstrating the range of AI motion capability — from fashion and editorial to commercial and atmospheric — without a client brief or production budget.',
+    solution:
+      'Built a self-directed motion piece using AI video generation with full creative direction: framing, pacing, colour temperature, and subject movement designed from scratch. No location. No crew.',
+    deliverables: [
+      'AI-generated motion direction',
+      'Full creative brief and visual language',
+      'Campaign-ready video output',
+      'Demonstrates fashion, editorial, and commercial registers',
+    ],
+    gallery: [],
+    videos: ['/ai-visuals/video-14.mp4'],
+    keyTakeaways: {
+      creative:
+        'AI motion works when the director knows what they want before the generation starts. Framing, light temperature, subject movement, and pacing are all creative decisions — not algorithmic ones.',
+      workflow:
+        'A single motion piece built without a crew, location, or production budget — demonstrating what AI video direction can produce when the brief is clear and the creative eye is consistent.',
+      business:
+        'For brands that need campaign-quality video content at a fraction of traditional production cost, AI motion direction is the most underused tool in the current market.',
+    },
+  },
   {
     id: 'black-mini-dress',
     title: 'Black Mini Dress',

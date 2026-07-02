@@ -1,23 +1,23 @@
 const benefits = [
   {
-    metric: "Hours back",
-    title: "Time saved across the team",
-    desc: "Repetitive content work and slow photoshoot cycles move to AI. Same output, lower cost, less time.",
+    metric: "Campaign quality",
+    title: "Imagery without booking a shoot",
+    desc: "Full campaign-quality AI visuals — no model booking, no location, no photographer. Delivered ready to publish.",
   },
   {
-    metric: "More output",
-    title: "Higher volume without more headcount",
-    desc: "Your team ships more, more consistently, without burning out or growing the payroll.",
+    metric: "Consistent output",
+    title: "A visual identity that doesn't drift",
+    desc: "Creative direction encoded into the system means every asset looks like the same brand, across every channel, every time.",
   },
   {
-    metric: "Less drift",
-    title: "Consistent quality and process",
-    desc: "Workflows run the same way every time. Standards are encoded into the system, not in someone's head.",
+    metric: "Built to scale",
+    title: "Content volume that matches your ambition",
+    desc: "A content system that produces at the pace the brand actually needs — not at the pace a traditional production schedule allows.",
   },
   {
-    metric: "Owned by you",
-    title: "Internal capability, not a dependency",
-    desc: "You keep the content pipeline, the documentation, and the visual assets. No agency retainer, no lock-in to me or any single tool.",
+    metric: "Yours to keep",
+    title: "Assets and systems delivered to you",
+    desc: "Everything I build belongs to the brand. Visual assets, content pipelines, creative documentation. No retainer. No dependency.",
   },
 ];
 

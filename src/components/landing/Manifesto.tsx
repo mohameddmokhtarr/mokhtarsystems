@@ -7,12 +7,12 @@ const Manifesto = () => {
 
         <div>
           <h2 className="reveal font-display text-4xl sm:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.9] text-[#FAF7F2]">
-            Building growth{" "}
-            <span className="italic-serif">systems</span>{" "}
-            beyond the obvious.
+            AI visuals built on{" "}
+            <span className="italic-serif">creative</span>{" "}
+            direction.
           </h2>
           <p className="reveal mt-8 max-w-lg text-lg text-[#FAF7F2]/65 leading-relaxed">
-            The old way is disconnected tools and random posting. I wire your content and visuals into one AI-powered system that runs without you.
+            Generating AI content without a brief produces output that looks like everyone else's. I start with the idea, the audience, and the visual language — then build the system around it.
           </p>
         </div>
 

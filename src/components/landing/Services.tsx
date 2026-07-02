@@ -4,24 +4,24 @@ const services = [
   {
     n: "01",
     title: "AI Content Systems",
-    desc: "Automated workflows for research, writing, editing, and publishing. Built around how your business already operates.",
+    desc: "A structured content production pipeline built around your brand's voice, channels, and output requirements — not generic templates.",
     bullets: [
-      "Research and brief generation",
-      "Drafting and editing pipelines",
-      "Review and approval workflow",
-      "Scheduled publishing and reporting",
+      "Brand voice and content brief",
+      "Production pipeline by channel",
+      "Review and approval structure",
+      "Consistent output at volume",
     ],
     examples:
-      "Examples: Automated research and brief generation for reports, drafting and editing pipelines for content teams, review and approval workflows that reduce back-and-forth, scheduled publishing to social media and blog with auto-formatting.",
+      "Examples: Content systems for fashion and lifestyle brands, editorial pipelines for agencies, campaign brief-to-asset workflows for product launches.",
   },
   {
     n: "02",
     title: "AI Visuals",
-    desc: "AI-generated fashion, product, and campaign photography. Full shoots without booking a model, location, or photographer. Photorealistic quality, fast turnaround.",
+    desc: "Campaign-quality AI-generated imagery: fashion, product, and editorial. Full creative direction, then production. No model booking. No location. No waiting weeks.",
     bullets: [
       "Studio & e-commerce product shots",
-      "Editorial campaign imagery",
-      "Multiple angles & variations",
+      "Editorial and campaign imagery",
+      "Multiple angles and variations",
       "Delivered ready to publish",
     ],
     href: "/ai-visuals",

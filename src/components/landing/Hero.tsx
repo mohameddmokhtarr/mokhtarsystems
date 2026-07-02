@@ -34,7 +34,7 @@ const Hero = () => {
             </h1>
 
             <p className="reveal mt-6 sm:mt-8 text-sm sm:text-base text-[#999] leading-relaxed font-sans">
-              Strategy-first content production: campaign direction, AI-generated visuals, and automated content workflows that scale.
+              Campaign direction, AI-generated visuals, and content systems built for brands that need to produce more — without the traditional cost of production.
             </p>
 
             <div className="reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">

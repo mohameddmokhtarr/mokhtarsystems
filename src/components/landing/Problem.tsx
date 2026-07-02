@@ -1,15 +1,15 @@
 const points = [
   {
-    title: "Manual work eats your team's time",
-    desc: "Content and visual production are still done by hand: slow photoshoot cycles, inconsistent output, and high cost.",
+    title: "Visual production can't keep up",
+    desc: "Traditional shoots are slow, expensive, and hard to scale. By the time the imagery is ready, the moment has passed.",
   },
   {
-    title: "Output doesn't match the headcount",
-    desc: "You've added people but the volume and quality of what gets shipped hasn't moved in proportion.",
+    title: "Content volume doesn't match brand ambition",
+    desc: "You know what the brand should look and sound like. What's shipping doesn't reflect it — and it's not for lack of trying.",
   },
   {
-    title: "AI tools sit unused",
-    desc: "Subscriptions are paid, but nothing is actually integrated into how the business operates day to day.",
+    title: "AI visuals are treated as a shortcut, not a system",
+    desc: "Brands generating AI content without a creative direction end up with output that looks like everyone else's. The tool is only as good as the brief behind it.",
   },
 ];
 
@@ -24,8 +24,8 @@ const Problem = () => {
           The <span className="bg-[#E8896A] text-white border-2 border-[#1A1512] px-2 -rotate-1 inline-block shadow-brutal">Bottleneck</span>.
         </h2>
         <p className="reveal mt-10 max-w-3xl font-display text-2xl sm:text-3xl lg:text-4xl uppercase leading-[1.05] tracking-tight text-[#1A1512]">
-          Most businesses don't have an AI problem.{" "}
-          <span className="lead-highlight">They have an implementation problem.</span>
+          Most brands don't have a content problem.{" "}
+          <span className="lead-highlight">They have a production system problem.</span>
         </p>
 
         <div className="mt-20 grid md:grid-cols-3 gap-8">
