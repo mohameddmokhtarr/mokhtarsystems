@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: 'Motion Reel',
     category: 'Motion',
     description: "A showcase of AI-generated motion direction — demonstrating what's possible when creative direction meets generative video.",
-    coverImage: '/ai-visuals/shot-61.jpg',
+    coverImage: '/ai-visuals/shot-92.jpg',
     challenge:
       'Demonstrating the range of AI motion capability — from fashion and editorial to commercial and atmospheric — without a client brief or production budget.',
     solution:
