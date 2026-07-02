@@ -41,21 +41,16 @@ const SelectedWork = () => {
             <p className="reveal mt-6 max-w-lg text-[#555] text-sm sm:text-base leading-relaxed">
               A curated selection of campaigns, product shoots, and content systems. Built for modern brands.
             </p>
-          </div>
-        </section>
 
-        {/* ── Filter tabs ── */}
-        <section className="border-b border-white/[0.06] bg-[#0A0A0A] sticky top-[57px] sm:top-[65px] z-40">
-          <div className="container">
-            <div className="flex gap-0 overflow-x-auto scrollbar-none -mb-px">
+            <div className="reveal mt-8 flex flex-wrap gap-2">
               {TABS.map(tab => (
                 <button
                   key={tab.value}
                   onClick={() => setActive(tab.value)}
-                  className={`shrink-0 px-5 py-4 text-[9px] font-mono tracking-[3px] uppercase border-b-2 transition-colors duration-200 ${
+                  className={`px-4 py-1.5 text-[9px] font-mono tracking-[3px] uppercase border transition-colors duration-200 ${
                     active === tab.value
-                      ? 'border-[#E05A2B] text-white'
-                      : 'border-transparent text-white/30 hover:text-white/60'
+                      ? 'border-[#E05A2B] text-white bg-[#E05A2B]/10'
+                      : 'border-white/10 text-white/30 hover:text-white/60 hover:border-white/25'
                   }`}
                 >
                   {tab.label}
