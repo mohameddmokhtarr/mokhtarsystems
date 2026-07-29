@@ -275,7 +275,7 @@ export const projects: Project[] = [
     gallery: [
       '/ai-visuals/shot-41.jpg',
     ],
-    videos: ['/ai-visuals/video-13.mp4'],
+    videos: [],
     keyTakeaways: {
       creative:
         'Industrial scale is the story. The aerial establishing shot — factory against desert and river — communicates more about Benphos in three seconds than any spec sheet. The film earns its close-ups by earning its wide shots first.',
@@ -305,7 +305,7 @@ export const projects: Project[] = [
     gallery: [
       '/ai-visuals/shot-40.jpg',
     ],
-    videos: ['/ai-visuals/video-12.mp4'],
+    videos: [],
     keyTakeaways: {
       creative:
         'The strongest brand films move through scale — from the rawness of production to the polish of retail. Kavé works because it earns the premium identity by first showing the process behind it.',
@@ -334,7 +334,7 @@ export const projects: Project[] = [
     gallery: [
       '/ai-visuals/shot-39.jpg',
     ],
-    videos: ['/ai-visuals/video-11.mp4'],
+    videos: [],
     keyTakeaways: {
       creative:
         'Scale is a creative tool. Placing models inside a space that dwarfs them shifts the viewer\'s attention from product to world — and a world worth inhabiting is worth buying into.',
