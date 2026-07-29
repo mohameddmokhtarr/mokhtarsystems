@@ -1,47 +1,37 @@
+import { useState } from "react";
 import { useReveal } from "@/hooks/use-reveal";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
-import PainPoints from "@/components/landing/PainPoints";
-import LogoMarquee from "@/components/landing/LogoMarquee";
-import Manifesto from "@/components/landing/Manifesto";
-import Results from "@/components/landing/Results";
-import Problem from "@/components/landing/Problem";
-import Solution from "@/components/landing/Solution";
-import Services from "@/components/landing/Services";
-import Benefits from "@/components/landing/Benefits";
-import ConceptLab from "@/components/landing/ConceptLab";
-import HowWeThink from "@/components/landing/HowWeThink";
-import Testimonials from "@/components/landing/Testimonials";
-import Experience from "@/components/landing/Experience";
-import FAQ from "@/components/landing/FAQ";
-import Booking from "@/components/landing/Booking";
+import FeaturedCampaigns from "@/components/landing/FeaturedCampaigns";
+import TheStudio from "@/components/landing/TheStudio";
+import Capabilities from "@/components/landing/Capabilities";
+import Process from "@/components/landing/Process";
+import StudioNumbers from "@/components/landing/StudioNumbers";
+import Philosophy from "@/components/landing/Philosophy";
+import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
-import WhatsAppFloat from "@/components/landing/WhatsAppFloat";
+import ProjectModal from "@/components/ProjectModal";
+import type { Project } from "@/data/projects";
 
 const Index = () => {
   useReveal();
+  const [modal, setModal] = useState<Project | null>(null);
+
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#E8E4DF]">
+    <div className="min-h-screen bg-white text-[#0A0A0A]">
       <Navbar />
       <main>
         <Hero />
-        <PainPoints />
-        <LogoMarquee />
-        <Manifesto />
-        <Results />
-        <Problem />
-        <Solution />
-        <Services />
-        <Benefits />
-        <ConceptLab />
-        <HowWeThink />
-        <Testimonials />
-        <Experience />
-        <FAQ />
-        <Booking />
+        <FeaturedCampaigns onOpen={setModal} />
+        <TheStudio />
+        <Capabilities />
+        <Process />
+        <StudioNumbers />
+        <Philosophy />
+        <Contact />
       </main>
       <Footer />
-      <WhatsAppFloat />
+      <ProjectModal project={modal} onClose={() => setModal(null)} />
     </div>
   );
 };

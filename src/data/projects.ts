@@ -16,6 +16,19 @@ export interface Project {
     workflow: string;
     business: string;
   };
+  // Extended case study fields — present on full brand case studies
+  projectOverview?: string;
+  brandOverview?: string;
+  businessGoal?: string;
+  creativeDirection?: string;
+  creativeStrategy?: string;
+  campaignConcept?: string;
+  aiImageProduction?: string;
+  aiVideoProduction?: string;
+  websiteDigital?: string;
+  contentSystem?: string;
+  campaignAssets?: string;
+  results?: string;
 }
 
 export const projects: Project[] = [
@@ -259,90 +272,148 @@ export const projects: Project[] = [
     id: 'benphos',
     title: 'Benphos',
     category: 'Commercial',
-    description: 'Industrial brand film for Benphos — a phosphate processing and export facility shot at full operational scale, from aerial overview to factory floor.',
+    description: 'Industrial brand film for a phosphate processing company — built to communicate operational scale and investment credibility to international B2B buyers and investors.',
     coverImage: '/ai-visuals/shot-41.jpg',
     challenge:
-      'Benphos needed a film that communicated the scale and operational sophistication of a phosphate processing facility to international partners and investors — without losing the cinematic quality that makes the content worth watching.',
+      'Benphos Phosphates Industries — a newly established integrated phosphate beneficiation and fertilizer complex backed by Topic International Trading (30+ years in fertilizer and phosphate trading) — was entering an international export market dominated by established names. With a 100,000 ton/year initial production capacity and a two-phase expansion plan, the company had infrastructure that matched the ambition. What it lacked was content that communicated that scale. International buyers and investors needed to see the facility before any commercial relationship could begin.',
     solution:
-      'Shot the facility across multiple registers: aerial drone establishing shots over the full plant with the desert and Nile backdrop, ground-level conveyor and processing sequences, worker-led machinery operation, and flotation process close-ups. The film builds from scale to detail.',
+      'Built a brand film structured as a hierarchy of scale: aerial establishing shots capturing the full facility footprint against the Egyptian landscape, followed by ground-level conveyor and processing sequences that demonstrated operational sophistication, then worker-led machinery shots and flotation process detail for technical credibility. The film moves from "what is the scale of this operation" to "how precisely is it run" — the sequence a serious investor or B2B buyer actually needs to follow to develop conviction.',
     deliverables: [
       'Full industrial brand film',
-      'Aerial drone footage of facility and surrounding landscape',
-      'Ground-level processing and conveyor sequences',
+      'Aerial overview footage of facility and surrounding landscape',
+      'Ground-level processing and flotation sequences',
       'Worker and operational detail shots',
-      'Export-ready assets for investor and B2B presentations',
+      'Investor-grade assets for international B2B presentations',
     ],
     gallery: [
       '/ai-visuals/shot-41.jpg',
     ],
-    videos: [],
+    videos: ['/ai-visuals/video-16.mp4'],
     keyTakeaways: {
       creative:
-        'Industrial scale is the story. The aerial establishing shot — factory against desert and river — communicates more about Benphos in three seconds than any spec sheet. The film earns its close-ups by earning its wide shots first.',
+        'Industrial scale is a visual argument. The aerial shot — facility against desert and open sky — makes a claim that no spec sheet can: this is real, it is large, and it is serious. The film earns every technical close-up by establishing that scale first.',
       workflow:
-        'Heavy industrial shoots require a shot hierarchy: aerials first to lock the geography, then ground-level sequences while equipment is running, then detail and worker shots. Running it in any other order means missing operational moments you cannot recreate.',
+        'Heavy industrial shoots require a strict shot hierarchy: aerials first to establish the geography, then ground-level sequences while equipment is running, then detail and worker shots. Running the order any other way means missing operational moments that cannot be recreated on command.',
       business:
-        'For B2B and investor audiences, a film that shows real operations at real scale removes doubt before the first conversation. Benphos competes internationally — its content needs to match that ambition.',
+        'For a B2B export company entering international markets, a film that shows real operations at real scale compresses the sales cycle. Benphos is competing against established phosphate producers — the content needs to remove doubt before the first conversation, not during it.',
     },
+    projectOverview: 'An investor-grade brand film and visual content package for Benphos Phosphates Industries — a newly established phosphate beneficiation and fertilizer complex entering international export markets. The engagement produced a complete brand film: aerial facility overview to ground-level processing detail, structured to function as the company\'s primary investor relations and B2B sales asset. Scope: brand film, facility imagery, and a full visual foundation for investor outreach and trade channels.',
+    campaignAssets: 'Industrial brand film (68 seconds, 16:9, 1920×1080) for investor presentations and B2B digital channels. Aerial facility overview stills for website and presentation decks. Ground-level processing and flotation imagery for technical documentation. All assets formatted for conference display, investor deck, and digital distribution.',
+    brandOverview: 'Benphos Phosphates Industries is an integrated phosphate beneficiation and fertilizer production company based in Giza, Egypt, 90% owned by Topic International Trading — a company with over 30 years of experience in international fertilizer and phosphate trading. Benphos was founded to close the gap between Egypt\'s abundant phosphate rock resources and the downstream processing infrastructure needed to export finished, high-value product to international markets. Phase One: a 100,000 ton/year phosphate beneficiation plant using advanced flotation technology to upgrade ore from 21–22% P₂O₅ to 29–30%. Phase Two: a 60,000 ton/year compound fertilizer production facility. Vision: to become a regional producer of upgraded Rock Phosphate products and phosphate-based mineral fertilizers.',
+    businessGoal: 'Create content that communicated operational scale, technical credibility, and investment-grade ambition to international phosphate buyers and financial partners — giving a newly established company the visual authority of an operation already at full capacity. The content needed to perform at the level of an established global producer from the first investor conversation.',
+    creativeDirection: 'Scale as the opening argument. The film begins with the kind of aerial establishing shot that no competitor can fake: the actual facility, at full operational scale, against the Egyptian landscape. Everything that follows — conveyor systems, flotation process, worker sequences — earns its credibility from having established that scale first. Dark, industrial, precise. No lifestyle, no voiceover optimism.',
+    creativeStrategy: 'Structured the film as a hierarchy that mirrors how a serious investor or B2B buyer actually builds conviction: Scale (is this a real operation?) → Process (is it technically credible?) → People (is it properly run?). Aerial first, ground-level second, detail third. Each layer assumes the previous one has been accepted. The film does not pitch — it demonstrates.',
+    campaignConcept: 'The integrated phosphate value chain — from Egyptian desert rock to export-ready product — visualised as a single continuous argument. Not a startup with ambition, but an operation already in motion. The film answers the investor\'s first question ("does this actually exist?") in the opening three seconds, then systematically answers every question that follows.',
+    aiImageProduction: 'Facility-scale imagery: aerial overview of the full plant footprint against the Egyptian desert, ground-level processing and conveyor sequences, flotation plant detail shots. Industrial visual language — utilitarian framing, operational lighting, no staging or set dressing. The environment is the subject.',
+    aiVideoProduction: 'Industrial brand film at 1920×1080 (16:9) for conference, presentation, and B2B digital delivery. Duration 68 seconds. Aerial establishing → conveyor and processing sequences → flotation process detail → worker and operational shots. Cut to demonstrate scale and precision simultaneously. Delivered at 37MB for digital distribution.',
+    websiteDigital: 'Brand film and facility imagery delivered for Benphos\'s investor relations materials, website, and international buyer outreach package. Assets formatted for both web delivery and presentation-grade display — conference screens, investor decks, and trade event materials.',
+    contentSystem: 'Delivered an investor-grade brand content package: brand film, facility imagery, and a visual identity foundation deployable across investor relations, trade events, and B2B digital channels. The content functions as a trust document as much as a marketing asset.',
+    results: 'The Benphos brand film provided the company\'s international investor outreach and B2B sales process with a visual foundation that matched the scale of the operation itself. Deployed across investor presentations, trade channels, and the company\'s digital presence — giving Benphos the content credibility to compete in international phosphate markets from its first year of operation.',
   },
   {
-    id: 'export-factory',
-    title: 'Kavé x Mawzoun',
-    category: 'Commercial',
-    description: 'Brand film for Kavé coffee and Mawzoun trading — from factory floor to premium retail, built for European export markets.',
-    coverImage: '/ai-visuals/shot-40.jpg',
+    id: 'ailah-co',
+    title: 'Ailah Co',
+    category: 'Fashion',
+    description: 'Complete studio e-commerce catalogue for a debut fashion collection — linen sets, crochet co-ords, structured dresses and separates across 23 campaign-quality images.',
+    coverImage: '/ai-visuals/shot-108.png',
     challenge:
-      'Kavé and Mawzoun needed a single commercial film that worked across two registers: the raw industrial credibility of a real production facility, and the premium retail identity of a brand positioning itself for European buyers.',
+      'Ailah Co was launching its debut collection with no photography budget and a live deadline. The collection spanned multiple garment types — linen strapless sets, structured asymmetric separates, crochet co-ords, keyhole mini dresses — in multiple colorways. To launch a functional e-commerce store, they needed full coverage: consistent studio imagery for every SKU, styled cohesively enough to read as a single shoot across all 23 pieces.',
     solution:
-      'Shot the full vertical — factory roasting floor, slow-motion coffee bean sequences, and the Kavé retail space with its copper-toned bar and capsule wall. The film moves from origin to brand, giving B2B buyers proof of scale and end consumers a reason to care.',
+      'Designed a locked studio template around one model, one lighting setup, and one background: white seamless, warm directional light calibrated to catch fabric texture without creating shadow drama, minimal styling throughout (gold jewelry, tan leather slides). Then shot the full collection in sequence — polka dot linen sets, black keyhole mini dress, cream structured separates, navy crochet co-ords — capturing front, side, and back angles for each piece. The result is 23 images that read as one coherent catalogue, fully ready to publish across web and social from day one.',
     deliverables: [
-      'Full brand commercial film',
-      'Factory and roasting floor sequences',
-      'Slow-motion coffee bean product shots',
-      'Kavé retail interior campaign footage',
-      'Export-market assets for European B2B and retail audiences',
+      '23 studio e-commerce images across the full debut collection',
+      'Linen sets, crochet co-ords, mini dresses, and structured separates',
+      'Front, side, and back angles per garment',
+      'Consistent studio system across all colorways',
+      'Web and social-ready exports at full resolution',
     ],
     gallery: [
-      '/ai-visuals/shot-40.jpg',
+      '/ai-visuals/shot-93.png',
+      '/ai-visuals/shot-94.png',
+      '/ai-visuals/shot-95.png',
+      '/ai-visuals/shot-96.png',
+      '/ai-visuals/shot-97.png',
+      '/ai-visuals/shot-98.png',
+      '/ai-visuals/shot-99.png',
+      '/ai-visuals/shot-100.png',
+      '/ai-visuals/shot-101.png',
+      '/ai-visuals/shot-102.png',
+      '/ai-visuals/shot-103.png',
+      '/ai-visuals/shot-104.png',
+      '/ai-visuals/shot-105.png',
+      '/ai-visuals/shot-106.png',
+      '/ai-visuals/shot-107.png',
+      '/ai-visuals/shot-108.png',
+      '/ai-visuals/shot-109.png',
+      '/ai-visuals/shot-110.png',
+      '/ai-visuals/shot-111.png',
+      '/ai-visuals/shot-112.png',
+      '/ai-visuals/shot-113.png',
+      '/ai-visuals/shot-114.png',
+      '/ai-visuals/shot-115.png',
     ],
     videos: [],
     keyTakeaways: {
       creative:
-        'The strongest brand films move through scale — from the rawness of production to the polish of retail. Kavé works because it earns the premium identity by first showing the process behind it.',
+        'A locked studio template is the difference between a product gallery and a brand catalogue. Same model, same light, same background — the creative decisions are made once, not shot by shot. That consistency is what makes a debut collection read like a fully-resourced brand rather than a series of individual product photos.',
       workflow:
-        'A two-register shoot (industrial + retail) requires two completely different lighting and framing approaches in the same production day. Locking the visual language of each environment in advance is what keeps them feeling like one film rather than two.',
+        'For multi-SKU debut catalogues, shooting by garment category — all linen sets first, then all dresses, then all crochet — minimises transitions and keeps the lighting locked per fabric type. Linen and crochet need different light distances to render texture correctly; switching between them mid-session costs both time and quality.',
       business:
-        'For export brands, a film that shows both the factory and the finished retail experience cuts the sales cycle in half. European buyers need proof of production scale; consumers need a brand they want to be part of.',
+        'A debut brand\'s first visual impression is permanent. 23 consistent, campaign-quality images at launch means every channel — website, Instagram, wholesale decks — looks equally considered. The alternative is launching with uneven content and spending the next year correcting the first impression.',
     },
+    projectOverview: 'A complete studio e-commerce imagery library for Ailah Co\'s debut collection launch — 23 campaign-quality product shots across the full range: strapless linen sets, structured asymmetric separates, crochet co-ords, and keyhole mini dresses. The engagement covered the full production pipeline: studio template design, garment sequencing, and multi-angle coverage per SKU — delivered as a launch-ready visual library for web and social from a single AI production session.',
+    campaignAssets: '23 studio e-commerce images (shot-93 through shot-115) covering the full debut collection. Linen sets (polka dot, white), structured separates (cream asymmetric), keyhole mini dress (black), crochet co-ords (navy). Front, side, and back angles per garment. Web-optimised exports for product pages and collection grids. Social-ready crops at 1:1 and 4:5 for Instagram feed and Stories.',
+    brandOverview: 'Ailah Co is a contemporary Egyptian fashion brand building a wardrobe of versatile, wearable pieces across multiple fabrications — linen, crochet, and structured cotton. The debut collection spans statement co-ords and everyday separates: strapless polka dot linen sets, keyhole mini dresses, asymmetric structured separates, and open-knit crochet co-ords in a palette that moves between bold monochrome (navy, black) and clean neutral (cream, white). A brand for a woman who wants pieces that work across her life — not just for one occasion.',
+    businessGoal: 'Launch a fully stocked e-commerce store with professional product imagery across every SKU in the debut collection — without a traditional photography budget or studio booking — at a quality level that matched brands spending significantly more, delivered in time for the launch window.',
+    creativeDirection: 'White seamless background, warm directional studio light calibrated per fabric type, minimal styling throughout (gold jewellery, tan leather slides). Same model across all 23 frames. One visual world — clean, contemporary, aspirational without being cold. The garments carry the identity.',
+    creativeStrategy: 'Designed a locked studio template first, then executed the full collection within it. Template-first means creative decisions are made once (light position, camera height, posing reference) and applied consistently across all frames. Shooting by garment category — linen sets, then structured separates, then crochet — kept lighting locked per fabric type and eliminated consistency drift.',
+    campaignConcept: 'The debut catalogue — a complete visual library for every piece in the collection, shot as one coherent world. No piece looks like it was added later or shot separately. The catalogue communicates brand identity through consistency: a customer browsing Ailah Co should feel the same visual intelligence across every product image, from the polka dot linen set to the navy crochet co-ord.',
+    aiImageProduction: '23 studio images across the full debut collection. Garment types: strapless linen sets, keyhole mini dresses, asymmetric structured separates, crochet co-ords. Colours: white polka dot, cream, black, navy. Angles: front, side, and back per piece. White seamless background, consistent model and styling throughout.',
+    aiVideoProduction: 'Not part of this engagement. Still product imagery was the production priority for the launch catalogue — full SKU coverage with multi-angle consistency was the brief.',
+    websiteDigital: 'All 23 images delivered in full resolution and web-optimised formats, sized for product page display, collection grids, and social publishing. Assets structured for direct upload to e-commerce store and Instagram grid from day one.',
+    contentSystem: 'Delivered a complete product imagery library for launch — every SKU covered with the full angle set a modern e-commerce store requires. The consistent visual system means new pieces can be added to the same template as the collection grows, maintaining visual coherence across the catalogue over time.',
+    results: 'Ailah Co launched its debut collection with full e-commerce imagery coverage across all 23 SKUs — a complete product catalogue delivered from a single AI production session. The visual consistency of the catalogue gave the brand the credibility of a much larger, better-resourced operation from their first public launch.',
   },
   {
     id: 'siwa-editorial',
-    title: 'Siwa Editorial',
+    title: 'Gannube',
     category: 'Luxury',
-    description: 'Multi-model luxury fashion film shot against dramatic sandstone canyon formations. Earth-tone garments, circular staging, golden desert light.',
+    description: 'AI campaign imagery for a Cairo luxury linen brand — effortless silhouettes placed in desert canyons, coastal rock formations, and open landscape. Designed to breathe.',
     coverImage: '/ai-visuals/shot-39.jpg',
     challenge:
-      'A luxury fashion film required a setting that elevated the garments beyond the studio — an environment that felt monumental, natural, and completely unlike anything a conventional shoot could produce.',
+      'Gannube — a new Cairo luxury fashion house built around the philosophy of "the South" — needed campaign-quality AI imagery for their Levant Collection launch. Their visual identity demanded placement in environments that matched the brand DNA: monumental natural settings, earth-tone palette, effortless linen silhouettes. A conventional shoot would have required location logistics across multiple countries and significant production cost. The brief was to deliver that quality through AI production alone, using the brand\'s own visual language as the creative brief.',
     solution:
-      'Placed multiple models in a circular formation inside a sandstone canyon, using the architecture of the rock itself as the staging. Earth-tone garments were selected to harmonise with the desert palette, letting the scale of the environment do the storytelling.',
+      'Built the campaign around the brand\'s core phrase: "Designed to Breathe." The creative direction placed multiple models in circular formation inside sandstone canyon formations — architecture borrowed from nature, mirroring Gannube\'s Egyptian roots and desert aesthetic. Earth-tone garments (sand, terracotta, cream) were selected to harmonise with the rock palette rather than contrast it. Golden hour light, no artificial fill. The environment became a character rather than a backdrop — reflecting Gannube\'s brand world of movement guided by instinct, refinement internally formed.',
     deliverables: [
-      'Multi-model luxury fashion film',
-      'Desert canyon location editorial',
-      'Full campaign video for social and web',
-      'Earth-tone collection campaign assets',
+      'Multi-model campaign editorial — Levant Collection launch',
+      'Desert canyon location visual set',
+      'AI campaign film for social and web',
+      'Campaign assets aligned to Gannube brand book',
     ],
     gallery: [
       '/ai-visuals/shot-39.jpg',
     ],
-    videos: [],
+    videos: ['/ai-visuals/video-15.mp4'],
     keyTakeaways: {
       creative:
-        'Scale is a creative tool. Placing models inside a space that dwarfs them shifts the viewer\'s attention from product to world — and a world worth inhabiting is worth buying into.',
+        'The Gannube brief came with a brand identity document detailed enough to function as a complete creative brief. When a brand has defined its visual world that precisely — colour field, movement language, mascot philosophy — AI production becomes a translation exercise rather than an invention exercise. Clarity at the brand level produces clarity at the image level.',
       workflow:
-        'Location-driven campaigns require environment selection before garment selection, not after. The rock formations, light temperature, and palette of the canyon defined every garment and styling decision that followed.',
+        'Luxury fashion campaigns require environment selection before garment selection, not after. The rock formations, golden light temperature, and earth-tone palette of the canyon defined every garment and styling decision that followed. Getting the setting right is 70% of the creative work.',
       business:
-        'Luxury fashion films in monumental natural settings earn significantly higher organic reach than studio content. The rarity of the environment signals the rarity of the brand.',
+        'For a brand at launch stage, one campaign visual set executed with full creative rigour outperforms 50 generic product shots. Gannube needed their imagery to establish the brand world before they had an audience — visual authority bought them the credibility to start building one.',
     },
+    projectOverview: 'A full campaign visual production for Gannube\'s Levant Collection launch — the first campaign imagery for a Cairo luxury fashion house built on 100% organic Egyptian linen. The engagement produced hero editorial imagery and a campaign film using the brand\'s identity document as the complete creative brief. Scope: multi-model campaign editorial, portrait-format brand film, and a campaign visual library aligned to Gannube\'s brand world across web, social, and press.',
+    campaignAssets: 'Hero campaign editorial — multi-model circular formation in sandstone canyon, delivered at full resolution for web and print use. Portrait campaign film (9:16, 1080×1920) for Instagram Stories, Reels, and website hero. Wide-format crops for press and editorial. All assets aligned to the Gannube brand book colour palette: earth tones — sand, terracotta, cream, feather.',
+    brandOverview: 'Gannube (Arabic: "South") is a luxury fashion house founded in Cairo, built on the philosophy that refinement is internally formed rather than externally validated. The brand draws its name and identity from a direction that is not geographical but philosophical — the South as a posture, a resistance to noise, a deliberate stillness. Their debut Levant Collection is made entirely from 100% organic Egyptian linen, carrying the brand\'s core conviction: that a garment should allow the body to move freely, breathe naturally, and inhabit the world without effort. The brand mascot is the Tern — "The Sovereign Voyager" — a seabird that migrates by instinct rather than instruction. Tagline: Designed to Breathe.',
+    businessGoal: 'Establish a complete campaign visual presence for the Levant Collection launch — hero imagery for the website, social campaign content for Instagram, and press-ready visuals — positioning the brand at the level of international luxury fashion houses from day one, without the cost or logistics of a multi-country location shoot.',
+    creativeDirection: 'Visual language drawn directly from the Gannube brand book: earth tones (sand, terracotta, cream, feather), environments with geological scale, effortless silhouettes in movement, golden directional light with no artificial fill. The five material references — Fabric, Stone, Sea, Feather, Sand — defined both palette and texture. Models inhabit the environment rather than perform for the camera.',
+    creativeStrategy: 'Used the Gannube brand identity document as the creative brief rather than writing a new one. When a brand has defined its visual world with that precision — colour field, movement philosophy, mascot symbolism, typographic voice — AI production becomes translation, not invention. Every generation decision was mapped directly to a principle from the document.',
+    campaignConcept: '"Designed to Breathe" — multiple models in circular formation inside sandstone canyon formations, using the architecture of the rock as staging. Earth-tone linen garments harmonise with the desert palette rather than contrast it. The environment becomes a character: imagery where the garment feels like it was designed for the specific piece of earth it inhabits.',
+    aiImageProduction: 'Campaign imagery generated against sandstone canyon formations — multi-model circular staging, natural rock architecture as set design. Garments in sand, terracotta, and cream selected to echo the geological palette. Golden hour light temperature (warm, directional, no artificial fill) consistent across all frames.',
+    aiVideoProduction: 'Campaign film in portrait format (9:16) for native social delivery. Effortless model movement against natural desert and coastal environments — light catching linen fabric in motion, drape, wind, breath. Delivered at 1080×1920 for Instagram and website hero deployment.',
+    websiteDigital: 'Campaign visuals deployed across Gannube\'s digital presence — website hero imagery, Instagram feed and stories, and press release assets. The visual system was designed from the outset to work across all surfaces: wide-format for web, portrait for social, without requiring separate shoots per format.',
+    contentSystem: 'Delivered a core campaign visual library for the Levant Collection: hero imagery, campaign film, and a consistent visual language extensible across future collections. The visual system — earth tones, natural settings, effortless movement — is format-agnostic and applicable to editorial, product, and motion without rebuilding the brief.',
+    results: 'Gannube\'s Levant Collection launched with a complete campaign visual presence — website hero, social campaign, and press assets — established without a traditional location shoot. Campaign imagery aligned precisely to the brand\'s identity document positioned Gannube within the visual register of established international luxury fashion houses from their first public post.',
   },
   {
     id: 'the-girl-theory',
@@ -351,14 +422,14 @@ export const projects: Project[] = [
     description: 'Full studio e-commerce set for a linen separates collection — camp-collar shirts, drawstring tops, wide-leg trousers, and pinstripe pieces in neutral earth tones.',
     coverImage: '/ai-visuals/shot-61.jpg',
     challenge:
-      'A multi-piece linen separates collection — spanning camp-collar shirts, drawstring-waist tops, V-neck polos, pinstripe styles, and wide-leg trousers across beige, oat, cream, and white — needed a unified studio approach that made every garment feel part of one coherent collection without any piece looking interchangeable.',
+      'The Girl Theory needed complete e-commerce catalogue coverage for a multi-piece linen separates collection — camp-collar shirts, drawstring-waist tops, V-neck polos, pinstripe styles, and wide-leg trousers across oat, cream, beige, and white. The challenge: making a large catalogue of visually similar, neutral-toned linen pieces feel distinct enough that every garment reads as its own SKU — without any piece looking interchangeable with its neighbour.',
     solution:
-      'Shot the full collection against a clean white studio background with consistent soft directional lighting and a single model brief across all 25 frames. Front-facing, side-profile, and back shots were captured for every silhouette, ensuring full coverage for both product pages and social content.',
+      'Built a unified white studio system with soft directional light calibrated specifically for linen — close enough to reveal weave and drape, without creating harsh shadow. Shot the full collection with a consistent posing brief across all 36 frames: relaxed but deliberate, body language that communicated ease and wearability rather than high-fashion rigidity. Front, side, and back angles for every silhouette gave the catalogue full coverage for both product pages and social content.',
     deliverables: [
-      '25 studio e-commerce images across the full collection',
-      'Multiple silhouettes: camp-collar shirts, drawstring tops, V-neck polos, pinstripe styles, wide-leg trousers',
+      '36 studio e-commerce images across the full linen separates collection',
+      'Camp-collar shirts, drawstring tops, V-neck polos, pinstripe styles, and wide-leg trousers',
       'Front, side, and back angles per garment',
-      'Neutral earth-tone colour rendering across oat, cream, beige, and white',
+      'Earth-tone colour accuracy across oat, cream, beige, and white',
       'Web and social-ready exports',
     ],
     gallery: [
@@ -401,12 +472,24 @@ export const projects: Project[] = [
     ],
     keyTakeaways: {
       creative:
-        'Shooting a linen separates collection as a system — not as individual pieces — creates a catalogue that feels like a brand, not a collection of SKUs. Consistent light, posing brief, and background mean the customer sees the collection logic instantly.',
+        'Neutral linen collections fail photographically when every piece looks like every other piece. The fix isn\'t background or lighting — it\'s angle discipline. Front, side, and back coverage per silhouette is what makes a camp-collar shirt read differently from a drawstring top when both are oat-coloured and similarly proportioned.',
       workflow:
-        'High-volume e-commerce shoots require a shot list built around silhouette type, not garment order. Grouping all front-facing shots first, then side, then back eliminates model fatigue and makes culling significantly faster in post.',
+        'High-volume linen catalogues require shooting by silhouette group rather than garment order: all shirts together, all tops, all trousers. Linen\'s drape and surface character changes significantly between silhouette types, and batching keeps the lighting locked while posing adapts per garment.',
       business:
-        'A 50-image catalogue from a single studio session gives a small brand the content volume of a much larger one. Consistent neutral earth-tone imagery across a collection also reduces decision fatigue for the customer and increases basket size.',
+        'A 36-image catalogue from a single AI production session gives a small fashion brand the content volume of a much larger one. For The Girl Theory\'s audience — considered buyers who read between the images — visual consistency is a trust signal as much as a design signal.',
     },
+    projectOverview: 'A full studio e-commerce catalogue for The Girl Theory\'s linen separates collection — 36 campaign-quality product images across five silhouette groups: camp-collar shirts, drawstring-waist tops, V-neck polos, pinstripe co-ords, and wide-leg trousers. The engagement covered the complete production pipeline: studio template design, silhouette-based sequencing, and front/side/back angle coverage per garment — delivered as a launch-ready visual library for the brand\'s e-commerce store and Instagram presence.',
+    campaignAssets: '36 studio e-commerce images (shot-42 through shot-77) across five silhouette groups. Colours: oat, cream, beige, white. Front, side, and back angles per garment. Web-optimised exports for product pages, collection grids, and email marketing. Asset naming structured for direct e-commerce platform upload. Instagram-ready crops at 1:1 and 4:5 for feed and Stories.',
+    brandOverview: 'The Girl Theory is an Egyptian fashion brand building a considered wardrobe of linen separates — camp-collar shirts, drawstring-waist tops, wide-leg trousers, V-neck polos, and pinstripe co-ords in a palette of oat, cream, beige, and white. The brand is positioned for a woman who prefers natural fabrics, relaxed silhouettes, and a wardrobe that works harder with fewer pieces. The Girl Theory\'s design language is quiet and deliberate — no decoration for its own sake, nothing the garment doesn\'t need.',
+    businessGoal: 'Produce a complete studio e-commerce catalogue for the full linen separates collection — enough visual coverage to launch the brand\'s online store and Instagram simultaneously. The brief required front, side, and back angles for every silhouette: full coverage for a considered buyer who reads product pages carefully before purchasing.',
+    creativeDirection: 'White studio background, soft directional light tuned specifically for linen — close enough to reveal weave and natural drape, not so harsh it creates shadow drama on neutral tones. Posing brief: relaxed and inhabiting the garment, not performing it. The model brief was aligned to The Girl Theory\'s customer: a woman who wears these pieces because they fit her life, not because they photograph well.',
+    creativeStrategy: 'Shot by silhouette group rather than garment order: all camp-collar shirts together, then all tops, then all trousers, then all co-ords. Linen changes character significantly across silhouette types — the drape of a wide-leg trouser needs a different light angle than the structure of a camp-collar shirt. Grouping kept light locked per garment type and made post-production colour accuracy consistent within each group.',
+    campaignConcept: 'The collection as a wardrobe — not 36 individual SKUs but one coherent visual system. A customer browsing The Girl Theory should be able to see immediately how the camp-collar shirt works with the wide-leg trouser, and how both swap into the pinstripe co-ord. The catalogue communicates the collection logic, not just the individual pieces.',
+    aiImageProduction: '36 studio images across the full linen separates collection. Silhouettes: camp-collar shirts, drawstring-waist tops, V-neck polos, pinstripe co-ords, wide-leg trousers. Colours: oat, cream, beige, white. Angles: front, side, and back per garment. White studio background, consistent lighting calibrated for linen texture throughout.',
+    aiVideoProduction: 'Not part of this engagement. Studio imagery was the production priority — full catalogue coverage was the brief, and video would have diluted the session time needed to hit 36 frames at full angle coverage.',
+    websiteDigital: 'All 36 images delivered in full resolution and web-optimised formats for product pages, collection grids, Instagram grid, and email marketing. Asset naming structured for direct upload to e-commerce store.',
+    contentSystem: 'Delivered a complete product imagery library for the full collection. The consistent visual system is extensible — new pieces can be added to the same studio template as the collection grows without disrupting the visual coherence of the existing catalogue.',
+    results: 'The Girl Theory launched its full linen separates collection with complete e-commerce imagery coverage — 36 images across all silhouettes and colorways, delivered from a single AI production session. The catalogue gave the brand the visual depth of a fully-resourced product launch without the traditional studio, crew, and location costs.',
   },
   {
     id: 'blue-floral-dress',
