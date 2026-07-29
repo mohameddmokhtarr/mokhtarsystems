@@ -7,6 +7,8 @@ import ProjectModal from "@/components/ProjectModal";
 import { projects } from "@/data/projects";
 import type { Project } from "@/data/projects";
 
+const caseStudies = projects.filter((p) => !!p.brandOverview);
+
 const SelectedWork = () => {
   useReveal();
   const [modal, setModal] = useState<Project | null>(null);
@@ -20,7 +22,7 @@ const SelectedWork = () => {
           <div className="container">
             <div className="reveal">
               <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">
-                Portfolio
+                Case Studies
               </span>
             </div>
             <h1
@@ -37,7 +39,7 @@ const SelectedWork = () => {
               className="reveal mt-8 max-w-md text-sm text-[#707070] leading-relaxed"
               style={{ transitionDelay: "0.2s" }}
             >
-              Campaigns, product shoots, and content systems built for modern brands.
+              Four brand campaigns — creative direction, AI production, and digital experience from brief to launch.
             </p>
           </div>
         </section>
@@ -45,13 +47,13 @@ const SelectedWork = () => {
         {/* Grid */}
         <section className="py-16 sm:py-24">
           <div className="container">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 lg:gap-x-8 lg:gap-y-16">
-              {projects.map((project, i) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-16 sm:gap-x-8 sm:gap-y-24">
+              {caseStudies.map((project, i) => (
                 <button
                   key={project.id}
                   onClick={() => setModal(project)}
                   className="reveal text-left group"
-                  style={{ transitionDelay: `${i * 0.05}s` }}
+                  style={{ transitionDelay: `${i * 0.1}s` }}
                 >
                   {/* Image */}
                   <div className="relative overflow-hidden aspect-[3/4] bg-[#F5F5F5]">
@@ -59,27 +61,27 @@ const SelectedWork = () => {
                       src={project.coverImage}
                       alt={project.title}
                       loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                      className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
-                    <div className="absolute inset-0 bg-[#0A0A0A]/0 group-hover:bg-[#0A0A0A]/30 transition-all duration-500 ease-out" />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="w-10 h-10 border border-white/60 flex items-center justify-center">
-                        <ArrowUpRight size={16} className="text-white" />
-                      </div>
+                    <div className="absolute inset-0 bg-[#0A0A0A]/0 group-hover:bg-[#0A0A0A]/40 transition-all duration-500 ease-out" />
+                    <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-[10px] font-mono tracking-widest uppercase text-white/90">
+                        View Case Study →
+                      </span>
                     </div>
                   </div>
 
                   {/* Meta */}
-                  <div className="mt-4">
-                    <div className="text-[10px] font-mono tracking-widest uppercase text-[#707070] mb-1.5">
-                      {project.category}
+                  <div className="mt-5 flex items-start justify-between gap-4">
+                    <div>
+                      <div className="text-[9px] font-mono tracking-[3px] uppercase text-[#707070] mb-2">
+                        {project.category}
+                      </div>
+                      <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight text-[#0A0A0A] group-hover:opacity-60 transition-opacity duration-200">
+                        {project.title}
+                      </h3>
                     </div>
-                    <h3 className="font-display text-base sm:text-lg uppercase tracking-tight text-[#0A0A0A] group-hover:opacity-60 transition-opacity duration-200">
-                      {project.title}
-                    </h3>
-                    <p className="mt-1 text-xs text-[#707070] leading-relaxed line-clamp-2">
-                      {project.description}
-                    </p>
+                    <ArrowUpRight size={18} className="mt-1 text-[#ECECEC] group-hover:text-[#0A0A0A] transition-colors duration-200 shrink-0" />
                   </div>
                 </button>
               ))}

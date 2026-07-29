@@ -73,11 +73,13 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/#contact"
+              href="https://www.instagram.com/mmohamedmokhtarr/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 text-xs font-mono text-[#707070] tracking-widest uppercase"
             >
-              mokhtar.edits@gmail.com
+              @mmohamedmokhtarr
             </a>
           </div>
         </div>
