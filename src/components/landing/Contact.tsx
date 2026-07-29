@@ -24,12 +24,6 @@ const Contact = () => (
         style={{ transitionDelay: "0.2s" }}
       >
         <a
-          href="mailto:mokhtar.edits@gmail.com"
-          className="hover-line w-fit text-sm text-[#707070] hover:text-[#0A0A0A] transition-colors"
-        >
-          mokhtar.edits@gmail.com ↗
-        </a>
-        <a
           href="https://www.instagram.com/mmohamedmokhtarr/"
           target="_blank"
           rel="noopener noreferrer"
