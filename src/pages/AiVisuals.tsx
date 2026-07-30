@@ -61,7 +61,7 @@ const SelectedWork = () => {
                       src={project.coverImage}
                       alt={project.title}
                       loading="lazy"
-                      className="w-full h-full object-cover object-top transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                      className="w-full h-full object-cover object-top transition-transform duration-900 ease-spring group-hover:scale-[1.04]"
                     />
                     <div className="absolute inset-0 bg-[#0A0A0A]/0 group-hover:bg-[#0A0A0A]/40 transition-all duration-500 ease-out" />
                     <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

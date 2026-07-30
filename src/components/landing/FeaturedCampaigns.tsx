@@ -45,7 +45,7 @@ const FeaturedCampaigns = ({ onOpen }: Props) => (
               src={project.coverImage}
               alt={project.title}
               loading="lazy"
-              className="w-full h-full object-cover object-top transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.03]"
+              className="w-full h-full object-cover object-top transition-transform duration-900 ease-spring hover:scale-[1.03]"
             />
           </div>
         </div>

@@ -82,6 +82,12 @@ export default {
       boxShadow: {
         glow: "var(--shadow-glow)",
       },
+      transitionDuration: {
+        "900": "900ms",
+      },
+      transitionTimingFunction: {
+        spring: "cubic-bezier(0.16, 1, 0.3, 1)",
+      },
       keyframes: {
         "accordion-down": {
           from: {
