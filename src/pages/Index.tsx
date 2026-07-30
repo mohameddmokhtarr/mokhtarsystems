@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useReveal } from "@/hooks/use-reveal";
+import { useScrollToHash } from "@/hooks/use-scroll-to-hash";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import OrbitalDiagram from "@/components/landing/OrbitalDiagram";
@@ -16,6 +17,7 @@ import type { Project } from "@/data/projects";
 
 const Index = () => {
   useReveal();
+  useScrollToHash();
   const [modal, setModal] = useState<Project | null>(null);
 
   return (

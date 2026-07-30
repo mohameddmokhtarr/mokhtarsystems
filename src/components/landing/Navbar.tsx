@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState, useCallback } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const links = [
@@ -11,6 +11,8 @@ const links = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen]         = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -18,6 +20,33 @@ const Navbar = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleClick = useCallback(
+    (e: React.MouseEvent, to: string) => {
+      const hashIndex = to.indexOf("#");
+      if (hashIndex === -1) {
+        setOpen(false);
+        return;
+      }
+
+      const path = to.slice(0, hashIndex) || "/";
+      const id = to.slice(hashIndex + 1);
+
+      e.preventDefault();
+      setOpen(false);
+
+      if (location.pathname !== path) {
+        navigate({ pathname: path, hash: `#${id}` });
+        return;
+      }
+
+      requestAnimationFrame(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      });
+    },
+    [location.pathname, navigate]
+  );
 
   return (
     <header
@@ -41,6 +70,7 @@ const Navbar = () => {
             <Link
               key={l.to}
               to={l.to}
+              onClick={(e) => handleClick(e, l.to)}
               className="text-xs text-[#707070] hover:text-[#0A0A0A] transition-colors duration-200 tracking-widest uppercase font-medium"
             >
               {l.label}
@@ -66,7 +96,7 @@ const Navbar = () => {
               <Link
                 key={l.to}
                 to={l.to}
-                onClick={() => setOpen(false)}
+                onClick={(e) => handleClick(e, l.to)}
                 className="font-display text-3xl uppercase text-[#0A0A0A] tracking-tight"
               >
                 {l.label}

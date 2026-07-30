@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useReveal } from "@/hooks/use-reveal";
+import { useScrollToHash } from "@/hooks/use-scroll-to-hash";
 import { useDocumentTitle } from "@/hooks/use-document-title";
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
@@ -12,6 +14,7 @@ const caseStudies = projects.filter((p) => !!p.brandOverview);
 
 const SelectedWork = () => {
   useReveal();
+  useScrollToHash();
   useDocumentTitle("Selected Work");
   const [modal, setModal] = useState<Project | null>(null);
 
@@ -104,12 +107,12 @@ const SelectedWork = () => {
               Let's work together.
             </h2>
             <div className="reveal mt-8" style={{ transitionDelay: "0.15s" }}>
-              <a
-                href="/#contact"
+              <Link
+                to="/#contact"
                 className="inline-block text-sm text-[#707070] hover:text-[#0A0A0A] transition-colors hover-line"
               >
                 Get in touch →
-              </a>
+              </Link>
             </div>
           </div>
         </section>
