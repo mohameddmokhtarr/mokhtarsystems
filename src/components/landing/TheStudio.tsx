@@ -9,19 +9,19 @@ const TheStudio = () => (
 
       <div className="max-w-4xl">
         <p
-          className="reveal font-display text-3xl sm:text-5xl lg:text-[3.5rem] text-[#0A0A0A] leading-[1.08] tracking-tight"
+          className="reveal-mask font-display text-3xl sm:text-5xl lg:text-[3.5rem] text-[#0A0A0A] leading-[1.08] tracking-tight"
           style={{ transitionDelay: "0.08s" }}
         >
           We don't start with visuals.
         </p>
         <p
-          className="reveal font-display text-3xl sm:text-5xl lg:text-[3.5rem] text-[#0A0A0A] leading-[1.08] tracking-tight"
+          className="reveal-mask font-display text-3xl sm:text-5xl lg:text-[3.5rem] text-[#0A0A0A] leading-[1.08] tracking-tight"
           style={{ transitionDelay: "0.18s" }}
         >
           We start with ideas.
         </p>
         <p
-          className="reveal font-display text-3xl sm:text-5xl lg:text-[3.5rem] text-[#707070] leading-[1.08] tracking-tight"
+          className="reveal-mask font-display text-3xl sm:text-5xl lg:text-[3.5rem] text-[#707070] leading-[1.08] tracking-tight"
           style={{ transitionDelay: "0.28s" }}
         >
           Everything else exists to support them.

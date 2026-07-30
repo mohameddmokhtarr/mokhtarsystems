@@ -10,7 +10,13 @@
   --muted:  #707070;
   --border: #ECECEC;
   --bg:     #FFFFFF;
-  --spring: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Motion */
+  --spring:   cubic-bezier(0.16, 1, 0.3, 1);   /* settles, no overshoot */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 0.3s;
+  --dur-base: 0.6s;
+  --dur-slow: 0.9s;
 }
 
 /* ── Base ── */
@@ -32,18 +38,41 @@ body { font-family: 'Inter', ui-sans-serif, sans-serif; color: var(--ink); backg
 /* ── Text selection ── */
 ::selection { background: var(--ink); color: #fff; }
 
-/* ── Scroll reveal ── */
+/* ── Scroll reveal ──
+   translate3d promotes to its own layer so the transform never repaints. */
 .reveal {
   opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.7s var(--spring), transform 0.7s var(--spring);
+  transform: translate3d(0, 20px, 0);
+  transition:
+    opacity   var(--dur-slow) var(--spring),
+    transform var(--dur-slow) var(--spring);
 }
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
 }
 
-/* ── Hover underline ── */
+/* ── Masked reveal — display headings wipe up into view.
+   clip-path composites on the GPU, so this stays smooth on large type
+   where animating a blur filter would repaint the whole glyph area. */
+.reveal-mask {
+  opacity: 0;
+  clip-path: inset(0 0 105% 0);
+  transform: translate3d(0, 24px, 0);
+  transition:
+    clip-path 1.1s var(--spring),
+    transform 1.1s var(--spring),
+    opacity   var(--dur-base) var(--ease-out);
+}
+.reveal-mask.is-visible {
+  opacity: 1;
+  /* negative bottom inset lets descenders and italic overhang clear the mask */
+  clip-path: inset(0 0 -12% 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ── Hover underline ──
+   hover:hover guard keeps the underline from sticking after a tap on touch. */
 .hover-line {
   position: relative;
 }
@@ -51,11 +80,15 @@ body { font-family: 'Inter', ui-sans-serif, sans-serif; color: var(--ink); backg
   content: '';
   position: absolute;
   left: 0; bottom: -2px;
-  width: 0; height: 1px;
+  width: 100%; height: 1px;
   background: currentColor;
-  transition: width 0.35s var(--spring);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-base) var(--spring);
 }
-.hover-line:hover::after { width: 100%; }
+@media (hover: hover) {
+  .hover-line:hover::after { transform: scaleX(1); }
+}
 
 /* ── Line reveal (border animations) ── */
 .line-reveal {
@@ -81,14 +114,14 @@ nav { opacity: 0; animation: nav-in 0.5s ease 0.1s forwards; }
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-.modal-backdrop { animation: backdrop-in 0.3s ease both; }
+.modal-backdrop { animation: backdrop-in var(--dur-fast) var(--ease-out) both; }
 
-/* ── Project modal ── */
+/* ── Project modal — rises with a touch of scale for depth ── */
 @keyframes modal-rise {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translate3d(0, 32px, 0) scale(0.985); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0)    scale(1); }
 }
-.project-modal { animation: modal-rise 0.45s var(--spring) both; }
+.project-modal { animation: modal-rise var(--dur-base) var(--spring) both; }
 
 /* ── Orbital labels: hide on mobile, show on sm+ ── */
 @media (max-width: 639px) {
@@ -113,11 +146,46 @@ a:focus-visible, button:focus-visible {
   border-radius: 2px;
 }
 
-/* ── Accessibility: reduce motion ── */
+/* ── Mobile: tighter, quicker motion ──
+   The desktop timings feel sluggish on a phone, where content scrolls past
+   faster and the travel distance is a larger share of the viewport. */
+@media (max-width: 639px) {
+  :root {
+    --dur-base: 0.45s;
+    --dur-slow: 0.6s;
+  }
+  .reveal { transform: translate3d(0, 14px, 0); }
+  .reveal-mask {
+    transform: translate3d(0, 16px, 0);
+    transition:
+      clip-path 0.75s var(--spring),
+      transform 0.75s var(--spring),
+      opacity   var(--dur-base) var(--ease-out);
+  }
+}
+
+/* ── Touch polish ── */
+@media (hover: none) {
+  /* Kill the grey flash on tap without removing the focus ring. */
+  a, button { -webkit-tap-highlight-color: transparent; }
+}
+
+/* ── Accessibility: reduce motion ──
+   Blanket override so any animation added later is covered by default. */
 @media (prefers-reduced-motion: reduce) {
-  .reveal { transition: none; }
-  .project-modal { animation: none; }
-  .arrow-bob { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto !important; }
+  .reveal,
+  .reveal-mask {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+  .line-reveal { transform: none !important; }
 }
 
 /* ── Shadcn base variables — white system ── */

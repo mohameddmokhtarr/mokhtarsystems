@@ -28,7 +28,7 @@ const SelectedWork = () => {
               </span>
             </div>
             <h1
-              className="reveal mt-5 font-display uppercase text-[#0A0A0A] leading-[0.88]"
+              className="reveal-mask mt-5 font-display uppercase text-[#0A0A0A] leading-[0.88]"
               style={{
                 fontSize: "clamp(3.5rem, 11vw, 12rem)",
                 letterSpacing: "-0.04em",

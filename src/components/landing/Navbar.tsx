@@ -30,7 +30,7 @@ const Navbar = () => {
       <nav className="container flex items-center justify-between h-16">
         <Link
           to="/"
-          className="font-display text-[#0A0A0A] text-xs sm:text-sm tracking-[0.18em] uppercase"
+          className="font-display text-[#0A0A0A] text-xs sm:text-sm tracking-[0.18em] uppercase py-2 -my-2"
         >
           Mokhtar Studio
         </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-[#0A0A0A] p-1"
+          className="md:hidden text-[#0A0A0A] p-2.5 -m-1.5"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -77,7 +77,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-4 text-xs font-mono text-[#707070] tracking-widest uppercase"
+              className="mt-4 text-xs font-mono text-[#707070] tracking-widest uppercase py-2.5 -my-2.5 w-fit"
             >
               @mmohamedmokhtarr
             </a>

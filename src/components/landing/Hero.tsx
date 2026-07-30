@@ -1,11 +1,11 @@
 const Hero = () => (
-  <section className="min-h-screen flex flex-col pt-16">
+  <section className="min-h-screen min-h-[100dvh] flex flex-col pt-16">
     {/* Main content — grows to fill available height */}
     <div className="container flex-1 flex flex-col justify-center py-20 sm:py-28">
       {/* Studio name */}
-      <div className="reveal">
+      <div>
         <h1
-          className="font-display uppercase text-[#0A0A0A] leading-[0.88]"
+          className="reveal-mask font-display uppercase text-[#0A0A0A] leading-[0.88]"
           style={{ fontSize: "clamp(3rem, 14vw, 17rem)", letterSpacing: "-0.04em" }}
         >
           Mokhtar<br />Studio
@@ -39,7 +39,7 @@ const Hero = () => (
     <div className="reveal container pb-10 sm:pb-14" style={{ transitionDelay: "0.35s" }}>
       <a
         href="#campaigns"
-        className="inline-flex items-center gap-3 text-xs text-[#707070] tracking-widest uppercase hover:text-[#0A0A0A] transition-colors"
+        className="inline-flex items-center gap-3 text-xs text-[#707070] tracking-widest uppercase hover:text-[#0A0A0A] transition-colors py-2.5 -my-2.5"
       >
         <span className="arrow-bob text-base leading-none inline-block">↓</span>
         <span>Selected Campaigns</span>

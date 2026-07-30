@@ -7,10 +7,14 @@ const Contact = () => (
         </span>
       </div>
 
-      <div className="reveal" style={{ transitionDelay: "0.1s" }}>
+      <div>
         <h2
-          className="font-display uppercase text-[#0A0A0A] leading-[0.92] tracking-tight"
-          style={{ fontSize: "clamp(2rem, 9vw, 10rem)", letterSpacing: "-0.04em" }}
+          className="reveal-mask font-display uppercase text-[#0A0A0A] leading-[0.92] tracking-tight"
+          style={{
+            fontSize: "clamp(2rem, 9vw, 10rem)",
+            letterSpacing: "-0.04em",
+            transitionDelay: "0.1s",
+          }}
         >
           Let's Build<br />
           Something<br />
@@ -27,7 +31,7 @@ const Contact = () => (
           href="https://www.instagram.com/mmohamedmokhtarr/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover-line w-fit text-sm text-[#707070] hover:text-[#0A0A0A] transition-colors"
+          className="hover-line w-fit text-sm text-[#707070] hover:text-[#0A0A0A] transition-colors py-2.5 -my-2.5"
         >
           @mmohamedmokhtarr ↗
         </a>
@@ -35,7 +39,7 @@ const Contact = () => (
           href="https://calendly.com/meetingwithmokhtar/discoverycallwithmokhtar"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover-line w-fit text-sm text-[#707070] hover:text-[#0A0A0A] transition-colors"
+          className="hover-line w-fit text-sm text-[#707070] hover:text-[#0A0A0A] transition-colors py-2.5 -my-2.5"
         >
           Book a Call ↗
         </a>

@@ -72,7 +72,7 @@ const FeaturedCampaigns = ({ onOpen }: Props) => (
 
             <button
               onClick={() => onOpen(project)}
-              className="shrink-0 hover-line text-sm text-[#0A0A0A] font-medium whitespace-nowrap self-start sm:self-auto"
+              className="shrink-0 hover-line text-sm text-[#0A0A0A] font-medium whitespace-nowrap self-start sm:self-auto py-2 -my-2"
             >
               View Case →
             </button>
