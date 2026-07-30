@@ -2,7 +2,7 @@ const steps = [
   { n: "01", title: "Strategy",    desc: "Define the single idea everything will support." },
   { n: "02", title: "Direction",   desc: "Establish the visual and creative language." },
   { n: "03", title: "Production",  desc: "Build the imagery, film, and campaign assets." },
-  { n: "04", title: "Experience",  desc: "Design the digital environment." },
+  { n: "04", title: "Website Build", desc: "Design and build the website that carries the brand." },
   { n: "05", title: "Launch",      desc: "Deploy the complete campaign." },
 ];
 
