@@ -6,7 +6,7 @@ const Hero = () => (
       <div className="reveal">
         <h1
           className="font-display uppercase text-[#0A0A0A] leading-[0.88]"
-          style={{ fontSize: "clamp(4.5rem, 14vw, 17rem)", letterSpacing: "-0.04em" }}
+          style={{ fontSize: "clamp(3rem, 14vw, 17rem)", letterSpacing: "-0.04em" }}
         >
           Mokhtar<br />Studio
         </h1>

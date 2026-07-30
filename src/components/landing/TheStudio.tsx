@@ -1,5 +1,5 @@
 const TheStudio = () => (
-  <section id="studio" className="border-t border-[#ECECEC] py-28 sm:py-44">
+  <section id="studio" className="border-t border-[#ECECEC] py-16 sm:py-44">
     <div className="container">
       <div className="reveal mb-10">
         <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">

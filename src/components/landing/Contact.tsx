@@ -1,5 +1,5 @@
 const Contact = () => (
-  <section id="contact" className="border-t border-[#ECECEC] py-28 sm:py-44">
+  <section id="contact" className="border-t border-[#ECECEC] py-16 sm:py-44">
     <div className="container">
       <div className="reveal mb-14">
         <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">
@@ -10,7 +10,7 @@ const Contact = () => (
       <div className="reveal" style={{ transitionDelay: "0.1s" }}>
         <h2
           className="font-display uppercase text-[#0A0A0A] leading-[0.92] tracking-tight"
-          style={{ fontSize: "clamp(3rem, 9vw, 10rem)", letterSpacing: "-0.04em" }}
+          style={{ fontSize: "clamp(2rem, 9vw, 10rem)", letterSpacing: "-0.04em" }}
         >
           Let's Build<br />
           Something<br />

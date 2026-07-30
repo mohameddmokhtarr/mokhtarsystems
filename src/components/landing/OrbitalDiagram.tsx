@@ -16,27 +16,27 @@ const OrbitalDiagram = () => (
     <text x="230" y="194" textAnchor="middle" fontSize="8.5" fill="white" fontFamily="'Space Mono',monospace" letterSpacing="3" fontWeight="700">BRAND</text>
     <text x="230" y="208" textAnchor="middle" fontSize="7" fill="rgba(255,255,255,0.35)" fontFamily="'Space Mono',monospace">✦</text>
 
-    {/* Service labels — positioned at the 4 orbital zones */}
+    {/* Service labels — hidden on mobile via CSS .orbital-label */}
 
     {/* Creative Strategy — top */}
-    <text x="230" y="72" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE STRATEGY</text>
+    <text className="orbital-label" x="230" y="72" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE STRATEGY</text>
 
     {/* AI Production — bottom */}
-    <text x="230" y="338" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">AI PRODUCTION</text>
+    <text className="orbital-label" x="230" y="338" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">AI PRODUCTION</text>
 
     {/* Creative Direction — right */}
-    <text x="422" y="202" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE</text>
-    <text x="422" y="216" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIRECTION</text>
+    <text className="orbital-label" x="422" y="202" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE</text>
+    <text className="orbital-label" x="422" y="216" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIRECTION</text>
 
     {/* Websites Built — left */}
-    <text x="38" y="202" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">WEBSITES</text>
-    <text x="38" y="216" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">BUILT</text>
+    <text className="orbital-label" x="38" y="202" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">WEBSITES</text>
+    <text className="orbital-label" x="38" y="216" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">BUILT</text>
 
-    {/* Connector tick marks from labels to orbits */}
-    <line x1="230" y1="82" x2="230" y2="102" stroke="#ECECEC" strokeWidth="1" />
-    <line x1="230" y1="320" x2="230" y2="295" stroke="#ECECEC" strokeWidth="1" />
-    <line x1="406" y1="206" x2="402" y2="200" stroke="#ECECEC" strokeWidth="1" />
-    <line x1="52" y1="206" x2="58" y2="200" stroke="#ECECEC" strokeWidth="1" />
+    {/* Connector tick marks — hidden on mobile too */}
+    <line className="orbital-label" x1="230" y1="82" x2="230" y2="102" stroke="#ECECEC" strokeWidth="1" />
+    <line className="orbital-label" x1="230" y1="320" x2="230" y2="295" stroke="#ECECEC" strokeWidth="1" />
+    <line className="orbital-label" x1="406" y1="206" x2="402" y2="200" stroke="#ECECEC" strokeWidth="1" />
+    <line className="orbital-label" x1="52" y1="206" x2="58" y2="200" stroke="#ECECEC" strokeWidth="1" />
 
     {/* Animated dots on inner orbit */}
     <g>

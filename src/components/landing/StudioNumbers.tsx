@@ -6,7 +6,7 @@ const stats = [
 ];
 
 const StudioNumbers = () => (
-  <section className="border-t border-[#ECECEC] py-28 sm:py-40">
+  <section className="border-t border-[#ECECEC] py-16 sm:py-40">
     <div className="container">
       <div className="reveal mb-14">
         <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">
@@ -14,7 +14,7 @@ const StudioNumbers = () => (
         </span>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-10 sm:gap-y-0 divide-x divide-[#ECECEC]">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-10 sm:gap-y-0 sm:divide-x divide-[#ECECEC]">
         {stats.map((s, i) => (
           <div
             key={s.label}

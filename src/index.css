@@ -90,6 +90,11 @@ nav { opacity: 0; animation: nav-in 0.5s ease 0.1s forwards; }
 }
 .project-modal { animation: modal-rise 0.45s var(--spring) both; }
 
+/* ── Orbital labels: hide on mobile, show on sm+ ── */
+@media (max-width: 639px) {
+  .orbital-label { display: none; }
+}
+
 /* ── Scroll arrow bounce ── */
 @keyframes arrow-bob {
   0%, 100% { transform: translateY(0); }

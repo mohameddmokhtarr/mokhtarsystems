@@ -18,7 +18,7 @@ const SelectedWork = () => {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="pt-36 pb-16 sm:pt-52 sm:pb-20 border-b border-[#ECECEC]">
+        <section className="pt-24 pb-10 sm:pt-52 sm:pb-20 border-b border-[#ECECEC]">
           <div className="container">
             <div className="reveal">
               <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">
@@ -90,7 +90,7 @@ const SelectedWork = () => {
         </section>
 
         {/* Contact CTA */}
-        <section className="border-t border-[#ECECEC] py-20 sm:py-28">
+        <section className="border-t border-[#ECECEC] py-14 sm:py-28">
           <div className="container text-center">
             <p className="reveal text-xs font-mono tracking-widest uppercase text-[#707070] mb-6">
               Start a Project

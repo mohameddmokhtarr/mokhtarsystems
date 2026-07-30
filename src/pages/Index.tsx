@@ -25,10 +25,16 @@ const Index = () => {
         <Hero />
 
         {/* Brand orbit — right below the hero */}
-        <section className="border-t border-[#ECECEC] py-20 sm:py-32">
+        <section className="border-t border-[#ECECEC] py-12 sm:py-32">
           <div className="container flex flex-col items-center text-center">
             <div className="reveal w-full max-w-[480px]">
               <OrbitalDiagram />
+              {/* Mobile service labels — shown only when SVG labels are hidden */}
+              <div className="sm:hidden mt-6 grid grid-cols-2 gap-x-4 gap-y-3">
+                {["Creative Strategy","Creative Direction","AI Production","Websites Built"].map((s) => (
+                  <span key={s} className="text-[9px] font-mono tracking-[2px] uppercase text-[#707070] text-center">{s}</span>
+                ))}
+              </div>
             </div>
             <div className="reveal mt-8" style={{ transitionDelay: "0.1s" }}>
               <h2

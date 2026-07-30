@@ -32,7 +32,7 @@ const caps = [
 ];
 
 const Capabilities = () => (
-  <section id="capabilities" className="border-t border-[#ECECEC] py-28 sm:py-40">
+  <section id="capabilities" className="border-t border-[#ECECEC] py-16 sm:py-40">
     <div className="container">
       <div className="reveal mb-14">
         <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">
