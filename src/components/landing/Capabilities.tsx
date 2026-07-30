@@ -27,7 +27,7 @@ const caps = [
   {
     n: "06",
     title: "Content Systems",
-    desc: "Scalable creative infrastructure for long-term output.",
+    desc: "Built so the brand can keep producing long after the campaign ends.",
   },
 ];
 

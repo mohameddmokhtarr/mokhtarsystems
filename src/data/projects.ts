@@ -272,7 +272,7 @@ export const projects: Project[] = [
     id: 'benphos',
     title: 'Benphos',
     category: 'Commercial',
-    description: 'Industrial brand film for a phosphate processing company, built to communicate operational scale and investment credibility to international B2B buyers and investors.',
+    description: 'An industrial brand film for a phosphate processing company — built to turn operational scale into investment credibility for international buyers and partners.',
     coverImage: '/ai-visuals/shot-41.jpg',
     challenge:
       'Benphos Phosphates Industries — a newly established integrated phosphate beneficiation and fertilizer complex backed by Topic International Trading (30+ years in fertilizer and phosphate trading) — was entering an international export market dominated by established names. With a 100,000 ton/year initial production capacity and a two-phase expansion plan, the company had infrastructure that matched the ambition. What it lacked was content that communicated that scale. International buyers and investors needed to see the facility before any commercial relationship could begin.',
@@ -315,7 +315,7 @@ export const projects: Project[] = [
     id: 'ailah-co',
     title: 'Ailah Co',
     category: 'Fashion',
-    description: 'Complete studio e-commerce catalogue for a debut fashion collection: linen sets, crochet co-ords, structured dresses and separates across 23 campaign-quality images.',
+    description: '23 campaign-quality studio images for a debut fashion collection — linen sets, crochet co-ords, and structured separates, shot as one coherent catalogue.',
     coverImage: '/ai-visuals/shot-100.png',
     challenge:
       'Ailah Co was launching its debut collection with no photography budget and a live deadline. The collection spanned multiple garment types — linen strapless sets, structured asymmetric separates, crochet co-ords, keyhole mini dresses — in multiple colorways. To launch a functional e-commerce store, they needed full coverage: consistent studio imagery for every SKU, styled cohesively enough to read as a single shoot across all 23 pieces.',
@@ -422,7 +422,7 @@ export const projects: Project[] = [
     id: 'the-girl-theory',
     title: 'The Girl Theory',
     category: 'Fashion',
-    description: 'Full studio e-commerce set for a linen separates collection: camp-collar shirts, drawstring tops, wide-leg trousers, and pinstripe pieces in neutral earth tones.',
+    description: '36 studio images for a linen separates collection — camp-collar shirts, drawstring tops, wide-leg trousers, and pinstripe co-ords, shot as one consistent world.',
     coverImage: '/ai-visuals/shot-65.jpg',
     challenge:
       'The Girl Theory needed complete e-commerce catalogue coverage for a multi-piece linen separates collection — camp-collar shirts, drawstring-waist tops, V-neck polos, pinstripe styles, and wide-leg trousers across oat, cream, beige, and white. The challenge: making a large catalogue of visually similar, neutral-toned linen pieces feel distinct enough that every garment reads as its own SKU — without any piece looking interchangeable with its neighbour.',

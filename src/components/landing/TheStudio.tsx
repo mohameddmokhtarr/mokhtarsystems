@@ -33,11 +33,9 @@ const TheStudio = () => (
         style={{ transitionDelay: "0.35s" }}
       >
         <p className="text-[#707070] text-sm sm:text-base leading-relaxed">
-          We help brands build campaign content, brand films, and websites
-          through creative strategy, direction, and AI production.
-          We don't sell AI. We don't sell content. We solve creative problems
-          and build complete brand campaigns — from the first idea to the
-          final website.
+          We take a single idea and build an entire brand campaign around
+          it — strategy, imagery, film, and the website that carries it
+          into the world. Creative direction leads. AI production scales it.
         </p>
       </div>
     </div>

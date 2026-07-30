@@ -44,7 +44,7 @@ const Index = () => {
                 Everything revolves around brand.
               </h2>
               <p className="mt-4 text-sm text-[#707070] leading-relaxed max-w-sm mx-auto">
-                Creative strategy, direction, AI production, websites. Each discipline built to serve the brand at the center.
+                Strategy defines it. Direction expresses it. Production proves it. The website carries it.
               </p>
             </div>
           </div>

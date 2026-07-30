@@ -39,7 +39,7 @@ const SelectedWork = () => {
               className="reveal mt-8 max-w-md text-sm text-[#707070] leading-relaxed"
               style={{ transitionDelay: "0.2s" }}
             >
-              Four brand campaigns: creative direction, AI production, and websites built from brief to launch.
+              Four complete brand campaigns, built from brief to launch.
             </p>
           </div>
         </section>
