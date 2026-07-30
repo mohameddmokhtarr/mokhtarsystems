@@ -10,6 +10,7 @@
   --muted:  #707070;
   --border: #ECECEC;
   --bg:     #FFFFFF;
+  --spring: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ── Base ── */
@@ -28,11 +29,14 @@ body { font-family: 'Inter', ui-sans-serif, sans-serif; color: var(--ink); backg
   font-family: 'Space Mono', ui-monospace, monospace;
 }
 
+/* ── Text selection ── */
+::selection { background: var(--ink); color: #fff; }
+
 /* ── Scroll reveal ── */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(14px);
+  transition: opacity 0.7s var(--spring), transform 0.7s var(--spring);
 }
 .reveal.is-visible {
   opacity: 1;
@@ -49,7 +53,7 @@ body { font-family: 'Inter', ui-sans-serif, sans-serif; color: var(--ink); backg
   left: 0; bottom: -2px;
   width: 0; height: 1px;
   background: currentColor;
-  transition: width 0.3s ease;
+  transition: width 0.35s var(--spring);
 }
 .hover-line:hover::after { width: 100%; }
 
@@ -57,7 +61,7 @@ body { font-family: 'Inter', ui-sans-serif, sans-serif; color: var(--ink); backg
 .line-reveal {
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 1.2s var(--spring);
 }
 .line-reveal.is-visible { transform: scaleX(1); }
 
@@ -67,17 +71,31 @@ nav { opacity: 0; animation: nav-in 0.5s ease 0.1s forwards; }
 
 /* ── Mobile menu ── */
 @keyframes menu-slide-down {
-  0%   { opacity: 0; transform: translateY(-8px); }
+  0%   { opacity: 0; transform: translateY(-10px); }
   100% { opacity: 1; transform: translateY(0); }
 }
-.menu-panel { animation: menu-slide-down 0.3s ease both; }
+.menu-panel { animation: menu-slide-down 0.28s var(--spring) both; }
+
+/* ── Modal backdrop ── */
+@keyframes backdrop-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.modal-backdrop { animation: backdrop-in 0.3s ease both; }
 
 /* ── Project modal ── */
 @keyframes modal-rise {
-  from { opacity: 0; transform: translateY(24px); }
+  from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.project-modal { animation: modal-rise 0.38s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.project-modal { animation: modal-rise 0.45s var(--spring) both; }
+
+/* ── Scroll arrow bounce ── */
+@keyframes arrow-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(5px); }
+}
+.arrow-bob { animation: arrow-bob 2s ease-in-out infinite; }
 
 /* ── Scrollbar hide ── */
 .scrollbar-none { scrollbar-width: none; -ms-overflow-style: none; }
@@ -94,6 +112,7 @@ a:focus-visible, button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .reveal { transition: none; }
   .project-modal { animation: none; }
+  .arrow-bob { animation: none; }
 }
 
 /* ── Shadcn base variables — white system ── */
@@ -149,13 +168,4 @@ a:focus-visible, button:focus-visible {
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
-  .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  .reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

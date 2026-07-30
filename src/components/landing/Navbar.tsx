@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Work",         href: "/work" },
-  { label: "Capabilities", href: "/#capabilities" },
-  { label: "Contact",      href: "/#contact" },
+  { label: "Work",         to: "/work" },
+  { label: "Capabilities", to: "/#capabilities" },
+  { label: "Contact",      to: "/#contact" },
 ];
 
 const Navbar = () => {
@@ -38,13 +38,13 @@ const Navbar = () => {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-10">
           {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-xs text-[#707070] hover:text-[#0A0A0A] transition-colors tracking-widest uppercase font-medium"
+            <Link
+              key={l.to}
+              to={l.to}
+              className="text-xs text-[#707070] hover:text-[#0A0A0A] transition-colors duration-200 tracking-widest uppercase font-medium"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -63,14 +63,14 @@ const Navbar = () => {
         <div className="menu-panel md:hidden border-t border-[#ECECEC] bg-white">
           <div className="container py-10 flex flex-col gap-7">
             {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
+              <Link
+                key={l.to}
+                to={l.to}
                 onClick={() => setOpen(false)}
                 className="font-display text-3xl uppercase text-[#0A0A0A] tracking-tight"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://www.instagram.com/mmohamedmokhtarr/"

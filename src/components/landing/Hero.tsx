@@ -41,7 +41,7 @@ const Hero = () => (
         href="#campaigns"
         className="inline-flex items-center gap-3 text-xs text-[#707070] tracking-widest uppercase hover:text-[#0A0A0A] transition-colors"
       >
-        <span className="text-base leading-none">↓</span>
+        <span className="arrow-bob text-base leading-none inline-block">↓</span>
         <span>Selected Campaigns</span>
       </a>
     </div>

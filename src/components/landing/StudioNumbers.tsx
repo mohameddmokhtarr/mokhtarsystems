@@ -14,11 +14,11 @@ const StudioNumbers = () => (
         </span>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#ECECEC]">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-10 sm:gap-y-0 divide-x divide-[#ECECEC]">
         {stats.map((s, i) => (
           <div
             key={s.label}
-            className="reveal px-0 sm:px-10 first:pl-0 last:pr-0 pb-10 sm:pb-0"
+            className="reveal px-0 sm:px-10 first:pl-0 last:pr-0"
             style={{ transitionDelay: `${i * 0.08}s` }}
           >
             <div

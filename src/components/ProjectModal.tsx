@@ -48,12 +48,12 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-[#0A0A0A]/50 backdrop-blur-md" />
+      <div className="modal-backdrop absolute inset-0 bg-[#0A0A0A]/50 backdrop-blur-md" />
 
       {/* Panel */}
       <div
         ref={scrollRef}
-        className="project-modal relative w-full sm:max-w-4xl max-h-[92vh] overflow-y-auto bg-white border border-[#ECECEC] sm:rounded-none"
+        className="project-modal scrollbar-none relative w-full sm:max-w-4xl max-h-[92vh] overflow-y-auto bg-white border border-[#ECECEC] sm:rounded-none"
       >
         {/* Sticky header */}
         <div className="sticky top-0 z-10 flex items-center justify-between px-7 sm:px-10 py-5 bg-white/95 backdrop-blur-sm border-b border-[#ECECEC]">
