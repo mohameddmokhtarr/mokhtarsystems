@@ -1,47 +1,62 @@
+const labels = [
+  { text: "CREATIVE STRATEGY",  pw: 126, begin: "0s"   },
+  { text: "CREATIVE DIRECTION", pw: 128, begin: "-6s"  },
+  { text: "AI PRODUCTION",      pw: 90,  begin: "-12s" },
+  { text: "WEBSITES BUILT",     pw: 96,  begin: "-18s" },
+];
+
 const OrbitalDiagram = () => (
-  <svg viewBox="0 0 500 400" className="w-full h-auto max-w-[440px]" aria-hidden="true">
+  <svg
+    viewBox="0 0 500 370"
+    className="w-full h-auto"
+    aria-hidden="true"
+    style={{ overflow: "visible" }}
+  >
     <defs>
-      <path id="orbit-inner" d="M 342 198 a 112,62 0 1,0 -224,0 a 112,62 0 1,0 224,0" transform="rotate(10,230,198)" />
-      <path id="orbit-outer" d="M 402 198 a 172,96 0 1,0 -344,0 a 172,96 0 1,0 344,0" transform="rotate(10,230,198)" />
+      {/* Outer orbit — labels travel along this */}
+      <path
+        id="orbit-outer"
+        d="M 425 185 a 175,92 0 1,0 -350,0 a 175,92 0 1,0 350,0"
+      />
+      {/* Inner orbit — dots travel along this */}
+      <path
+        id="orbit-inner"
+        d="M 360 185 a 110,60 0 1,0 -220,0 a 110,60 0 1,0 220,0"
+      />
     </defs>
 
-    {/* Outer ellipse */}
-    <ellipse cx="230" cy="198" rx="172" ry="96" stroke="#ECECEC" strokeWidth="1" fill="none" transform="rotate(10,230,198)" />
-    {/* Inner ellipse */}
-    <ellipse cx="230" cy="198" rx="112" ry="62" stroke="#ECECEC" strokeWidth="1.2" fill="none" transform="rotate(10,230,198)" opacity="0.7" />
+    {/* Outer ellipse ring */}
+    <ellipse
+      cx="250" cy="185" rx="175" ry="92"
+      stroke="#ECECEC" strokeWidth="1" fill="none"
+    />
+    {/* Inner ellipse ring */}
+    <ellipse
+      cx="250" cy="185" rx="110" ry="60"
+      stroke="#ECECEC" strokeWidth="1.2" fill="none" opacity="0.7"
+    />
 
-    {/* Center — Brand */}
-    <circle cx="230" cy="198" r="34" fill="#0A0A0A" />
-    <circle cx="230" cy="198" r="34" fill="none" stroke="#0A0A0A" strokeWidth="1" opacity="0.3" />
-    <text x="230" y="194" textAnchor="middle" fontSize="8.5" fill="white" fontFamily="'Space Mono',monospace" letterSpacing="3" fontWeight="700">BRAND</text>
-    <text x="230" y="208" textAnchor="middle" fontSize="7" fill="rgba(255,255,255,0.35)" fontFamily="'Space Mono',monospace">✦</text>
-
-    {/* Service labels — hidden on mobile via CSS .orbital-label */}
-
-    {/* Creative Strategy — top */}
-    <text className="orbital-label" x="230" y="72" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE STRATEGY</text>
-
-    {/* AI Production — bottom */}
-    <text className="orbital-label" x="230" y="338" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">AI PRODUCTION</text>
-
-    {/* Creative Direction — right */}
-    <text className="orbital-label" x="422" y="202" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE</text>
-    <text className="orbital-label" x="422" y="216" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIRECTION</text>
-
-    {/* Websites Built — left */}
-    <text className="orbital-label" x="38" y="202" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">WEBSITES</text>
-    <text className="orbital-label" x="38" y="216" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">BUILT</text>
-
-    {/* Connector tick marks — hidden on mobile too */}
-    <line className="orbital-label" x1="230" y1="82" x2="230" y2="102" stroke="#ECECEC" strokeWidth="1" />
-    <line className="orbital-label" x1="230" y1="320" x2="230" y2="295" stroke="#ECECEC" strokeWidth="1" />
-    <line className="orbital-label" x1="406" y1="206" x2="402" y2="200" stroke="#ECECEC" strokeWidth="1" />
-    <line className="orbital-label" x1="52" y1="206" x2="58" y2="200" stroke="#ECECEC" strokeWidth="1" />
+    {/* Center — THE BRAND */}
+    <circle cx="250" cy="185" r="42" fill="#0A0A0A" />
+    <text
+      x="250" y="180"
+      textAnchor="middle" fontSize="6.5" fill="rgba(255,255,255,0.55)"
+      fontFamily="'Space Mono',monospace" letterSpacing="3"
+    >
+      THE
+    </text>
+    <text
+      x="250" y="195"
+      textAnchor="middle" fontSize="9.5" fill="white" fontWeight="700"
+      fontFamily="'Space Mono',monospace" letterSpacing="2.5"
+    >
+      BRAND
+    </text>
 
     {/* Animated dots on inner orbit */}
     <g>
-      <circle r="8" fill="#0A0A0A" opacity="0.06" />
-      <circle r="4" fill="#0A0A0A" />
+      <circle r="6" fill="#0A0A0A" opacity="0.07" />
+      <circle r="3.5" fill="#0A0A0A" />
       {/* @ts-ignore */}
       <animateMotion dur="10s" repeatCount="indefinite" rotate="none" begin="0s">
         {/* @ts-ignore */}
@@ -49,8 +64,8 @@ const OrbitalDiagram = () => (
       </animateMotion>
     </g>
     <g>
-      <circle r="8" fill="#0A0A0A" opacity="0.06" />
-      <circle r="4" fill="#0A0A0A" />
+      <circle r="6" fill="#0A0A0A" opacity="0.07" />
+      <circle r="3.5" fill="#0A0A0A" />
       {/* @ts-ignore */}
       <animateMotion dur="10s" repeatCount="indefinite" rotate="none" begin="-5s">
         {/* @ts-ignore */}
@@ -58,25 +73,35 @@ const OrbitalDiagram = () => (
       </animateMotion>
     </g>
 
-    {/* Animated dots on outer orbit */}
-    <g>
-      <circle r="8" fill="#0A0A0A" opacity="0.06" />
-      <circle r="4" fill="#0A0A0A" />
-      {/* @ts-ignore */}
-      <animateMotion dur="16s" repeatCount="indefinite" rotate="none" begin="0s">
+    {/* Revolving service label chips on outer orbit */}
+    {labels.map(({ text, pw, begin }) => (
+      <g key={text}>
+        <rect
+          x={-pw / 2} y="-10"
+          width={pw} height="19"
+          rx="9.5"
+          fill="white"
+          stroke="#D8D8D8"
+          strokeWidth="1"
+        />
+        <text
+          x="0" y="4.5"
+          textAnchor="middle"
+          fontSize="7.5"
+          fontFamily="'Space Mono',monospace"
+          letterSpacing="1.5"
+          fill="#0A0A0A"
+          fontWeight="600"
+        >
+          {text}
+        </text>
         {/* @ts-ignore */}
-        <mpath href="#orbit-outer" />
-      </animateMotion>
-    </g>
-    <g>
-      <circle r="8" fill="#0A0A0A" opacity="0.06" />
-      <circle r="4" fill="#0A0A0A" />
-      {/* @ts-ignore */}
-      <animateMotion dur="16s" repeatCount="indefinite" rotate="none" begin="-8s">
-        {/* @ts-ignore */}
-        <mpath href="#orbit-outer" />
-      </animateMotion>
-    </g>
+        <animateMotion dur="24s" repeatCount="indefinite" rotate="none" begin={begin}>
+          {/* @ts-ignore */}
+          <mpath href="#orbit-outer" />
+        </animateMotion>
+      </g>
+    ))}
   </svg>
 );
 
