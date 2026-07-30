@@ -23,8 +23,8 @@ const caps = [
   },
   {
     n: "05",
-    title: "Digital Experiences",
-    desc: "Websites and digital products that complete the campaign.",
+    title: "Websites Built",
+    desc: "Websites and e-commerce stores that complete the brand.",
   },
   {
     n: "06",
@@ -42,22 +42,22 @@ const Capabilities = () => (
         </span>
       </div>
 
-      {/* Orbital diagram + intro */}
-      <div className="reveal mb-16 sm:mb-20 flex flex-col sm:flex-row items-center sm:items-start gap-12 sm:gap-16">
-        <div className="w-full sm:w-[42%] shrink-0 flex justify-center">
-          <OrbitalDiagram />
-        </div>
-        <div className="sm:pt-10">
-          <h2
-            className="font-display uppercase text-[#0A0A0A] leading-[0.92] tracking-tight"
-            style={{ fontSize: "clamp(2rem, 4.5vw, 4rem)", letterSpacing: "-0.03em" }}
-          >
-            Everything<br />revolves<br />around<br />brand.
-          </h2>
-          <p className="mt-6 text-sm text-[#707070] leading-relaxed max-w-xs">
-            Creative strategy, direction, AI production, and digital experiences — each discipline built to serve the brand at the center.
-          </p>
-        </div>
+      {/* Orbital diagram — full width, centered */}
+      <div className="reveal mb-6 flex justify-center">
+        <OrbitalDiagram />
+      </div>
+
+      {/* Tagline below orbital */}
+      <div className="reveal mb-16 sm:mb-20 text-center" style={{ transitionDelay: "0.1s" }}>
+        <h2
+          className="font-display uppercase text-[#0A0A0A] leading-[0.92] tracking-tight"
+          style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)", letterSpacing: "-0.03em" }}
+        >
+          Everything revolves around brand.
+        </h2>
+        <p className="mt-4 text-sm text-[#707070] leading-relaxed max-w-sm mx-auto">
+          Creative strategy, direction, AI production, websites — each discipline built to serve the brand at the center.
+        </p>
       </div>
 
       <div>

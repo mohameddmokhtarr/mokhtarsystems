@@ -28,9 +28,8 @@ const OrbitalDiagram = () => (
     <text x="422" y="202" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE</text>
     <text x="422" y="216" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIRECTION</text>
 
-    {/* Digital Experiences — left */}
-    <text x="38" y="202" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIGITAL</text>
-    <text x="38" y="216" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">EXPERIENCES</text>
+    {/* Websites — left */}
+    <text x="38" y="209" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">WEBSITES</text>
 
     {/* Connector tick marks from labels to orbits */}
     <line x1="230" y1="82" x2="230" y2="102" stroke="#ECECEC" strokeWidth="1" />
