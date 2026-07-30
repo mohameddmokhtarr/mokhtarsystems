@@ -1,3 +1,5 @@
+import OrbitalDiagram from "./OrbitalDiagram";
+
 const caps = [
   {
     n: "01",
@@ -38,6 +40,24 @@ const Capabilities = () => (
         <span className="text-xs font-mono tracking-widest uppercase text-[#707070]">
           Capabilities
         </span>
+      </div>
+
+      {/* Orbital diagram + intro */}
+      <div className="reveal mb-16 sm:mb-20 flex flex-col sm:flex-row items-center sm:items-start gap-12 sm:gap-16">
+        <div className="w-full sm:w-[42%] shrink-0 flex justify-center">
+          <OrbitalDiagram />
+        </div>
+        <div className="sm:pt-10">
+          <h2
+            className="font-display uppercase text-[#0A0A0A] leading-[0.92] tracking-tight"
+            style={{ fontSize: "clamp(2rem, 4.5vw, 4rem)", letterSpacing: "-0.03em" }}
+          >
+            Everything<br />revolves<br />around<br />brand.
+          </h2>
+          <p className="mt-6 text-sm text-[#707070] leading-relaxed max-w-xs">
+            Creative strategy, direction, AI production, and digital experiences — each discipline built to serve the brand at the center.
+          </p>
+        </div>
       </div>
 
       <div>

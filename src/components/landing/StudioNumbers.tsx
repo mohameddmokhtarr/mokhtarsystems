@@ -2,7 +2,7 @@ const stats = [
   { value: "100+", label: "AI Visuals" },
   { value: "13",   label: "AI Films" },
   { value: "4",    label: "Brand Campaigns" },
-  { value: "12",   label: "Projects" },
+  { value: "4",    label: "Websites Built" },
 ];
 
 const StudioNumbers = () => (

@@ -1,72 +1,83 @@
-interface Props {
-  light?: boolean;
-}
+const OrbitalDiagram = () => (
+  <svg viewBox="0 0 500 400" className="w-full h-auto max-w-[440px]" aria-hidden="true">
+    <defs>
+      <path id="orbit-inner" d="M 342 198 a 112,62 0 1,0 -224,0 a 112,62 0 1,0 224,0" transform="rotate(10,230,198)" />
+      <path id="orbit-outer" d="M 402 198 a 172,96 0 1,0 -344,0 a 172,96 0 1,0 344,0" transform="rotate(10,230,198)" />
+    </defs>
 
-const OrbitalDiagram = ({ light = true }: Props) => {
-  const stroke   = light ? "#C45A38" : "#FAF7F2";
-  const label    = light ? "#1A1512" : "#FAF7F2";
-  const dot      = light ? "#C45A38" : "#FAF7F2";
-  const starText = light ? "#FAF7F2" : "#1A1512";
+    {/* Outer ellipse */}
+    <ellipse cx="230" cy="198" rx="172" ry="96" stroke="#ECECEC" strokeWidth="1" fill="none" transform="rotate(10,230,198)" />
+    {/* Inner ellipse */}
+    <ellipse cx="230" cy="198" rx="112" ry="62" stroke="#ECECEC" strokeWidth="1.2" fill="none" transform="rotate(10,230,198)" opacity="0.7" />
 
-  return (
-    <svg viewBox="0 0 460 400" className="w-full h-auto max-w-[420px]" aria-hidden="true">
-      <defs>
-        {/* Orbit paths — each is the corresponding ellipse as an arc path with the 12° rotation baked in via transform */}
-        <path id="orbit-inner"  d="M 298 198 a 68,38 0 1,0 -136,0 a 68,38 0 1,0 136,0"    transform="rotate(12,230,198)" />
-        <path id="orbit-middle" d="M 358 198 a 128,73 0 1,0 -256,0 a 128,73 0 1,0 256,0"   transform="rotate(12,230,198)" />
-        <path id="orbit-outer"  d="M 418 198 a 188,108 0 1,0 -376,0 a 188,108 0 1,0 376,0" transform="rotate(12,230,198)" />
-      </defs>
+    {/* Center — Brand */}
+    <circle cx="230" cy="198" r="34" fill="#0A0A0A" />
+    <circle cx="230" cy="198" r="34" fill="none" stroke="#0A0A0A" strokeWidth="1" opacity="0.3" />
+    <text x="230" y="194" textAnchor="middle" fontSize="8.5" fill="white" fontFamily="'Space Mono',monospace" letterSpacing="3" fontWeight="700">BRAND</text>
+    <text x="230" y="208" textAnchor="middle" fontSize="7" fill="rgba(255,255,255,0.35)" fontFamily="'Space Mono',monospace">✦</text>
 
-      {/* Three concentric ellipses, tilted 12° */}
-      <ellipse cx="230" cy="198" rx="68"  ry="38"  stroke={stroke} strokeWidth="1.2" fill="none" transform="rotate(12,230,198)" opacity="0.8"  />
-      <ellipse cx="230" cy="198" rx="128" ry="73"  stroke={stroke} strokeWidth="1"   fill="none" transform="rotate(12,230,198)" opacity="0.45" />
-      <ellipse cx="230" cy="198" rx="188" ry="108" stroke={stroke} strokeWidth="0.8" fill="none" transform="rotate(12,230,198)" opacity="0.28" />
+    {/* Service labels — positioned at the 4 orbital zones */}
 
-      {/* Centre star — glass lens + glow rings */}
-      <circle cx="230" cy="198" r="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" strokeWidth="1" />
-      <circle cx="230" cy="198" r="16" fill={dot} opacity="0.12" />
-      <circle cx="230" cy="198" r="7"  fill={dot} />
-      <text x="230" y="202" textAnchor="middle" fontSize="9" fill={starText} fontWeight="700">✦</text>
+    {/* Creative Strategy — top */}
+    <text x="230" y="72" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE STRATEGY</text>
 
-      {/* Static orbit labels */}
-      <text x="302" y="228" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label}>CONTENT</text>
-      <text x="106" y="153" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label} textAnchor="end">VISUALS</text>
-      <text x="280" y="100" fontSize="10" fontFamily="'Space Mono',monospace" fontWeight="700" letterSpacing="1.5" fill={label}>AUTOMATION</text>
+    {/* AI Production — bottom */}
+    <text x="230" y="338" textAnchor="middle" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">AI PRODUCTION</text>
 
-      {/* CONTENT — inner orbit, 8s. begin=0s → starts at rotated right-side ≈(296,212), near label */}
-      <g>
-        <circle r="9" fill={dot} opacity="0.12" />
-        <circle r="5" fill={dot} />
+    {/* Creative Direction — right */}
+    <text x="422" y="202" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">CREATIVE</text>
+    <text x="422" y="216" textAnchor="start" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIRECTION</text>
+
+    {/* Digital Experiences — left */}
+    <text x="38" y="202" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">DIGITAL</text>
+    <text x="38" y="216" textAnchor="end" fontSize="8.5" fontFamily="'Space Mono',monospace" letterSpacing="2" fill="#0A0A0A" fontWeight="600">EXPERIENCES</text>
+
+    {/* Connector tick marks from labels to orbits */}
+    <line x1="230" y1="82" x2="230" y2="102" stroke="#ECECEC" strokeWidth="1" />
+    <line x1="230" y1="320" x2="230" y2="295" stroke="#ECECEC" strokeWidth="1" />
+    <line x1="406" y1="206" x2="402" y2="200" stroke="#ECECEC" strokeWidth="1" />
+    <line x1="52" y1="206" x2="58" y2="200" stroke="#ECECEC" strokeWidth="1" />
+
+    {/* Animated dots on inner orbit */}
+    <g>
+      <circle r="8" fill="#0A0A0A" opacity="0.06" />
+      <circle r="4" fill="#0A0A0A" />
+      {/* @ts-ignore */}
+      <animateMotion dur="10s" repeatCount="indefinite" rotate="none" begin="0s">
         {/* @ts-ignore */}
-        <animateMotion dur="8s" repeatCount="indefinite" rotate="none" begin="0s">
-          {/* @ts-ignore */}
-          <mpath href="#orbit-inner" />
-        </animateMotion>
-      </g>
-
-      {/* VISUALS — middle orbit, 12s. begin=-6.7s → starts at ≈(118,149), near label */}
-      <g>
-        <circle r="9" fill={dot} opacity="0.12" />
-        <circle r="5" fill={dot} />
+        <mpath href="#orbit-inner" />
+      </animateMotion>
+    </g>
+    <g>
+      <circle r="8" fill="#0A0A0A" opacity="0.06" />
+      <circle r="4" fill="#0A0A0A" />
+      {/* @ts-ignore */}
+      <animateMotion dur="10s" repeatCount="indefinite" rotate="none" begin="-5s">
         {/* @ts-ignore */}
-        <animateMotion dur="12s" repeatCount="indefinite" rotate="none" begin="-6.7s">
-          {/* @ts-ignore */}
-          <mpath href="#orbit-middle" />
-        </animateMotion>
-      </g>
+        <mpath href="#orbit-inner" />
+      </animateMotion>
+    </g>
 
-      {/* AUTOMATION — outer orbit, 16s. begin=-12.2s → starts at ≈(268,96), near label */}
-      <g>
-        <circle r="9" fill={dot} opacity="0.12" />
-        <circle r="5" fill={dot} />
+    {/* Animated dots on outer orbit */}
+    <g>
+      <circle r="8" fill="#0A0A0A" opacity="0.06" />
+      <circle r="4" fill="#0A0A0A" />
+      {/* @ts-ignore */}
+      <animateMotion dur="16s" repeatCount="indefinite" rotate="none" begin="0s">
         {/* @ts-ignore */}
-        <animateMotion dur="16s" repeatCount="indefinite" rotate="none" begin="-12.2s">
-          {/* @ts-ignore */}
-          <mpath href="#orbit-outer" />
-        </animateMotion>
-      </g>
-    </svg>
-  );
-};
+        <mpath href="#orbit-outer" />
+      </animateMotion>
+    </g>
+    <g>
+      <circle r="8" fill="#0A0A0A" opacity="0.06" />
+      <circle r="4" fill="#0A0A0A" />
+      {/* @ts-ignore */}
+      <animateMotion dur="16s" repeatCount="indefinite" rotate="none" begin="-8s">
+        {/* @ts-ignore */}
+        <mpath href="#orbit-outer" />
+      </animateMotion>
+    </g>
+  </svg>
+);
 
 export default OrbitalDiagram;
