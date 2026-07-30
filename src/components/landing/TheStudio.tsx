@@ -33,11 +33,11 @@ const TheStudio = () => (
         style={{ transitionDelay: "0.35s" }}
       >
         <p className="text-[#707070] text-sm sm:text-base leading-relaxed">
-          We help brands build premium digital experiences through creative
-          strategy, creative direction, AI production and digital execution.
+          We help brands build campaign content, brand films, and websites
+          through creative strategy, direction, and AI production.
           We don't sell AI. We don't sell content. We solve creative problems
-          and build complete digital campaigns — from the first idea to the
-          final asset.
+          and build complete brand campaigns — from the first idea to the
+          final website.
         </p>
       </div>
     </div>

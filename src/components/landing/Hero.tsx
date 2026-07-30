@@ -24,13 +24,13 @@ const Hero = () => (
           Creative Strategy.<br />
           Creative Direction.<br />
           AI Production.<br />
-          Digital Experiences.
+          Websites Built.
         </p>
 
         <p className="text-sm sm:text-base text-[#0A0A0A] leading-relaxed">
           Ideas become campaigns.<br />
-          Campaigns become digital<br />
-          experiences.
+          Campaigns become<br />
+          websites.
         </p>
       </div>
     </div>

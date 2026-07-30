@@ -11,7 +11,7 @@ const capabilitiesFor = (p: Project): string[] => {
   const caps: string[] = ["Creative Direction"];
   if (p.gallery.length > 0)          caps.push("AI Visual Production");
   if (p.videos && p.videos.length > 0) caps.push("AI Film Production");
-  if (p.websiteDigital)              caps.push("Digital Experience");
+  if (p.websiteDigital)              caps.push("Website Built");
   return caps;
 };
 
