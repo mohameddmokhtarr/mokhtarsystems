@@ -28,9 +28,9 @@ const Hero = () => (
         </p>
 
         <p className="text-sm sm:text-base text-[#0A0A0A] leading-relaxed">
-          Ideas become campaigns.<br />
-          Campaigns become<br />
-          websites.
+          Complete brand campaigns.<br />
+          From the first idea<br />
+          to the finished website.
         </p>
       </div>
     </div>

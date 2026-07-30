@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useReveal } from "@/hooks/use-reveal";
+import { useDocumentTitle } from "@/hooks/use-document-title";
 import { ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
@@ -11,6 +12,7 @@ const caseStudies = projects.filter((p) => !!p.brandOverview);
 
 const SelectedWork = () => {
   useReveal();
+  useDocumentTitle("Selected Work");
   const [modal, setModal] = useState<Project | null>(null);
 
   return (

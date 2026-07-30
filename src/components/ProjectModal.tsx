@@ -171,6 +171,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                           muted
                           loop
                           playsInline
+                          preload="metadata"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -301,7 +302,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                     {project.videos.map((src) => (
                       <div key={src} className="aspect-[3/4] overflow-hidden bg-[#F5F5F5]">
-                        <video src={src} autoPlay muted loop playsInline className="w-full h-full object-cover" />
+                        <video src={src} autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover" />
                       </div>
                     ))}
                   </div>

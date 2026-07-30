@@ -72,7 +72,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "sans-serif"],
-        display: ["Fraunces", "serif"],
+        display: ["Space Grotesk", "sans-serif"],
         mono: ["Space Mono", "monospace"],
       },
       backgroundImage: {
